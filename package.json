@@ -1,0 +1,22 @@
+{
+  "name": "youtube-clone",
+  "version": "1.0.0",
+  "description": "<h2 align='left'>Goals of this project</h2> <ul>   <li>Get more comfortable with Figma (I'll make a wireframe for the project first).</li>   <li>Get better at writing SCSS/CSS.</li>   <li>Get even more experience with PHP and file managament.</li> </ul>",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w styles/sass/ -o styles/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikael-Kolehmainen/Youtube-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikael-Kolehmainen/Youtube-clone/issues"
+  },
+  "homepage": "https://github.com/Mikael-Kolehmainen/Youtube-clone#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
