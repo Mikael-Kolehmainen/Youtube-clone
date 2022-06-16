@@ -1,6 +1,8 @@
 <?php
     echo "
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='icon' type='image/svg' href='media/favicon.svg'>
+        <script src='https://kit.fontawesome.com/48a5ef6957.js' crossorigin='anonymous'></script>
         <link href='./styles/css/main.css' rel='stylesheet' type='text/css'>
     ";
 ?>
