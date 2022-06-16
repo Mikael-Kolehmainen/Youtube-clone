@@ -1,3 +1,8 @@
+header .logo {
+  width: 125px; }
+  header .logo img {
+    width: 100%; }
+
 * {
   scroll-behavior: smooth;
   margin: 0;
