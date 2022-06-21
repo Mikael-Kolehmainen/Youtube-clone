@@ -1,4 +1,17 @@
 
+// FONT FAMILY
+
+@font-face {
+    font-family: roboto;
+    src: url(../../font/Roboto/Roboto-Regular.ttf);
+}
+$main-font-family: roboto;
+
+// FONT COLORS
+
+$main-font-color: #030303;
+$secondary-font-color: #797979;
+
 // BORDER COLORS
 
 $main-border-color: #d5d5d5;

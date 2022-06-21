@@ -2,6 +2,7 @@
     echo "
         <header>
             <!-- HAMBURGER MENU -->
+            <div class='bottom-border'></div>
             <nav>
                 <div id='hamburger'>
                     <a onclick='openHamburgerMenu()'>
@@ -9,31 +10,43 @@
                     </a>
                 </div>
                 <div id='navLinks'>
-                    <div class='item'>
-                        <i class='fa-solid fa-house'></i>
-                        <a href=''>Home</a>
-                    </div>
-                    <div class='item'>
-                        <i class='fa-solid fa-compass'></i>
-                        <a href=''>Explore</a>
-                    </div>
-                    <div class='item'>
-                        <i class='fa-solid fa-stopwatch'></i>
-                        <a href=''>Shorts</a>
-                    </div>
-                    <div class='item'>
-                        <i class='fa-solid fa-clipboard-list'></i>
-                        <a href=''>Subscriptions</a>
-                    </div>
+                    <a href='' class='item active'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-house'></i>
+                        </div>
+                        <p>Home</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-compass'></i>
+                        </div>
+                        <p>Explore</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-stopwatch'></i>
+                        </div>
+                        <p>Shorts</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-clipboard-list'></i>
+                        </div>
+                        <p>Subscriptions</p>
+                    </a>
                     <hr>
-                    <div class='item'>
-                        <i class='fa-solid fa-book'></i>
-                        <a href=''>Library</a>
-                    </div>
-                    <div class='item'>
-                        <i class='fa-solid fa-clock-rotate-left'></i>
-                        <a href=''>History</a>
-                    </div>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-book'></i>
+                        </div>
+                        <p>Library</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-clock-rotate-left'></i>
+                        </div>
+                        <p>History</p>
+                    </a>
                     <hr>
                     <p>Sign in to like videos, comment and subscribe.</p>
                     <a href='' class='Sign-btn'>
@@ -41,52 +54,66 @@
                         <p>SIGN IN</p>
                     </a>
                     <hr>
-                    <p>BEST OF YOUTUBE</p>
+                    <p class='title'>BEST OF YOUTUBE</p>
                     <div class='categories'>
-                        <div class='item'>
-                            <i class='fa-solid fa-music'></i>
-                            <a href=''>Music</a>
-                        </div>
-                        <div class='item'>
-                            <i class='fa-solid fa-trophy'></i>
-                            <a href=''>Sports</a>
-                        </div>
-                        <div class='item'>
-                            <i class='fa-solid fa-gamepad'></i>
-                            <a href=''>Gaming</a>
-                        </div>
-                        <div class='item'>
-                            <i class='fa-solid fa-film'></i>
-                            <a href=''>Movies</a>
-                        </div>
-                        <div class='item'>
-                            <i class='fa-solid fa-newspaper'></i>
-                            <a href=''>News</a>
-                        </div>
-                        <div class='item'>
-                            <i class='fa-solid fa-tower-broadcast'></i>
-                            <a href=''>Live</a>
-                        </div>
-                        <div class='item'>
-                            <i class='fa-solid fa-vr-cardboard'></i>
-                            <a href=''>360° Video</a>
-                        </div>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-music'></i>
+                            </div>
+                            <p>Music</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-trophy'></i>
+                            </div>
+                            <p>Sports</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-gamepad'></i>
+                            </div>
+                            <p>Gaming</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-film'></i>
+                            </div>
+                            <p>Movies</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-newspaper'></i>
+                            </div>
+                            <p>News</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-tower-broadcast'></i>
+                            </div>
+                            <p>Live</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-vr-cardboard'></i>
+                            </div>
+                            <p>360° Video</p>
+                        </a>
                     </div>
                     <hr>
-                    <div class='item'>
+                    <a class='item'>
                         <i class='fa-solid fa-plus'></i>
-                        <a href=''>Browse channels</a>
-                    </div>
+                        <p>Browse channels</p>
+                    </a>
                     <hr>
-                    <p>MORE FROM YOUTUBE</p>
-                    <div class='item'>
+                    <p class='title'>MORE FROM YOUTUBE</p>
+                    <a class='item'>
                         <i class='fa-brands fa-youtube'></i>
-                        <a href=''>YouTube Premium</a>
-                    </div>
-                    <div class='item'>
+                        <p>YouTube Premium</p>
+                    </a>
+                    <a class='item'>
                         <i class='fa-solid fa-tower-broadcast'></i>
-                        <a href=''>Live</a>
-                    </div>
+                        <p>Live</p>
+                    </a>
                 </div>
             </nav>
             <div class='logo'>
