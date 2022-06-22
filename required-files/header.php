@@ -130,6 +130,17 @@
             <a class='voice-search'>
                 <i class='fa-solid fa-microphone'></i>
             </a>
+            <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
+            <a href='' class='sign-btn'>
+                <i class='fa-regular fa-circle-user'></i>
+                <p>SIGN IN</p>
+            </a>
+            <a class='anym-settings'>
+                <i class='fa-solid fa-ellipsis-vertical'></i>
+            </a>
+            <a class='apps'>
+                <i class='fa-solid fa-ellipsis'></i>
+            </a>
         </header>
     ";
 ?>

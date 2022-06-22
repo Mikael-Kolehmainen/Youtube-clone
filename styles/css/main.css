@@ -109,32 +109,12 @@ header {
           transform: translate(-50%, -50%);
           color: white; }
       header nav #navLinks .sign-btn {
-        position: relative;
-        display: block;
+        float: none;
         margin-left: 35px;
-        margin-right: 30px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        border: 1px solid #065fd4;
-        width: 125px;
-        height: 35px; }
-        header nav #navLinks .sign-btn p, header nav #navLinks .sign-btn i {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
+        margin-top: 15px; }
         header nav #navLinks .sign-btn p {
-          width: fit-content;
-          left: 60%;
           padding: 0;
-          margin: 0;
-          font-weight: bold;
-          color: #065fd4;
-          display: inline-block; }
-        header nav #navLinks .sign-btn i {
-          left: 20%;
-          font-size: 20px;
-          color: #065fd4; }
+          margin: 0; }
     header nav #hamburger {
       position: relative;
       left: 50%;
@@ -176,10 +156,10 @@ header {
         width: 65px;
         border-left: none;
         cursor: pointer; }
-  header .voice-search {
+  header .voice-search, header .apps, header .anym-settings {
     position: relative;
     cursor: pointer; }
-    header .voice-search i {
+    header .voice-search i, header .apps i, header .anym-settings i {
       padding: 10px;
       padding-left: 12px;
       padding-right: 12px;
@@ -189,6 +169,40 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 1.1rem; }
+  header .apps, header .anym-settings {
+    float: right;
+    margin-right: 40px; }
+    header .apps i, header .anym-settings i {
+      font-size: 1.3rem; }
+  header .anym-settings {
+    margin-right: 30px; }
+  header .sign-btn {
+    float: right;
+    position: relative;
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #065fd4;
+    width: 125px;
+    height: 35px; }
+    header .sign-btn p, header .sign-btn i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    header .sign-btn p {
+      width: fit-content;
+      left: 60%;
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+      color: #065fd4;
+      display: inline-block; }
+    header .sign-btn i {
+      left: 20%;
+      font-size: 20px;
+      color: #065fd4; }
 
 @keyframes hamburgerClicked {
   0% {
