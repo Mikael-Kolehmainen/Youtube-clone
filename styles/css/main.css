@@ -73,6 +73,20 @@ header {
           background-color: #d5d5d5; }
           header nav #navLinks .item.active p {
             font-weight: bold; }
+        header nav #navLinks .item.browse .icon {
+          border: 1px solid black;
+          width: 18px;
+          margin-left: 2px;
+          height: 18px;
+          border-radius: 50%;
+          font-size: 0.7rem; }
+          header nav #navLinks .item.browse .icon i {
+            width: fit-content;
+            max-width: fit-content;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); }
       header nav #navLinks .categories .item .icon {
         position: relative;
         display: inline-block;
@@ -80,7 +94,7 @@ header {
         width: 23px;
         height: 23px;
         border-radius: 50%;
-        font-size: 11px; }
+        font-size: 0.7rem; }
         header nav #navLinks .categories .item .icon i {
           width: fit-content;
           max-width: fit-content;

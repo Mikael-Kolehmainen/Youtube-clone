@@ -89,6 +89,25 @@ header {
                         font-weight: bold;
                     }
                 }
+                &.browse {
+                    .icon {
+                        border: 1px solid black;
+                        width: 18px;
+                        margin-left: 2px;
+                        height: 18px;
+                        border-radius: 50%;
+                        font-size: 0.7rem;
+
+                        i {
+                            width: fit-content;
+                            max-width: fit-content;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
             }
             .categories {
                 .item {
@@ -99,7 +118,7 @@ header {
                         width: 23px;
                         height: 23px;
                         border-radius: 50%;
-                        font-size: 11px;
+                        font-size: 0.7rem;
 
                         i {
                             width: fit-content;

@@ -58,7 +58,7 @@
                     <div class='categories'>
                         <a class='item'>
                             <div class='icon'>
-                                <i class='fa-solid fa-music'></i>
+                                <i class='fa-solid fa-music' aria-hidden='true'></i>
                             </div>
                             <p>Music</p>
                         </a>
@@ -100,8 +100,10 @@
                         </a>
                     </div>
                     <hr>
-                    <a class='item'>
-                        <i class='fa-solid fa-plus'></i>
+                    <a class='item browse'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-plus'></i>
+                        </div>
                         <p>Browse channels</p>
                     </a>
                     <hr>
@@ -114,6 +116,7 @@
                         <i class='fa-solid fa-tower-broadcast'></i>
                         <p>Live</p>
                     </a>
+                    <hr>
                 </div>
             </nav>
             <div class='logo'>
