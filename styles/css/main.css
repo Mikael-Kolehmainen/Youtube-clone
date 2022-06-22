@@ -183,6 +183,17 @@ header {
     border: 2px solid white;
     background-color: white; } }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4; }
+  footer p {
+    font-size: 12px;
+    text-align: center;
+    color: white; }
+
 * {
   scroll-behavior: smooth;
   color: #030303;

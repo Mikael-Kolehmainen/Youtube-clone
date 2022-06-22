@@ -9,5 +9,6 @@
     <body>
         <?php require './required-files/header.php'; ?>
         
+        <?php require './required-files/footer.php'; ?>
     </body>
 </html>
