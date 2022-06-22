@@ -6,16 +6,17 @@ header {
   width: 100%;
   height: 60px;
   position: fixed; }
+  header > *:not(.bottom-border) {
+    display: inline-block;
+    float: left;
+    height: 100%; }
   header .bottom-border {
     top: 60px;
     left: 255px;
     position: absolute;
     width: 100%;
     border-bottom: 1px solid #d5d5d5; }
-  header nav, header .logo {
-    display: inline-block; }
   header .logo {
-    height: 100%;
     width: 110px; }
     header .logo img {
       position: relative;
@@ -24,9 +25,7 @@ header {
       transform: translate(-50%, -50%);
       width: 100%; }
   header nav {
-    float: left;
     max-width: 45.88px;
-    height: 100%;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 14px; }
@@ -152,6 +151,28 @@ header {
       header nav #hamburger.hamburger-click {
         animation-name: hamburgerClicked;
         animation-duration: 1s; }
+  header .search-bar {
+    position: relative;
+    width: 40%;
+    margin-left: 22.5%; }
+    header .search-bar form {
+      height: 40px;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      header .search-bar form input {
+        height: 35px;
+        border: 1px solid #d5d5d5; }
+      header .search-bar form input[type=text] {
+        font-size: 16px;
+        padding-left: 10px;
+        width: 75%; }
+      header .search-bar form input[type=submit] {
+        height: 37px;
+        width: 65px; }
 
 @keyframes hamburgerClicked {
   0% {
