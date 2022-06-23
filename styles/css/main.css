@@ -224,7 +224,9 @@ footer {
 
 .video-categories {
   padding-bottom: 10px;
-  border-bottom: 1px solid #d5d5d5; }
+  border-bottom: 1px solid #d5d5d5;
+  overflow-x: auto;
+  white-space: nowrap; }
   .video-categories .category {
     display: inline-block;
     background-color: #e6e6e6;
@@ -234,9 +236,29 @@ footer {
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    animation-name: categoryHover-out;
+    animation-duration: .5s;
+    animation-fill-mode: forwards; }
     .video-categories .category:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      animation-name: categoryHover-in; }
+
+@keyframes categoryHover-in {
+  0% {
+    background-color: #e6e6e6;
+    border-color: #d5d5d5; }
+  100% {
+    background-color: #d5d5d5;
+    border-color: #b7b7b7; } }
+
+@keyframes categoryHover-out {
+  0% {
+    background-color: #d5d5d5;
+    border-color: #b7b7b7; }
+  100% {
+    background-color: #e6e6e6;
+    border-color: #d5d5d5; } }
 
 section {
   margin-left: 255px;

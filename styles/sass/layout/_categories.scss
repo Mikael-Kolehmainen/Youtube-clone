@@ -1,6 +1,8 @@
 .video-categories {
     padding-bottom: 10px;
     border-bottom: 1px solid $main-border-color;
+    overflow-x: auto;
+    white-space: nowrap;
 
     .category {
         display: inline-block;
@@ -12,9 +14,21 @@
         padding-left: 10px;
         padding-right: 10px;
         margin-left: 10px;
+        animation-name: categoryHover-out;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
 
         &:hover {
             cursor: pointer;
+            animation-name: categoryHover-in;
         }
     }
+}
+@keyframes categoryHover-in {
+    0% { background-color: $lighter-main-border-color; border-color: $main-border-color; }
+    100% { background-color: $main-border-color; border-color: $darker-main-border-color; }
+}
+@keyframes categoryHover-out {
+    0% { background-color: $main-border-color; border-color: $darker-main-border-color; }
+    100% { background-color: $lighter-main-border-color; border-color: $main-border-color; }
 }

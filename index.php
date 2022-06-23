@@ -20,6 +20,45 @@
                 <div class='category'>
                     <p>Music</p>
                 </div>
+                <div class='category'>
+                    <p>Amber Heard</p>
+                </div>
+                <div class='category'>
+                    <p>Gaming</p>
+                </div>
+                <div class='category'>
+                    <p>Bossa Nova</p>
+                </div>
+                <div class='category'>
+                    <p>Deep House</p>
+                </div>
+                <div class='category'>
+                    <p>Gadgets</p>
+                </div>
+                <div class='category'>
+                    <p>Laughter</p>
+                </div>
+                <div class='category'>
+                    <p>Trailers</p>
+                </div>
+                <div class='category'>
+                    <p>Tourist destinations</p>
+                </div>
+                <div class='category'>
+                    <p>Disc Golf</p>
+                </div>
+                <div class='category'>
+                    <p>Formula 1</p>
+                </div>
+                <div class='category'>
+                    <p>Scene</p>
+                </div>
+                <div class='category'>
+                    <p>Classical Music</p>
+                </div>
+                <div class='category'>
+                    <p>History</p>
+                </div>
             </article>
         </section>
 
