@@ -243,6 +243,13 @@ footer {
     .video-categories .category:hover {
       cursor: pointer;
       animation-name: categoryHover-in; }
+    .video-categories .category.active {
+      background-color: black;
+      animation-name: none; }
+      .video-categories .category.active:hover {
+        animation-name: none; }
+      .video-categories .category.active p {
+        color: white; }
 
 @keyframes categoryHover-in {
   0% {

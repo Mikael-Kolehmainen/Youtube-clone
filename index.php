@@ -11,7 +11,7 @@
         
         <section>
             <article class='video-categories'>
-                <div class='category'>
+                <div class='category active'>
                     <p>All</p>
                 </div>
                 <div class='category'>

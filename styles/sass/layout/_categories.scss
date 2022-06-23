@@ -22,6 +22,17 @@
             cursor: pointer;
             animation-name: categoryHover-in;
         }
+        &.active {
+            background-color: black;
+            animation-name: none;
+
+            &:hover {
+                animation-name: none;
+            }
+            p {
+                color: white;
+            }
+        }
     }
 }
 @keyframes categoryHover-in {
