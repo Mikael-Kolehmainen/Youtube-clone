@@ -157,6 +157,7 @@ header {
         border-left: none;
         cursor: pointer; }
   header .voice-search, header .apps, header .anym-settings {
+    width: 60px;
     position: relative;
     cursor: pointer; }
     header .voice-search i, header .apps i, header .anym-settings i {
@@ -170,12 +171,11 @@ header {
       transform: translate(-50%, -50%);
       font-size: 1.1rem; }
   header .apps, header .anym-settings {
-    float: right;
-    margin-right: 40px; }
+    float: right; }
     header .apps i, header .anym-settings i {
       font-size: 1.3rem; }
   header .anym-settings {
-    margin-right: 30px; }
+    margin-right: 10px; }
   header .sign-btn {
     float: right;
     position: relative;

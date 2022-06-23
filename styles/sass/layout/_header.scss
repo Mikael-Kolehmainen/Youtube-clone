@@ -203,6 +203,7 @@ header {
         }
     }
     .voice-search, .apps, .anym-settings {
+        width: 60px;
         position: relative;
         cursor: pointer;
 
@@ -220,14 +221,13 @@ header {
     }
     .apps, .anym-settings {
         float: right;
-        margin-right: 40px;
 
         i {
             font-size: 1.3rem;
         }
     }
     .anym-settings {
-        margin-right: 30px;
+        margin-right: 10px;
     }
     .sign-btn {
         float: right;
