@@ -9,8 +9,8 @@
                         <i class='fa-solid fa-bars' id='hamburgerImage'></i>
                     </a>
                 </div>
-                <div id='navLinks'>
-                    <a href='' class='item active'>
+                <div id='navLinks' class='navLinks' style='display: none;'>
+                    <a href='index.php' class='item active'>
                         <div class='icon'>
                             <i class='fa-solid fa-house'></i>
                         </div>
@@ -117,6 +117,38 @@
                         <p>Live</p>
                     </a>
                     <hr>
+                </div>
+                <div id='closed-navLinks' class='closed-navLinks'>
+                    <a href='index.php' class='item active'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-house'></i>
+                        </div>
+                        <p>Home</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-compass'></i>
+                        </div>
+                        <p>Explore</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-stopwatch'></i>
+                        </div>
+                        <p>Shorts</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-clipboard-list'></i>
+                        </div>
+                        <p>Subscriptions</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-book'></i>
+                        </div>
+                        <p>Library</p>
+                    </a>
                 </div>
             </nav>
             <div class='logo'>
