@@ -279,10 +279,10 @@ section {
     width: 20%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    height: 300px; }
+    min-height: 300px; }
     .videos .video .thumbnail {
       position: relative;
-      height: 70%;
+      height: 40%;
       width: 100%; }
       .videos .video .thumbnail .time {
         position: absolute;
