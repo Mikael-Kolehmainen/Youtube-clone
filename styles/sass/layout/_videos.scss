@@ -25,14 +25,10 @@
             }
         }
         .information {
-            position: relative;
             height: 30%;
 
             .title {
-                position: absolute;
-                top: 35%;
-                left: 30.5%;
-                transform: translate(-50%, -50%);
+                margin-left: 10px;
                 font-weight: bold;
             }
             .channel, .stats {

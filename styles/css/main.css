@@ -313,13 +313,9 @@ section {
         padding: 2px;
         font-size: 12px; }
     .videos .video .information {
-      position: relative;
       height: 30%; }
       .videos .video .information .title {
-        position: absolute;
-        top: 35%;
-        left: 30.5%;
-        transform: translate(-50%, -50%);
+        margin-left: 10px;
         font-weight: bold; }
       .videos .video .information .channel, .videos .video .information .stats {
         font-size: 14px;
