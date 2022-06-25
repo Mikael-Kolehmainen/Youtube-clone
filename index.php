@@ -60,6 +60,56 @@
                     <p>History</p>
                 </div>
             </article>
+            <article class='videos'>
+                <div class='video'>
+                    <div class='thumbnail'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder thumbnail'>
+                        <p class='time'>0:18</p>
+                    </div>
+                    <div class='information'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder channel icon'>
+                        <p class='title'>Placeholder title</p>
+                        <p class='channel'>Placeholder channel</p>
+                        <p class='stats'>13M views - 2 months ago</p>
+                    </div>
+                </div>
+                <div class='video'>
+                    <div class='thumbnail'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder thumbnail'>
+                        <p class='time'>0:18</p>
+                    </div>
+                    <div class='information'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder channel icon'>
+                        <p class='title'>Placeholder title</p>
+                        <p class='channel'>Placeholder channel</p>
+                        <p class='stats'>13M views - 2 months ago</p>
+                    </div>
+                </div>
+                <div class='video'>
+                    <div class='thumbnail'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder thumbnail'>
+                        <p class='time'>0:18</p>
+                    </div>
+                    <div class='information'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder channel icon'>
+                        <p class='title'>Placeholder title</p>
+                        <p class='channel'>Placeholder channel</p>
+                        <p class='stats'>13M views - 2 months ago</p>
+                    </div>
+                </div>
+                <div class='video'>
+                    <div class='thumbnail'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder thumbnail'>
+                        <p class='time'>0:18</p>
+                    </div>
+                    <div class='information'>
+                        <img src='media/thumbnail-placeholder.png' alt='placeholder channel icon'>
+                        <p class='title'>Placeholder title</p>
+                        <p class='channel'>Placeholder channel</p>
+                        <p class='stats'>13M views - 2 months ago</p>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <?php require './required-files/footer.php'; ?>

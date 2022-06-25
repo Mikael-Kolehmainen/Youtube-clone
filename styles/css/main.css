@@ -42,7 +42,7 @@ header {
         margin-left: 30px;
         margin-right: 30px; }
       header nav #navLinks .title {
-        color: #797979;
+        color: #606060;
         font-weight: bold;
         padding-bottom: 15px; }
       header nav #navLinks .item {
@@ -270,6 +270,54 @@ footer {
 section {
   margin-left: 255px;
   padding-top: 70px; }
+
+.videos {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row; }
+  .videos .video {
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 300px; }
+    .videos .video .thumbnail {
+      position: relative;
+      height: 70%;
+      width: 100%; }
+      .videos .video .thumbnail .time {
+        position: absolute;
+        bottom: 0;
+        left: 92.5%;
+        background-color: black;
+        color: white;
+        padding: 2px;
+        font-size: 12px; }
+    .videos .video .information {
+      position: relative;
+      height: 30%; }
+      .videos .video .information .title {
+        position: absolute;
+        top: 35%;
+        left: 30.5%;
+        transform: translate(-50%, -50%);
+        font-weight: bold; }
+      .videos .video .information .channel, .videos .video .information .stats {
+        font-size: 14px;
+        display: block;
+        color: #606060;
+        margin-top: 3px;
+        margin-left: 44px; }
+      .videos .video .information img {
+        display: inline-block;
+        margin-top: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; }
+      .videos .video .information p {
+        display: inline-block; }
+    .videos .video img {
+      height: 100%;
+      width: 100%; }
 
 * {
   scroll-behavior: smooth;
