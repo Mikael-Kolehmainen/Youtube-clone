@@ -9,7 +9,7 @@
                         <i class='fa-solid fa-bars' id='hamburgerImage'></i>
                     </a>
                 </div>
-                <div id='navLinks' class='navLinks' style='display: none;'>
+                <div id='navLinks' class='navLinks'>
                     <a href='index.php' class='item active'>
                         <div class='icon'>
                             <i class='fa-solid fa-house'></i>
@@ -118,7 +118,7 @@
                     </a>
                     <hr>
                 </div>
-                <div id='closed-navLinks' class='closed-navLinks'>
+                <div id='closed-navLinks' class='closed-navLinks' style='display: none'>
                     <a href='index.php' class='item active'>
                         <div class='icon'>
                             <i class='fa-solid fa-house'></i>

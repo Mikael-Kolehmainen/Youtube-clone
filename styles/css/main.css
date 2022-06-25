@@ -35,7 +35,7 @@ header {
       padding-bottom: 50px;
       position: absolute;
       left: 0;
-      overflow-y: scroll; }
+      overflow-y: auto; }
       header nav .navLinks .item, header nav .closed-navLinks .item {
         display: block;
         cursor: pointer;
@@ -118,7 +118,8 @@ header {
           padding: 0;
           margin: 0; }
     header nav .closed-navLinks {
-      width: 100px; }
+      margin-top: 0;
+      width: 85px; }
       header nav .closed-navLinks .item {
         width: 100%;
         height: 85px; }
