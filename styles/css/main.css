@@ -231,6 +231,22 @@ header {
     border: 2px solid white;
     background-color: white; } }
 
+@media (max-width: 1250px) {
+  header .search-bar {
+    margin-left: 10%; } }
+
+@media (max-width: 950px) {
+  header .search-bar {
+    margin-left: 5%; }
+    header .search-bar form input[type=text] {
+      width: 70%; }
+  header .voice-search, header .apps, header .anym-settings {
+    width: 40px; } }
+
+@media (max-width: 800px) {
+  header .search-bar {
+    margin-left: 2.5%; } }
+
 footer {
   position: fixed;
   bottom: 0;

@@ -298,3 +298,33 @@ header {
     20% { border: 2px solid $darker-main-border-color; }
     100% { border: 2px solid white; background-color: white; }
 }
+@media (max-width: 1250px) {
+    header {
+        .search-bar {
+            margin-left: 10%;
+        }
+    }
+}
+@media (max-width: 950px) {
+    header {
+        .search-bar {
+            margin-left: 5%;
+
+            form {
+                input[type=text] {
+                    width: 70%;
+                }
+            }
+        }
+        .voice-search, .apps, .anym-settings {
+            width: 40px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    header {
+        .search-bar {
+            margin-left: 2.5%;
+        }
+    }
+}
