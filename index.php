@@ -1,4 +1,5 @@
 <!-- MODIFY SCROLL BAR -->
+<!-- SHOW SCROLL BAR ON HOVER IN NAV -->
 <!-- nav opens on top of page after 1300px -->
 <!-- small nav bar disappears after 800px -->
 <!-- search bar disappears after 750px -->

@@ -7,7 +7,31 @@
     font-family: $main-font-family;
     margin: 0;
     padding: 0;
+    scrollbar-width: thin;
 }
 hr {
     border: 1px solid $main-border-color;
+}
+
+// SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(99, 99, 99);
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(145, 145, 145);
 }

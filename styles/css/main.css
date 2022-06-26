@@ -372,7 +372,25 @@ section {
   color: #030303;
   font-family: roboto;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scrollbar-width: thin; }
 
 hr {
   border: 1px solid #d5d5d5; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #636363;
+  border-radius: 20px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #919191; }
