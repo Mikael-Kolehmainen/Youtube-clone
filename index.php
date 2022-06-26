@@ -1,4 +1,7 @@
 <!-- MODIFY SCROLL BAR -->
+<!-- nav opens on top of page after 1300px -->
+<!-- small nav bar disappears after 800px -->
+<!-- search bar disappears after 700px -->
 
 <!DOCTYPE html>
 <html>

@@ -2,6 +2,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     .video {
         width: 20%;
@@ -55,6 +56,27 @@
         img {
             height: 100%;
             width: 100%;
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .videos {
+        .video {
+            width: 28%;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .videos {
+        .video {
+            width: 45%;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .videos {
+        .video {
+            width: 95%;
         }
     }
 }

@@ -297,7 +297,8 @@ section {
 .videos {
   margin-top: 20px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
   .videos .video {
     width: 20%;
     margin-left: 2.5%;
@@ -337,6 +338,18 @@ section {
     .videos .video img {
       height: 100%;
       width: 100%; }
+
+@media (max-width: 1150px) {
+  .videos .video {
+    width: 28%; } }
+
+@media (max-width: 900px) {
+  .videos .video {
+    width: 45%; } }
+
+@media (max-width: 500px) {
+  .videos .video {
+    width: 95%; } }
 
 * {
   scroll-behavior: smooth;
