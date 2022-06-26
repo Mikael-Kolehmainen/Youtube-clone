@@ -36,6 +36,10 @@ header {
       position: absolute;
       left: 0;
       overflow-y: auto; }
+      header nav .navLinks::-webkit-scrollbar, header nav .closed-navLinks::-webkit-scrollbar {
+        width: 0px; }
+      header nav .navLinks:hover::-webkit-scrollbar, header nav .closed-navLinks:hover::-webkit-scrollbar {
+        width: 7px; }
       header nav .navLinks .item, header nav .closed-navLinks .item {
         display: block;
         cursor: pointer;
@@ -380,7 +384,8 @@ hr {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px; }
+  width: 7px;
+  height: 7px; }
 
 /* Track */
 ::-webkit-scrollbar-track {

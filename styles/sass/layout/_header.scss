@@ -40,6 +40,14 @@ header {
             left: 0;
             overflow-y: auto;
 
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
+            &:hover {
+                &::-webkit-scrollbar {
+                    width: 7px;
+                }
+            }
             .item {
                 display: block;
                 cursor: pointer;
