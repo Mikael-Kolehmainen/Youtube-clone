@@ -291,6 +291,9 @@ section {
   margin-left: 255px;
   padding-top: 70px; }
 
+.expanded-view {
+  margin-left: 100px; }
+
 .videos {
   margin-top: 20px;
   display: flex;
