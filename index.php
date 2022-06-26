@@ -9,7 +9,7 @@
     <body>
         <?php require './required-files/header.php'; ?>
         
-        <section>
+        <section id='video-section'>
             <article class='video-categories'>
                 <div class='category active'>
                     <p>All</p>
