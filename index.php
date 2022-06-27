@@ -2,6 +2,10 @@
 <!-- nav opens on top of page after 1300px --> <!-- 2 -->
 <!-- small nav bar disappears after 800px --> <!-- 3 -->
 <!-- search bar disappears after 750px --> <!-- 1 -->
+    <!-- in js change display to none of the search bar -->
+    <!-- add search icon with display none but when after 750px display block -->
+    <!-- in css write new css for search bar so it overlays the header when search icon is clicked -->
+    <!-- onclick show search bar -->
 
 <!DOCTYPE html>
 <html>

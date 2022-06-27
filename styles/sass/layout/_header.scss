@@ -241,7 +241,7 @@ header {
             }
         }
     }
-    .voice-search, .apps, .anym-settings {
+    .voice-search, .apps, .anym-settings, .search-btn {
         width: 60px;
         position: relative;
         cursor: pointer;
@@ -324,7 +324,7 @@ header {
                 }
             }
         }
-        .voice-search, .apps, .anym-settings {
+        .voice-search, .apps, .anym-settings, .search-btn {
             width: 40px;
         }
     }
@@ -333,6 +333,13 @@ header {
     header {
         .search-bar {
             margin-left: 2.5%;
+        }
+    }
+}
+@media (max-width: 750px) {
+    header {
+        .search-btn, .voice-search {
+            float: right;
         }
     }
 }

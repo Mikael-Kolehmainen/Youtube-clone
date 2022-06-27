@@ -154,14 +154,12 @@
             <div class='logo'>
                 <img src='./media/logo.jpg' alt='YouTube logo'>
             </div>
-            <div class='search-bar'>
+            <div class='search-bar' id='search-bar' style='display: block;'>
                 <form action=''>
                     <input type='text' name='searchInput' placeholder='Search' required><input type='submit' name='searchBtn' value='Icon'>
                 </form>
             </div>
-            <a class='voice-search'>
-                <i class='fa-solid fa-microphone'></i>
-            </a>
+            
             <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
             <a href='' class='sign-btn'>
                 <i class='fa-regular fa-circle-user'></i>
@@ -173,6 +171,14 @@
             <a class='apps'>
                 <i class='fa-solid fa-ellipsis'></i>
             </a>
+            <a class='voice-search'>
+                <i class='fa-solid fa-microphone'></i>
+            </a>
+            <div class='search-btn' id='search-btn' style='display: none;'>
+                <div class='icon'>
+                    <i class='fa-solid fa-magnifying-glass'></i>
+                </div>
+            </div>
         </header>
     ";
 ?>
