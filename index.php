@@ -7,6 +7,7 @@
     <!-- in css write new css for search bar so it overlays the header when search icon is clicked -->
     <!-- onclick show search bar -->
     <!-- edit css to make it look like yt search bar and we're done -->
+    <!-- add the circle animation when clicked -->
 
 <!DOCTYPE html>
 <html>

@@ -189,6 +189,9 @@
                         <input type='text' name='searchInput' placeholder='Search' required><input type='submit' name='searchBtn' value='Icon'>
                     </form>
                 </div>
+                <a class='voice-search'>
+                    <i class='fa-solid fa-microphone'></i>
+                </a>
             </div>
         </header>
     ";

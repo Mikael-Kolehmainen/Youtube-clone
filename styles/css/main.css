@@ -178,11 +178,11 @@ header {
         width: 65px;
         border-left: none;
         cursor: pointer; }
-  header .voice-search, header .apps, header .anym-settings, header .search-btn {
+  header .voice-search, header .apps, header .anym-settings, header .search-btn, header .back-btn {
     width: 60px;
     position: relative;
     cursor: pointer; }
-    header .voice-search i, header .apps i, header .anym-settings i, header .search-btn i {
+    header .voice-search i, header .apps i, header .anym-settings i, header .search-btn i, header .back-btn i {
       padding: 10px;
       padding-left: 12px;
       padding-right: 12px;
@@ -258,7 +258,25 @@ header {
     position: fixed;
     width: 100%;
     height: 60px;
-    background-color: white; } }
+    background-color: white; }
+    header .search-container * {
+      float: left; }
+    header .search-container .back-btn, header .search-container .voice-search {
+      height: 100%;
+      width: 60px; }
+    header .search-container .search-bar {
+      width: 80%;
+      height: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+      header .search-container .search-bar form input[type=text] {
+        width: 85%; } }
+
+@media (max-width: 600px) {
+  header .search-container .search-bar {
+    width: 75%; }
+    header .search-container .search-bar form input[type=text] {
+      width: 80%; } }
 
 footer {
   position: fixed;

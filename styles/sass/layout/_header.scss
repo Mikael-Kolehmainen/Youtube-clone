@@ -241,7 +241,7 @@ header {
             }
         }
     }
-    .voice-search, .apps, .anym-settings, .search-btn {
+    .voice-search, .apps, .anym-settings, .search-btn, .back-btn {
         width: 60px;
         position: relative;
         cursor: pointer;
@@ -346,6 +346,40 @@ header {
             width: 100%;
             height: 60px;
             background-color: white;
+            * {
+                float: left;
+            }
+            .back-btn, .voice-search {
+                height: 100%;
+                width: 60px;
+            }
+            .search-bar {
+                width: 80%;
+                height: 100%;
+                margin-left: 0;
+                margin-right: 0;
+
+                form {
+                    input[type=text] {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    header {
+        .search-container {
+            .search-bar {
+                width: 75%;
+                
+                form {
+                    input[type=text] {
+                        width: 80%;
+                    }
+                }
+            }
         }
     }
 }
