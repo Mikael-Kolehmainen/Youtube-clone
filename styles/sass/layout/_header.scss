@@ -36,11 +36,13 @@ header {
 
         .navLinks, .closed-navLinks {
             height: 890px;
-            margin-top: 20px;
+            margin-top: 10px;
             padding-bottom: 50px;
             position: absolute;
             left: 0;
             overflow-y: auto;
+            z-index: 99;
+            background-color: white;
 
             &::-webkit-scrollbar {
                 width: 0px;
@@ -167,7 +169,6 @@ header {
             }
         }
         .closed-navLinks {
-            margin-top: 0;
             width: 85px;
 
             .item {

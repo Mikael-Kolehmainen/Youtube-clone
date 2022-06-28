@@ -1,7 +1,22 @@
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 98;
+}
 section {
     margin-left: 255px;
     padding-top: 70px;
 }
 .expanded-view {
     margin-left: 100px;
+}
+@media (max-width: 1300px) {
+    section {
+        margin-left: 100px;
+    }   
 }

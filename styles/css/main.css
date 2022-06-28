@@ -33,11 +33,13 @@ header {
     font-size: 14px; }
     header nav .navLinks, header nav .closed-navLinks {
       height: 890px;
-      margin-top: 20px;
+      margin-top: 10px;
       padding-bottom: 50px;
       position: absolute;
       left: 0;
-      overflow-y: auto; }
+      overflow-y: auto;
+      z-index: 99;
+      background-color: white; }
       header nav .navLinks::-webkit-scrollbar, header nav .closed-navLinks::-webkit-scrollbar {
         width: 0px; }
       header nav .navLinks:hover::-webkit-scrollbar, header nav .closed-navLinks:hover::-webkit-scrollbar {
@@ -124,7 +126,6 @@ header {
           padding: 0;
           margin: 0; }
     header nav .closed-navLinks {
-      margin-top: 0;
       width: 85px; }
       header nav .closed-navLinks .item {
         width: 100%;
@@ -344,12 +345,26 @@ footer {
     background-color: #e6e6e6;
     border-color: #d5d5d5; } }
 
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 98; }
+
 section {
   margin-left: 255px;
   padding-top: 70px; }
 
 .expanded-view {
   margin-left: 100px; }
+
+@media (max-width: 1300px) {
+  section {
+    margin-left: 100px; } }
 
 .videos {
   margin-top: 20px;
