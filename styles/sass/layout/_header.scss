@@ -247,6 +247,7 @@ header {
         width: 60px;
         position: relative;
         cursor: pointer;
+        border-radius: 50%;
 
         i {
             padding: 10px;
@@ -301,6 +302,10 @@ header {
             font-size: 20px;
             color: $sign-main-color;
         }
+    }
+    .clicked {
+        animation-name: hamburgerClicked;
+        animation-duration: 1s;
     }
 }
 @keyframes hamburgerClicked {

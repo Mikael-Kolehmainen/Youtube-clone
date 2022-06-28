@@ -176,13 +176,13 @@
             </a>
             <div class='search-btn' id='search-btn' style='display: none;' onclick='showSearchBar();'>
                 <div class='icon'>
-                    <i class='fa-solid fa-magnifying-glass'></i>
+                    <i class='fa-solid fa-magnifying-glass' id='search-btn-icon'></i>
                 </div>
             </div>
             <!-- SEARCH BAR ON SMALLER SCREENS -->
             <div class='search-container' id='search-container' style='display: none;'>
                 <div class='back-btn' onclick='hideSearchBar();'>
-                    <i class='fa-solid fa-arrow-left'></i>
+                    <i class='fa-solid fa-arrow-left' id='back-btn-icon'></i>
                 </div>
                 <div class='search-bar'>
                     <form action=''>

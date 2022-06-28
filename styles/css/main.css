@@ -183,7 +183,8 @@ header {
   header .voice-search, header .apps, header .anym-settings, header .search-btn, header .back-btn {
     width: 60px;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 50%; }
     header .voice-search i, header .apps i, header .anym-settings i, header .search-btn i, header .back-btn i {
       padding: 10px;
       padding-left: 12px;
@@ -227,6 +228,9 @@ header {
       left: 20%;
       font-size: 20px;
       color: #065fd4; }
+  header .clicked {
+    animation-name: hamburgerClicked;
+    animation-duration: 1s; }
 
 @keyframes hamburgerClicked {
   0% {
