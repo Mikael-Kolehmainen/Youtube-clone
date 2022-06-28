@@ -1,4 +1,4 @@
-<!-- 27.06.2022 -->
+
 <!-- nav opens on top of page after 1300px --> <!-- 2 -->
 <!-- small nav bar disappears after 800px --> <!-- 3 -->
 <!-- search bar disappears after 750px --> <!-- 1 -->
