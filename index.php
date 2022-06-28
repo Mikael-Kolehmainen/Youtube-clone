@@ -1,5 +1,8 @@
 
 <!-- nav opens on top of page after 1300px --> <!-- 2 -->
+    <!-- Remove overlay feature before 1300px -->
+    <!-- Bug when refreshed under 1300px then dragge -->
+
 <!-- small nav bar disappears after 800px --> <!-- 3 -->
 
 <!DOCTYPE html>

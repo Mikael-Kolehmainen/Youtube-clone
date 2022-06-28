@@ -9,6 +9,7 @@ window.addEventListener('resize', function(event) {
 
     changeSearchBar(currentWidth);
     hideSearchContainer(currentWidth);
+    changeDefaultStateNav(currentWidth);
 });
 function changeSearchBar(width) {
     searchBar = document.getElementById('search-bar');
@@ -33,8 +34,10 @@ function changeDefaultStateNav(width) {
     if (width <= 1300) {
         navLinks = document.getElementById('navLinks');
         closedNavLinks = document.getElementById('closed-navLinks');
+        overlay = document.getElementById('overlay');
 
         navLinks.style.display = 'none';
         closedNavLinks.style.display = 'block';
+        overlay.style.display = 'none';
     }
 }
