@@ -1,8 +1,6 @@
 
 <!-- nav opens on top of page after 1300px --> <!-- 2 -->
 <!-- small nav bar disappears after 800px --> <!-- 3 -->
-<!-- search bar disappears after 750px --> <!-- 1 -->
-    <!-- when search bar is opened and site is enlarged the search bar stays open before 750px -->
 
 <!DOCTYPE html>
 <html>
