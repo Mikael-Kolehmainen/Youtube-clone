@@ -2,6 +2,8 @@ header {
     width: 100%;
     height: 60px;
     position: fixed;
+    background-color: white;
+    z-index: 99;
 
     &>*:not(.bottom-border) {
         display: inline-block;
@@ -29,7 +31,7 @@ header {
     nav {
         max-width: 45.88px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 10px;
         font-size: 14px;
 
         .navLinks, .closed-navLinks {
@@ -380,6 +382,13 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+@media (max-width: 510px) {
+    header {
+        .voice-search {
+            display: none;
         }
     }
 }

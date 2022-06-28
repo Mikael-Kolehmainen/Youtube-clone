@@ -5,7 +5,9 @@
 header {
   width: 100%;
   height: 60px;
-  position: fixed; }
+  position: fixed;
+  background-color: white;
+  z-index: 99; }
   header > *:not(.bottom-border) {
     display: inline-block;
     float: left;
@@ -27,7 +29,7 @@ header {
   header nav {
     max-width: 45.88px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     font-size: 14px; }
     header nav .navLinks, header nav .closed-navLinks {
       height: 890px;
@@ -277,6 +279,10 @@ header {
     width: 75%; }
     header .search-container .search-bar form input[type=text] {
       width: 80%; } }
+
+@media (max-width: 510px) {
+  header .voice-search {
+    display: none; } }
 
 footer {
   position: fixed;
