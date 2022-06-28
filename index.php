@@ -6,6 +6,7 @@
     <!-- add search icon with display none but when after 750px display block -->
     <!-- in css write new css for search bar so it overlays the header when search icon is clicked -->
     <!-- onclick show search bar -->
+    <!-- edit css to make it look like yt search bar and we're done -->
 
 <!DOCTYPE html>
 <html>
