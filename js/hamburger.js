@@ -6,9 +6,13 @@ function openHamburgerMenu() {
     hamburger = document.getElementById("hamburger");
     overlay = document.getElementById("overlay");
 
+    var currentWidth = window.innerWidth;
+
     if (links.style.display == 'block' || links.style.display == "") {
         links.style.display = 'none';
-        overlay.style.display = 'none';
+        if (currentWidth < 1300) {
+            overlay.style.display = 'none';
+        }
         closedLinks.style.display = 'block';
         videoSection.classList.add("expanded-view");
         hamburger.classList.add("hamburger-click");
@@ -17,7 +21,9 @@ function openHamburgerMenu() {
         }, 1000);
     } else if (links.style.display == 'none') {
         links.style.display = 'block';
-        overlay.style.display = 'block';
+        if (currentWidth < 1300) {
+            overlay.style.display = 'block';
+        }
         closedLinks.style.display = 'none';
         videoSection.classList.remove("expanded-view");
         hamburger.classList.add("hamburger-click");

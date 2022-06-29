@@ -1,6 +1,5 @@
 
 <!-- nav opens on top of page after 1300px --> <!-- 2 -->
-    <!-- Remove overlay feature before 1300px -->
     <!-- Bug when refreshed under 1300px then dragged over 1300px the nav menu doesn't open up -->
 
 <!-- small nav bar disappears after 800px --> <!-- 3 -->
