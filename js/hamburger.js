@@ -13,7 +13,9 @@ function openHamburgerMenu() {
         if (currentWidth < 1300) {
             overlay.style.display = 'none';
         }
-        closedLinks.style.display = 'block';
+        if (currentWidth > 800) {
+            closedLinks.style.display = 'block';
+        }
         videoSection.classList.add("expanded-view");
         hamburger.classList.add("hamburger-click");
         setTimeout(() => {
@@ -25,7 +27,9 @@ function openHamburgerMenu() {
         if (currentWidth < 1300) {
             overlay.style.display = 'block';
         }
-        closedLinks.style.display = 'none';
+        if (currentWidth > 800) {
+            closedLinks.style.display = 'none';
+        }
         videoSection.classList.remove("expanded-view");
         hamburger.classList.add("hamburger-click");
         setTimeout(() => { 

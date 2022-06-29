@@ -266,7 +266,9 @@ header {
 
 @media (max-width: 800px) {
   header .search-bar {
-    margin-left: 2.5%; } }
+    margin-left: 2.5%; }
+  header .closed-navLinks {
+    display: none; } }
 
 @media (max-width: 750px) {
   header .search-btn, header .voice-search {
@@ -375,6 +377,10 @@ section {
 @media (max-width: 1300px) {
   section {
     margin-left: 100px; } }
+
+@media (max-width: 800px) {
+  section, .expanded-view {
+    margin-left: 10px; } }
 
 .videos {
   margin-top: 20px;

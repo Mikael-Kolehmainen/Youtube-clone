@@ -3,6 +3,7 @@ window.onload = function() {
 
     changeSearchBar(currentWidth);
     changeDefaultStateNav(currentWidth);
+    hideSmallNav(currentWidth);
 };
 window.addEventListener('resize', function(event) {
     var currentWidth = window.innerWidth;
@@ -10,6 +11,7 @@ window.addEventListener('resize', function(event) {
     changeSearchBar(currentWidth);
     hideSearchContainer(currentWidth);
     changeDefaultStateNav(currentWidth);
+    hideSmallNav(currentWidth);
 });
 function changeSearchBar(width) {
     searchBar = document.getElementById('search-bar');
@@ -34,14 +36,23 @@ function changeDefaultStateNav(width) {
     navLinks = document.getElementById('navLinks');
     closedNavLinks = document.getElementById('closed-navLinks');
     overlay = document.getElementById('overlay');
+    videoSection = document.getElementById('video-section');
 
     if (width <= 1300) {
         navLinks.style.display = 'none';
         closedNavLinks.style.display = 'block';
         overlay.style.display = 'none';
     } else if (width > 1300) {
+        videoSection.classList.remove("expanded-view");
         navLinks.style.display = 'block';
         navLinks.classList.add("opened");
+        closedNavLinks.style.display = 'none';
+    }
+}
+function hideSmallNav(width) {
+    closedNavLinks = document.getElementById('closed-navLinks');
+
+    if (width <= 800) {
         closedNavLinks.style.display = 'none';
     }
 }
