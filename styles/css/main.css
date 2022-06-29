@@ -53,7 +53,11 @@ header {
         header nav .navLinks .item.active p, header nav .closed-navLinks .item.active p {
           font-weight: bold; }
     header nav .navLinks {
-      width: 240px; }
+      width: 0px; }
+      header nav .navLinks.opened {
+        animation-name: navMenuOpen;
+        animation-duration: .5s;
+        animation-fill-mode: forwards; }
       header nav .navLinks p {
         padding-top: 20px;
         margin-left: 30px;
@@ -241,6 +245,12 @@ header {
   100% {
     border: 2px solid white;
     background-color: white; } }
+
+@keyframes navMenuOpen {
+  from {
+    width: 0px; }
+  to {
+    width: 240px; } }
 
 @media (max-width: 1250px) {
   header .search-bar {

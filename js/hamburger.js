@@ -16,11 +16,12 @@ function openHamburgerMenu() {
         closedLinks.style.display = 'block';
         videoSection.classList.add("expanded-view");
         hamburger.classList.add("hamburger-click");
-        setTimeout(() => { 
+        setTimeout(() => {
             hamburger.classList.remove("hamburger-click");
         }, 1000);
     } else if (links.style.display == 'none') {
         links.style.display = 'block';
+        links.classList.add("opened");
         if (currentWidth < 1300) {
             overlay.style.display = 'block';
         }

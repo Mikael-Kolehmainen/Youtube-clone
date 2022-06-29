@@ -69,8 +69,13 @@ header {
             }
         }
         .navLinks {
-            width: 240px;
+            width: 0px;
             
+            &.opened {
+                animation-name: navMenuOpen;
+                animation-duration: .5s;
+                animation-fill-mode: forwards;
+            }
             p {
                 padding-top: 20px;
                 margin-left: 30px;
@@ -313,6 +318,10 @@ header {
     0% { background-color: $main-border-color; }
     20% { border: 2px solid $darker-main-border-color; }
     100% { border: 2px solid white; background-color: white; }
+}
+@keyframes navMenuOpen {
+    from {width: 0px;}
+    to {width: 240px;}
 }
 @media (max-width: 1250px) {
     header {
