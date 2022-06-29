@@ -31,13 +31,17 @@ function hideSearchContainer(width) {
     }
 }
 function changeDefaultStateNav(width) {
-    if (width <= 1300) {
-        navLinks = document.getElementById('navLinks');
-        closedNavLinks = document.getElementById('closed-navLinks');
-        overlay = document.getElementById('overlay');
+    navLinks = document.getElementById('navLinks');
+    closedNavLinks = document.getElementById('closed-navLinks');
+    overlay = document.getElementById('overlay');
 
+    if (width <= 1300) {
         navLinks.style.display = 'none';
         closedNavLinks.style.display = 'block';
         overlay.style.display = 'none';
+    } else if (width > 1300) {
+        navLinks.style.display = 'block';
+        navLinks.classList.add("opened");
+        closedNavLinks.style.display = 'none';
     }
 }
