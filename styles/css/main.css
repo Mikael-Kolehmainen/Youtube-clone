@@ -401,8 +401,8 @@ footer {
     min-height: 300px; }
     .videos .video .thumbnail {
       position: relative;
-      height: 40%;
-      width: 100%; }
+      width: 100%;
+      aspect-ratio: 16 / 9; }
       .videos .video .thumbnail .time {
         position: absolute;
         bottom: 0;
