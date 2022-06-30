@@ -12,6 +12,10 @@
                     <img src='./media/logo-g.png'>
                 </div>
                 <h2>Sign in</h2>
+                <p>to continue to YouTube</p>
+                <form action='' method='POST'>
+                    <input type='email' name='email' placeholder='email'>
+                </form>
             </article>
         </section>
     </body>

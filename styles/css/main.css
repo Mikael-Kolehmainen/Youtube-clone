@@ -462,6 +462,18 @@ footer {
     border: 2px solid #e6e6e6;
     border-radius: 10px;
     text-align: center; }
+    .sign-section .sign-box form {
+      margin-top: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%; }
+      .sign-section .sign-box form input[type=email] {
+        width: 100%;
+        font-size: 16px;
+        padding: 13px 15px; }
+    .sign-section .sign-box p {
+      margin-top: 10px;
+      font-size: 16px; }
     .sign-section .sign-box h2 {
       font-weight: 100;
       font-size: 24px; }
