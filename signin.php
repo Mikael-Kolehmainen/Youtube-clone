@@ -8,7 +8,10 @@
     <body>
         <section class='sign-section'>
             <article class='sign-box'>
-
+                <div class='logo'>
+                    <img src='./media/logo-g.png'>
+                </div>
+                <h2>Sign in</h2>
             </article>
         </section>
     </body>

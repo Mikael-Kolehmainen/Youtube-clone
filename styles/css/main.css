@@ -451,7 +451,18 @@ footer {
     width: 448px;
     height: 500px;
     border: 2px solid #e6e6e6;
-    border-radius: 10px; }
+    border-radius: 10px;
+    text-align: center; }
+    .sign-section .sign-box h2 {
+      font-weight: 100;
+      font-size: 24px; }
+    .sign-section .sign-box .logo {
+      margin-top: 50px;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center; }
+      .sign-section .sign-box .logo img {
+        width: 75px; }
 
 * {
   scroll-behavior: smooth;
