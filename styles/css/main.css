@@ -367,7 +367,7 @@ footer {
   opacity: 0.5;
   z-index: 98; }
 
-section {
+.video-section {
   margin-left: 255px;
   padding-top: 70px; }
 
@@ -375,11 +375,11 @@ section {
   margin-left: 100px; }
 
 @media (max-width: 1300px) {
-  section {
+  .video-section {
     margin-left: 100px; } }
 
 @media (max-width: 800px) {
-  section, .expanded-view {
+  .video-section, .expanded-view {
     margin-left: 10px; } }
 
 .videos {
@@ -439,6 +439,20 @@ section {
   .videos .video {
     width: 95%; } }
 
+.sign-section {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+  .sign-section .sign-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 448px;
+    height: 500px;
+    border: 2px solid #e6e6e6;
+    border-radius: 10px; }
+
 * {
   scroll-behavior: smooth;
   color: #030303;
@@ -446,6 +460,9 @@ section {
   margin: 0;
   padding: 0;
   scrollbar-width: thin; }
+
+body {
+  background-color: white; }
 
 hr {
   border: 1px solid #d5d5d5; }

@@ -49,7 +49,7 @@
                         </a>
                         <hr>
                         <p>Sign in to like videos, comment and subscribe.</p>
-                        <a href='./registration/signin.php' class='sign-btn'>
+                        <a href='./signin.php' class='sign-btn'>
                             <i class='fa-regular fa-circle-user'></i>
                             <p>SIGN IN</p>
                         </a>
@@ -161,7 +161,7 @@
             </div>
             
             <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
-            <a href='./registration/signin.php' class='sign-btn'>
+            <a href='./signin.php' class='sign-btn'>
                 <i class='fa-regular fa-circle-user'></i>
                 <p>SIGN IN</p>
             </a>

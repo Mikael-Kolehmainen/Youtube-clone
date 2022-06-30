@@ -4,13 +4,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel='icon' type='image/svg' href='media/favicon.svg'>
         <?php require './required-files/head.php'; ?>
         <title>YouTube - clone</title>
     </head>
     <body>
         <div id='overlay' style='display: none'></div>
         <?php require './required-files/header.php'; ?>
-            <section id='video-section'>
+            <section id='video-section' class='video-section'>
                 <article class='video-categories'>
                     <div class='category active'>
                         <p>All</p>
