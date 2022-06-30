@@ -5,7 +5,12 @@
     font-family: roboto;
     src: url(../../font/Roboto/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: notosans;
+    src: url(../../font/NotoSans/NotoSans-Regular.ttf);
+}
 $main-font-family: roboto;
+$secodary-font-family: notosans;
 
 // FONT COLORS
 

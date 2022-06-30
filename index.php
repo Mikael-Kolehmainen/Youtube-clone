@@ -8,7 +8,7 @@
         <?php require './required-files/head.php'; ?>
         <title>YouTube - clone</title>
     </head>
-    <body>
+    <body class='home-page'>
         <div id='overlay' style='display: none'></div>
         <?php require './required-files/header.php'; ?>
             <section id='video-section' class='video-section'>

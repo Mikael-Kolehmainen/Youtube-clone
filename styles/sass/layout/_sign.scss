@@ -3,6 +3,9 @@
     height: 100%;
     position: absolute;
 
+    &>* {
+        font-family: $secodary-font-family;
+    }
     .sign-box {
         position: absolute;
         left: 50%;

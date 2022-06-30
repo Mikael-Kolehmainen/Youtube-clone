@@ -2,6 +2,10 @@
   font-family: roboto;
   src: url(../../font/Roboto/Roboto-Regular.ttf); }
 
+@font-face {
+  font-family: notosans;
+  src: url(../../font/NotoSans/NotoSans-Regular.ttf); }
+
 header {
   width: 100%;
   height: 60px;
@@ -367,6 +371,9 @@ footer {
   opacity: 0.5;
   z-index: 98; }
 
+.home-page > * {
+  font-family: roboto; }
+
 .video-section {
   margin-left: 255px;
   padding-top: 70px; }
@@ -443,6 +450,8 @@ footer {
   width: 100%;
   height: 100%;
   position: absolute; }
+  .sign-section > * {
+    font-family: notosans; }
   .sign-section .sign-box {
     position: absolute;
     left: 50%;
@@ -467,7 +476,6 @@ footer {
 * {
   scroll-behavior: smooth;
   color: #030303;
-  font-family: roboto;
   margin: 0;
   padding: 0;
   scrollbar-width: thin; }
