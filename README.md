@@ -3,6 +3,7 @@
 
 <h2 align='left'>About this project</h2>
 <p>This is a clone of YouTube's homepage where you can create an account or log in and upload a video, then the video can be watched.</p>
+<p>NOTE: when creating an local account you can use any values you want.</p>
 <h2 align='left'>How to set up project</h2>
 <h2 align='left'>Goals of this project</h2>
 <ul>
