@@ -465,6 +465,27 @@ footer {
     .sign-section .sign-box form {
       margin-top: 20px;
       width: 100%; }
+      .sign-section .sign-box form .options {
+        position: relative;
+        height: 100px; }
+        .sign-section .sign-box form .options a, .sign-section .sign-box form .options p {
+          position: absolute;
+          display: inline-block;
+          margin: 0; }
+        .sign-section .sign-box form .options a {
+          bottom: 0;
+          left: 9%; }
+        .sign-section .sign-box form .options p {
+          padding: 8px 24px;
+          border-radius: 5px;
+          color: white;
+          background-color: #1a73e8;
+          bottom: -10%;
+          right: 9%; }
+          .sign-section .sign-box form .options p:hover {
+            cursor: pointer;
+            background-color: #155bb6;
+            box-shadow: .5px .5px 3px black; }
       .sign-section .sign-box form input[type=email] {
         width: 75%;
         font-size: 16px;
@@ -503,6 +524,24 @@ footer {
       text-align: center; }
       .sign-section .sign-box .logo img {
         width: 75px; }
+    .sign-section .sign-box .outside {
+      width: 448px;
+      position: absolute;
+      bottom: -40px;
+      font-size: 12px; }
+      .sign-section .sign-box .outside select {
+        cursor: pointer;
+        float: left;
+        border: none;
+        background-color: transparent; }
+      .sign-section .sign-box .outside a {
+        cursor: pointer;
+        color: #5f6368;
+        padding: 5px 10px;
+        display: inline-block;
+        text-decoration: none; }
+      .sign-section .sign-box .outside .right {
+        float: right; }
 
 * {
   scroll-behavior: smooth;

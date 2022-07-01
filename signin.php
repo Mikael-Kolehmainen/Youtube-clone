@@ -17,7 +17,21 @@
                     <input type='email' name='email' placeholder='Email'>
                     <a href='#'>Forgot email?</a>
                     <p>Not your computer? Use Guest mode to sign in privately.<a href='#'>Learn more</a></p>
+                    <div class='options'>
+                        <a href='signup.php'>Create account</a>
+                        <p onclick=''>Next</p>
+                    </div>
                 </form>
+                <div class='outside'>
+                    <select>
+                        <option value='English-US'>English (United States)</option>
+                    </select>
+                    <div class='right'>
+                        <a href='#'>Help</a>
+                        <a href='#'>Privacy</a>
+                        <a href='#'>Terms</a>
+                    </div>
+                </div>
             </article>
         </section>
     </body>
