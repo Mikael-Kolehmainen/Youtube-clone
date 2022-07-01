@@ -19,14 +19,40 @@
 
         form {
             margin-top: 20px;
-            margin-left: 10%;
-            margin-right: 10%;
-            width: 80%;
+            width: 100%;
 
             input[type=email] {
-                width: 100%;
+                width: 75%;
                 font-size: 16px;
                 padding: 13px 15px;
+                border-radius: 5px;
+                border: 2px solid $lighter-main-border-color;
+
+                &:focus {
+                    outline: none;
+                    border: 2px solid $sign-link-font-color;
+                }
+            }
+            a, p {
+                font-size: 14px;
+                margin-left: 9%;
+                text-align: left;
+            }
+            a {
+                font-weight: bold;
+                margin-top: 10px;
+                display: block;
+                text-decoration: none;
+                color: $sign-link-font-color;
+            }
+            p {
+                margin-top: 50px;
+                color: $sign-secondary-font-color;
+
+                &>a {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
             }
         }
         p {

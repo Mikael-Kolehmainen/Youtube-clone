@@ -464,13 +464,32 @@ footer {
     text-align: center; }
     .sign-section .sign-box form {
       margin-top: 20px;
-      margin-left: 10%;
-      margin-right: 10%;
-      width: 80%; }
+      width: 100%; }
       .sign-section .sign-box form input[type=email] {
-        width: 100%;
+        width: 75%;
         font-size: 16px;
-        padding: 13px 15px; }
+        padding: 13px 15px;
+        border-radius: 5px;
+        border: 2px solid #e6e6e6; }
+        .sign-section .sign-box form input[type=email]:focus {
+          outline: none;
+          border: 2px solid #1a73e8; }
+      .sign-section .sign-box form a, .sign-section .sign-box form p {
+        font-size: 14px;
+        margin-left: 9%;
+        text-align: left; }
+      .sign-section .sign-box form a {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+        text-decoration: none;
+        color: #1a73e8; }
+      .sign-section .sign-box form p {
+        margin-top: 50px;
+        color: #5f6368; }
+        .sign-section .sign-box form p > a {
+          margin-top: 0;
+          margin-left: 0; }
     .sign-section .sign-box p {
       margin-top: 10px;
       font-size: 16px; }

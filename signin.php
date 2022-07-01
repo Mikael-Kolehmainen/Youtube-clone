@@ -14,7 +14,9 @@
                 <h2>Sign in</h2>
                 <p>to continue to YouTube</p>
                 <form action='' method='POST'>
-                    <input type='email' name='email' placeholder='email'>
+                    <input type='email' name='email' placeholder='Email'>
+                    <a href='#'>Forgot email?</a>
+                    <p>Not your computer? Use Guest mode to sign in privately.<a href='#'>Learn more</a></p>
                 </form>
             </article>
         </section>
