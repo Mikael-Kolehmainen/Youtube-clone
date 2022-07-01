@@ -468,31 +468,35 @@ footer {
       .sign-section .sign-box form .options {
         position: relative;
         height: 100px; }
-        .sign-section .sign-box form .options a, .sign-section .sign-box form .options p {
+        .sign-section .sign-box form .options a, .sign-section .sign-box form .options p, .sign-section .sign-box form .options input[type=submit] {
           position: absolute;
           display: inline-block;
           margin: 0; }
         .sign-section .sign-box form .options a {
           bottom: 0;
           left: 9%; }
-        .sign-section .sign-box form .options p {
+        .sign-section .sign-box form .options p, .sign-section .sign-box form .options input[type=submit] {
           padding: 8px 24px;
           border-radius: 5px;
           color: white;
           background-color: #1a73e8;
           bottom: -10%;
           right: 9%; }
-          .sign-section .sign-box form .options p:hover {
+          .sign-section .sign-box form .options p:hover, .sign-section .sign-box form .options input[type=submit]:hover {
             cursor: pointer;
             background-color: #155bb6;
             box-shadow: .5px .5px 3px black; }
-      .sign-section .sign-box form input[type=email] {
+        .sign-section .sign-box form .options input[type=submit] {
+          text-align: center;
+          font-size: 14px;
+          width: fit-content; }
+      .sign-section .sign-box form input {
         width: 75%;
         font-size: 16px;
         padding: 13px 15px;
         border-radius: 5px;
         border: 2px solid #e6e6e6; }
-        .sign-section .sign-box form input[type=email]:focus {
+        .sign-section .sign-box form input:focus {
           outline: none;
           border: 2px solid #1a73e8; }
       .sign-section .sign-box form a, .sign-section .sign-box form p {
@@ -542,6 +546,47 @@ footer {
         text-decoration: none; }
       .sign-section .sign-box .outside .right {
         float: right; }
+    .sign-section .sign-box.sign-up {
+      text-align: left;
+      height: 604px; }
+      .sign-section .sign-box.sign-up form {
+        margin-right: 9%;
+        width: 82%; }
+        .sign-section .sign-box.sign-up form a {
+          font-weight: normal; }
+        .sign-section .sign-box.sign-up form p, .sign-section .sign-box.sign-up form a {
+          margin-left: 0; }
+        .sign-section .sign-box.sign-up form .comment {
+          margin-left: 10px;
+          margin-top: 5px;
+          font-size: 10px; }
+        .sign-section .sign-box.sign-up form .inline {
+          text-align: center; }
+          .sign-section .sign-box.sign-up form .inline input {
+            display: inline-block;
+            width: 43.5%; }
+          .sign-section .sign-box.sign-up form .inline.margin {
+            margin-top: 40px; }
+        .sign-section .sign-box.sign-up form .long {
+          margin-top: 20px; }
+        .sign-section .sign-box.sign-up form input {
+          width: 94%;
+          padding: 6px 8px; }
+        .sign-section .sign-box.sign-up form .options a {
+          left: 0; }
+        .sign-section .sign-box.sign-up form .options p, .sign-section .sign-box.sign-up form .options input[type=submit] {
+          right: 0; }
+        .sign-section .sign-box.sign-up form input[type=checkbox] {
+          margin-top: 20px;
+          width: fit-content;
+          display: inline-block; }
+        .sign-section .sign-box.sign-up form label {
+          margin-left: 10px;
+          font-size: 14px; }
+      .sign-section .sign-box.sign-up > *:not(.outside) {
+        margin-left: 9%; }
+      .sign-section .sign-box.sign-up .logo {
+        text-align: left; }
 
 * {
   scroll-behavior: smooth;

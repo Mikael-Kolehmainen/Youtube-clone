@@ -1,5 +1,7 @@
 
-<!-- small nav bar disappears after 800px --> <!-- 3 -->
+<!-- In sign pages use js when 'next' is clicked and show the other parts of the form --> <!-- 1 -->
+<!-- Responsiveness of sign page--> <!-- 2 -->
+<!-- PHP --> <!-- 3 -->
 
 <!DOCTYPE html>
 <html>
