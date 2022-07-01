@@ -3,6 +3,11 @@
 <!-- Responsiveness of sign page--> <!-- 2 -->
 <!-- PHP --> <!-- 3 -->
 
+<!-- 4 -->
+<!-- Password confirm function -->
+<!-- Show password function -->
+<!-- Password validation as in the comment -->
+
 <!DOCTYPE html>
 <html>
     <head>
