@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='icon' type='image/png' href='media/favicon-g.png'>
         <?php require './required-files/head.php'; ?>
         <title>YouTube - clone</title>

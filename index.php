@@ -1,5 +1,4 @@
 
-<!-- Responsiveness of sign page--> <!-- 2 -->
 <!-- PHP (write in index.php the verification of sign in and uploading of data to database)--> <!-- 3 -->
 
 <!-- 4 -->

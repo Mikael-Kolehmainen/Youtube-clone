@@ -559,7 +559,13 @@ footer {
       left: 50%;
       top: 27.5%;
       transform: translate(-50%, -50%);
-      border-radius: 100vw; }
+      border-radius: 100vw;
+      border: 2px solid #e6e6e6;
+      padding: 5px 7.5px;
+      color: #5f6368;
+      font-size: 14px; }
+      .sign-section .sign-box .useremail:hover {
+        cursor: pointer; }
     .sign-section .sign-box.sign-up {
       text-align: left;
       height: 604px; }
@@ -601,6 +607,28 @@ footer {
         margin-left: 9%; }
       .sign-section .sign-box.sign-up .logo {
         text-align: left; }
+
+@media (max-width: 600px) {
+  .sign-section {
+    overflow: hidden; }
+    .sign-section .sign-box {
+      width: 100%;
+      height: 100%;
+      border: 2px solid transparent;
+      top: 50%; }
+      .sign-section .sign-box .outside {
+        width: 90%;
+        bottom: 20px;
+        padding: 5%; }
+      .sign-section .sign-box.sign-up {
+        height: 100%; }
+        .sign-section .sign-box.sign-up form {
+          text-align: center; }
+          .sign-section .sign-box.sign-up form .inline input {
+            margin-top: 20px;
+            width: 94%; }
+          .sign-section .sign-box.sign-up form .inline.margin {
+            margin-top: 20px; } }
 
 * {
   scroll-behavior: smooth;
