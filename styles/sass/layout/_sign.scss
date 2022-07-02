@@ -66,6 +66,15 @@
                     border: 2px solid $sign-link-font-color;
                 }
             }
+            input[type=checkbox] {
+                margin-top: 20px;
+                width: fit-content;
+                display: inline-block;
+            }
+            label {
+                margin-left: 10px;
+                font-size: 14px;
+            }
             a, p {
                 font-size: 14px;
                 margin-left: 9%;
@@ -128,6 +137,15 @@
             .right {
                 float: right;
             }
+        }
+        .useremail {
+            width: fit-content;
+            position: absolute;
+            left: 50%;
+            top: 27.5%;
+            transform: translate(-50%, -50%);
+            border-radius: 100vw;
+        //    border: 1px solid ;
         }
         &.sign-up {
             text-align: left;

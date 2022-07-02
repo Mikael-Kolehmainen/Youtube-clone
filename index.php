@@ -1,7 +1,6 @@
 
-<!-- In sign pages use js when 'next' is clicked and show the other parts of the form --> <!-- 1 -->
 <!-- Responsiveness of sign page--> <!-- 2 -->
-<!-- PHP --> <!-- 3 -->
+<!-- PHP (write in index.php the verification of sign in and uploading of data to database)--> <!-- 3 -->
 
 <!-- 4 -->
 <!-- Password confirm function -->

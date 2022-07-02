@@ -499,6 +499,13 @@ footer {
         .sign-section .sign-box form input:focus {
           outline: none;
           border: 2px solid #1a73e8; }
+      .sign-section .sign-box form input[type=checkbox] {
+        margin-top: 20px;
+        width: fit-content;
+        display: inline-block; }
+      .sign-section .sign-box form label {
+        margin-left: 10px;
+        font-size: 14px; }
       .sign-section .sign-box form a, .sign-section .sign-box form p {
         font-size: 14px;
         margin-left: 9%;
@@ -546,6 +553,13 @@ footer {
         text-decoration: none; }
       .sign-section .sign-box .outside .right {
         float: right; }
+    .sign-section .sign-box .useremail {
+      width: fit-content;
+      position: absolute;
+      left: 50%;
+      top: 27.5%;
+      transform: translate(-50%, -50%);
+      border-radius: 100vw; }
     .sign-section .sign-box.sign-up {
       text-align: left;
       height: 604px; }
