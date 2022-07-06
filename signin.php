@@ -33,12 +33,12 @@
                         echo "
                         <h2 style='margin-bottom: 100px;'>Welcome</h2>
                         <p class='useremail'>$_SESSION[email]</p>
-                        <form action='' method='POST'>
+                        <form action='index.php' method='POST'>
                             <input type='password' name='password' placeholder='Enter your password' required><br>
                             <input type='checkbox' name='show' id='show' onchange=''><label for='show'>Show password</label>
                             <div class='options'>
                                 <a href='#'>Forgot password?</a>
-                                <input type='submit' name='stage-2' value='Next'>
+                                <input type='submit' name='sign-in' value='Next'>
                             </div>
                         </form>
                         ";

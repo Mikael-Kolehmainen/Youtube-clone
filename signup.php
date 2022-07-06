@@ -14,7 +14,7 @@
                 </div>
                 <h2>Create your Google Account</h2>
                 <p>to continue to YouTube</p>
-                <form action='' method='POST'>
+                <form action='index.php' method='POST'>
                     <div class='inline'>
                         <input type='text' name='fname' placeholder='First name' required>
                         <input type='text' name='lname' placeholder='Last name' required>
