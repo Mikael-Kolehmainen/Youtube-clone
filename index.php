@@ -1,7 +1,3 @@
-
-<!-- 4 -->
-<!-- Password confirm function -->
-
 <!-- 5 -->
 <!-- Create the looks of the page when logged in -->
 
