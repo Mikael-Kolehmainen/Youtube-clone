@@ -2,7 +2,6 @@
 <!-- 4 -->
 <!-- Password confirm function -->
 <!-- Show password function -->
-<!-- Password validation as in the comment -->
 
 <!-- 5 -->
 <!-- Create the looks of the page when logged in -->

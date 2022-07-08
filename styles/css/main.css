@@ -490,6 +490,8 @@ footer {
           text-align: center;
           font-size: 14px;
           width: fit-content; }
+          .sign-section .sign-box form .options input[type=submit]:disabled {
+            opacity: 0.5; }
       .sign-section .sign-box form input {
         width: 75%;
         font-size: 16px;
