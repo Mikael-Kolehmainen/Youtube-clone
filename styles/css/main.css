@@ -492,6 +492,10 @@ footer {
           width: fit-content; }
           .sign-section .sign-box form .options input[type=submit]:disabled {
             opacity: 0.5; }
+            .sign-section .sign-box form .options input[type=submit]:disabled:hover {
+              cursor: auto;
+              box-shadow: none;
+              background-color: #1a73e8; }
       .sign-section .sign-box form input {
         width: 75%;
         font-size: 16px;

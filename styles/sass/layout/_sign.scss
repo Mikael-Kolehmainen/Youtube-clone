@@ -55,6 +55,12 @@
 
                     &:disabled {
                         opacity: 0.5;
+
+                        &:hover {
+                            cursor: auto;
+                            box-shadow: none;
+                            background-color: $sign-link-font-color;
+                        }
                     }
                 }
             }
