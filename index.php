@@ -1,7 +1,6 @@
 
 <!-- 4 -->
 <!-- Password confirm function -->
-<!-- Show password function -->
 
 <!-- 5 -->
 <!-- Create the looks of the page when logged in -->

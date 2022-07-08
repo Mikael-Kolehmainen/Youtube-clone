@@ -27,7 +27,7 @@
                         <input type='password' name='repeat' id='repeat' placeholder='Confirm' required onchange='checkPasswords();'>
                     </div>
                     <p class='comment' id='pwCheck'>Use 8 or more characters with a mix of letters, numbers & symbols</p>
-                    <input type='checkbox' name='show' id='show' onchange=''><label for='show'>Show password</label>
+                    <input type='checkbox' name='show' id='show' onchange='showPassword();'><label for='show'>Show password</label>
                     <div class='options'>
                         <a href='signin.php'>Sign in instead</a>
                         <input type='submit' name='sign-up' value='Create' id='sign-up'>

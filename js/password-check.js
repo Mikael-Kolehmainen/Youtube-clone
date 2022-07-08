@@ -24,3 +24,15 @@ function checkPasswords() {
         pwCheck.innerText = "";
     }
 }
+function showPassword() {
+    var pwInput = document.getElementById("pw");
+    var confirmInput = document.getElementById("repeat");
+
+    if (pwInput.type == "password") {
+        pwInput.type = "text";
+        confirmInput.type = "text";
+    } else {
+        pwInput.type = "password";
+        confirmInput.type = "password";
+    }
+}
