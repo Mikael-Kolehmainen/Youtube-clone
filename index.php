@@ -1,6 +1,9 @@
 <!-- 5 -->
 <!-- Create the looks of the page when logged in -->
 
+<!-- 6 -->
+<!-- Upload video function -->
+
 <!DOCTYPE html>
 <html>
     <head>
