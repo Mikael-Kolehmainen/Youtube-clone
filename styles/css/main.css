@@ -189,12 +189,12 @@ header {
         width: 65px;
         border-left: none;
         cursor: pointer; }
-  header .voice-search, header .apps, header .anym-settings, header .search-btn, header .back-btn {
+  header .voice-search, header .apps, header .anym-settings, header .search-btn, header .back-btn, header .notifications, header .new {
     width: 60px;
     position: relative;
     cursor: pointer;
     border-radius: 50%; }
-    header .voice-search i, header .apps i, header .anym-settings i, header .search-btn i, header .back-btn i {
+    header .voice-search i, header .apps i, header .anym-settings i, header .search-btn i, header .back-btn i, header .notifications i, header .new i {
       padding: 10px;
       padding-left: 12px;
       padding-right: 12px;
@@ -204,13 +204,15 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 1.1rem; }
-  header .apps, header .anym-settings {
+  header .apps, header .anym-settings, header .notifications, header .new {
     float: right; }
-    header .apps i, header .anym-settings i {
+    header .apps i, header .anym-settings i, header .notifications i, header .new i {
       font-size: 1.3rem; }
   header .anym-settings {
     margin-right: 10px; }
-  header .sign-btn {
+  header .notifications {
+    margin-right: 10px; }
+  header .sign-btn, header .profile-btn {
     float: right;
     position: relative;
     display: block;
@@ -220,12 +222,12 @@ header {
     border: 1px solid #065fd4;
     width: 125px;
     height: 35px; }
-    header .sign-btn p, header .sign-btn i {
+    header .sign-btn p, header .sign-btn i, header .profile-btn p, header .profile-btn i {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-    header .sign-btn p {
+    header .sign-btn p, header .profile-btn p {
       width: fit-content;
       left: 60%;
       padding: 0;
@@ -233,10 +235,18 @@ header {
       font-weight: bold;
       color: #065fd4;
       display: inline-block; }
-    header .sign-btn i {
+    header .sign-btn i, header .profile-btn i {
       left: 20%;
       font-size: 20px;
       color: #065fd4; }
+  header .profile-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    margin-right: 40px; }
+    header .profile-btn img {
+      width: 100%;
+      border-radius: 50%; }
   header .clicked {
     animation-name: hamburgerClicked;
     animation-duration: 1s; }
@@ -265,7 +275,7 @@ header {
     margin-left: 5%; }
     header .search-bar form input[type=text] {
       width: 70%; }
-  header .voice-search, header .apps, header .anym-settings, header .search-btn {
+  header .voice-search, header .apps, header .anym-settings, header .search-btn, header .notifications, header .new {
     width: 40px; } }
 
 @media (max-width: 800px) {

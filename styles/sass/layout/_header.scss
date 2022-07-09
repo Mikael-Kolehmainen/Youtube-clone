@@ -249,7 +249,7 @@ header {
             }
         }
     }
-    .voice-search, .apps, .anym-settings, .search-btn, .back-btn {
+    .voice-search, .apps, .anym-settings, .search-btn, .back-btn, .notifications, .new {
         width: 60px;
         position: relative;
         cursor: pointer;
@@ -267,7 +267,7 @@ header {
             font-size: 1.1rem;
         }
     }
-    .apps, .anym-settings {
+    .apps, .anym-settings, .notifications, .new {
         float: right;
 
         i {
@@ -277,7 +277,10 @@ header {
     .anym-settings {
         margin-right: 10px;
     }
-    .sign-btn {
+    .notifications {
+        margin-right: 10px;
+    }
+    .sign-btn, .profile-btn {
         float: right;
         position: relative;
         display: block;
@@ -307,6 +310,17 @@ header {
             left: 20%;
             font-size: 20px;
             color: $sign-main-color;
+        }
+    }
+    .profile-btn {
+        width: 35px;
+        height: 35px;
+        border: none;
+        margin-right: 40px;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
         }
     }
     .clicked {
@@ -341,7 +355,7 @@ header {
                 }
             }
         }
-        .voice-search, .apps, .anym-settings, .search-btn {
+        .voice-search, .apps, .anym-settings, .search-btn, .notifications, .new {
             width: 40px;
         }
     }

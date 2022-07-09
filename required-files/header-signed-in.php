@@ -169,15 +169,17 @@
             </div>
             
             <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
-            <a href='./signin.php' class='sign-btn'>
-                <i class='fa-regular fa-circle-user'></i>
-                <p>SIGN IN</p>
+            <a href='./index.php' class='profile-btn'>
+                <img src='./media/profile-default.jpg' alt='profile image of user'>
             </a>
-            <a class='anym-settings'>
-                <i class='fa-solid fa-ellipsis-vertical'></i>
+            <a class='notifications'>
+                <i class='fa-solid fa-bell'></i>
             </a>
             <a class='apps'>
                 <i class='fa-solid fa-ellipsis'></i>
+            </a>
+            <a class='new'>
+                <i class='fa-solid fa-video'></i>
             </a>
             <a class='voice-search'>
                 <i class='fa-solid fa-microphone'></i>
