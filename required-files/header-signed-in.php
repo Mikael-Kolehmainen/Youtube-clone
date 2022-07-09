@@ -47,67 +47,82 @@
                             </div>
                             <p>History</p>
                         </a>
-                        <p class='title'>BEST OF YOUTUBE</p>
-                        <div class='categories'>
-                            <a class='item'>
-                                <div class='icon'>
-                                    <i class='fa-solid fa-music' aria-hidden='true'></i>
-                                </div>
-                                <p>Music</p>
-                            </a>
-                            <a class='item'>
-                                <div class='icon'>
-                                    <i class='fa-solid fa-trophy'></i>
-                                </div>
-                                <p>Sports</p>
-                            </a>
-                            <a class='item'>
-                                <div class='icon'>
-                                    <i class='fa-solid fa-gamepad'></i>
-                                </div>
-                                <p>Gaming</p>
-                            </a>
-                            <a class='item'>
-                                <div class='icon'>
-                                    <i class='fa-solid fa-film'></i>
-                                </div>
-                                <p>Movies</p>
-                            </a>
-                            <a class='item'>
-                                <div class='icon'>
-                                    <i class='fa-solid fa-newspaper'></i>
-                                </div>
-                                <p>News</p>
-                            </a>
-                            <a class='item'>
-                                <div class='icon'>
-                                    <i class='fa-solid fa-tower-broadcast'></i>
-                                </div>
-                                <p>Live</p>
-                            </a>
-                            <a class='item'>
-                                <div class='icon'>
-                                    <i class='fa-solid fa-vr-cardboard'></i>
-                                </div>
-                                <p>360° Video</p>
-                            </a>
-                        </div>
-                        <hr>
-                        <a class='item browse'>
+                        <a class='item'>
                             <div class='icon'>
-                                <i class='fa-solid fa-plus'></i>
+                                <i class='fa-solid fa-circle-play'></i>
                             </div>
-                            <p>Browse channels</p>
+                            <p>Your videos</p>
                         </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-clock'></i>
+                            </div>
+                            <p>Watch later</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-thumbs-up'></i>
+                            </div>
+                            <p>Liked videos</p>
+                        </a>
+                        <hr>
+                        <p class='title'>SUBSCRIPTIONS</p>
                         <hr>
                         <p class='title'>MORE FROM YOUTUBE</p>
                         <a class='item'>
-                            <i class='fa-brands fa-youtube'></i>
+                            <div class='icon'>
+                                <i class='fa-brands fa-youtube'></i>
+                            </div>
                             <p>YouTube Premium</p>
                         </a>
                         <a class='item'>
-                            <i class='fa-solid fa-tower-broadcast'></i>
+                            <div class='icon'>
+                                <i class='fa-solid fa-film'></i>
+                            </div>
+                            <p>Movies</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-gamepad'></i>
+                            </div>
+                            <p>Gaming</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-tower-broadcast'></i>
+                            </div>
                             <p>Live</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-trophy'></i>
+                            </div>
+                            <p>Sports</p>
+                        </a>
+                        <hr>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-gear'></i>
+                            </div>
+                            <p>Settings</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-flag'></i>
+                            </div>
+                            <p>Report history</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-circle-question'></i>
+                            </div>
+                            <p>Help</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-circle-exclamation'></i>
+                            </div>
+                            <p>Send feedback</p>
                         </a>
                         <hr>
                     </div>

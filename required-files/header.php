@@ -109,12 +109,41 @@
                         <hr>
                         <p class='title'>MORE FROM YOUTUBE</p>
                         <a class='item'>
-                            <i class='fa-brands fa-youtube'></i>
+                            <div class='icon'>
+                                <i class='fa-brands fa-youtube'></i>
+                            </div>
                             <p>YouTube Premium</p>
                         </a>
                         <a class='item'>
-                            <i class='fa-solid fa-tower-broadcast'></i>
+                            <div class='icon'>
+                                <i class='fa-solid fa-tower-broadcast'></i>
+                            </div>
                             <p>Live</p>
+                        </a>
+                        <hr>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-gear'></i>
+                            </div>
+                            <p>Settings</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-flag'></i>
+                            </div>
+                            <p>Report history</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-circle-question'></i>
+                            </div>
+                            <p>Help</p>
+                        </a>
+                        <a class='item'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-circle-exclamation'></i>
+                            </div>
+                            <p>Send feedback</p>
                         </a>
                         <hr>
                     </div>
