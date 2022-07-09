@@ -1,5 +1,5 @@
 <!-- 5 -->
-<!-- Create the looks of the page when logged in -->
+<!-- Dropdown when profile image is clicked -->
 
 <!-- 6 -->
 <!-- Upload video function -->
