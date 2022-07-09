@@ -47,13 +47,6 @@
                             </div>
                             <p>History</p>
                         </a>
-                        <hr>
-                        <p>Sign in to like videos, comment and subscribe.</p>
-                        <a href='./signin.php' class='sign-btn'>
-                            <i class='fa-regular fa-circle-user'></i>
-                            <p>SIGN IN</p>
-                        </a>
-                        <hr>
                         <p class='title'>BEST OF YOUTUBE</p>
                         <div class='categories'>
                             <a class='item'>

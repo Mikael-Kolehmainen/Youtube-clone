@@ -14,9 +14,8 @@
     <body class='home-page'>
         <?php
             require './required-files/random-string.php';
-            session_start();
 
-            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["sign-up"]) && isset($_SESSION["signed-in"]) == false) {
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["sign-up"])) {
                 require './required-files/connection.php';
                 $sql = "SELECT email FROM users";
                 $result = mysqli_query($conn, $sql);
@@ -53,9 +52,10 @@
 
                     mysqli_query($conn, $sql);
 
-                    $_SESSION["signed-in"] = true;
+                    $cookieTime = 60 * 30;
+                    setcookie('alreadyLoggedInCookie', $session, time() + ($cookieTime), "/");
 
-                    showWebsite($session);
+                    header("Location: index.php");
                 }
                 mysqli_close($conn);
             } else if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["sign-in"])) {
