@@ -13,9 +13,10 @@
     </head>
     <body class='home-page'>
         <?php
-            require './required-files/random-string.php'; 
+            require './required-files/random-string.php';
+            session_start();
 
-            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["sign-up"])) {
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["sign-up"]) && isset($_SESSION["signed-in"]) == false) {
                 require './required-files/connection.php';
                 $sql = "SELECT email FROM users";
                 $result = mysqli_query($conn, $sql);
@@ -51,6 +52,8 @@
                             VALUES ('$fname', '$lname', '$email', '$pw', '$session')";
 
                     mysqli_query($conn, $sql);
+
+                    $_SESSION["signed-in"] = true;
 
                     showWebsite($session);
                 }
@@ -103,7 +106,7 @@
             for ($i = 0; $i < mysqli_num_rows($result); $i++) {
                 $row = mysqli_fetch_assoc($result);
                 if ($session == $row['sessionhash']) {
-                    require './required-files/header.php';
+                    require './required-files/header-signed-in.php';
                     echo "
                         <div id='overlay' style='display: none'></div>
                         <section id='video-section' class='video-section'>
