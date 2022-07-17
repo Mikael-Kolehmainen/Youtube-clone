@@ -169,9 +169,12 @@
             </div>
             
             <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
-            <a href='./index.php' class='profile-btn'>
+            <a href='#' onclick='openProfileMenu();' class='profile-btn'>
                 <img src='./media/profile-default.jpg' alt='profile image of user'>
             </a>
+                <div class='profile' id='profileMenu' style='display: none'>
+                    <p>TEST</p>
+                </div>
             <a class='notifications'>
                 <i class='fa-solid fa-bell'></i>
             </a>
