@@ -327,6 +327,9 @@ header {
         animation-name: hamburgerClicked;
         animation-duration: 1s;
     }
+    .profile {
+        
+    }
 }
 @keyframes hamburgerClicked {
     0% { background-color: $main-border-color; }
