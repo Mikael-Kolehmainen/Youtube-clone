@@ -328,18 +328,82 @@ header {
         animation-duration: 1s;
     }
     .profile {
-        width: 20%;
-        height: fit-content;
-        padding-bottom: 20px;
+        width: 300px;
         position: absolute;
-        left: 80%;
-        top: 100%;
+        height: fit-content;
+        right: -6%;
+        top: 675%;
+        transform: translate(-50%, -50%);
         margin-top: 0;
         background-color: white;
         border: 1px solid $main-border-color;
         border-top: none;
         z-index: 2;
-        text-align: center;
+
+        .top {
+            border-bottom: 1px solid $main-border-color;
+            padding: 15px;
+
+            h1, a {
+                display: inline-block;
+            }
+            a {
+                text-decoration: none;
+                color: $sign-link-font-color;
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            h1 {
+                margin-top: 2px;
+                font-size: 16px;
+            }
+            img {
+                float: left;
+                display: inline-block;
+                margin-right: 15px;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+            }
+        }
+        .item {
+            display: block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:hover {
+                background-color: $main-border-color;
+            }
+            p {
+                padding-top: 0;
+                margin-right: 0;
+                margin-left: 25px;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .icon {
+                position: relative;
+                display: inline-block;
+                font-size: 20px;
+                
+                i {
+                    width: 23px;
+                    max-width: 23px;
+                }
+            }
+            &.active {
+                background-color: $main-border-color;
+
+                p {
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
 @keyframes hamburgerClicked {

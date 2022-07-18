@@ -1,5 +1,6 @@
 <!-- 5 -->
 <!-- Dropdown when profile image is clicked -->
+    <!-- Add the arrow pointing right to some options -->
 
 <!-- 6 -->
 <!-- Upload video function -->
@@ -100,7 +101,7 @@
 <?php
     function showWebsite($session) {
         require 'required-files/connection.php';
-        $sql = "SELECT sessionhash FROM users";
+        $sql = "SELECT fname, lname, sessionhash FROM users";
         $result = mysqli_query($conn, $sql);
         if (mysqli_num_rows($result) >= 0) {
             for ($i = 0; $i < mysqli_num_rows($result); $i++) {
