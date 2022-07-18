@@ -328,7 +328,18 @@ header {
         animation-duration: 1s;
     }
     .profile {
-        
+        width: 20%;
+        height: fit-content;
+        padding-bottom: 20px;
+        position: absolute;
+        left: 80%;
+        top: 100%;
+        margin-top: 0;
+        background-color: white;
+        border: 1px solid $main-border-color;
+        border-top: none;
+        z-index: 2;
+        text-align: center;
     }
 }
 @keyframes hamburgerClicked {

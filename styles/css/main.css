@@ -250,6 +250,19 @@ header {
   header .clicked {
     animation-name: hamburgerClicked;
     animation-duration: 1s; }
+  header .profile {
+    width: 20%;
+    height: fit-content;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 80%;
+    top: 100%;
+    margin-top: 0;
+    background-color: white;
+    border: 1px solid #d5d5d5;
+    border-top: none;
+    z-index: 2;
+    text-align: center; }
 
 @keyframes hamburgerClicked {
   0% {
