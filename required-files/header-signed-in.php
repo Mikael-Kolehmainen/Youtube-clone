@@ -186,12 +186,6 @@
                     </a>
                     <a class='item'>
                         <div class='icon'>
-                            <i class='fa-solid fa-sack-dollar'></i>
-                        </div>
-                        <p>Purchases and memberships</p>
-                    </a>
-                    <a class='item'>
-                        <div class='icon'>
                             <i class='fa-brands fa-youtube'></i>
                         </div>
                         <p>YouTube Studio</p>
@@ -211,6 +205,19 @@
                     <hr>
                     <a class='item'>
                         <div class='icon'>
+                            <i class='fa-solid fa-sack-dollar'></i>
+                        </div>
+                        <p>Purchases and memberships</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-user-shield'></i>
+                        </div>
+                        <p>Your data in YouTube</p>
+                    </a>
+                    <hr>
+                    <a class='item'>
+                        <div class='icon'>
                             <i class='fa-solid fa-moon'></i>
                         </div>
                         <p>Appearance: Light</p>
@@ -223,22 +230,30 @@
                     </a>
                     <a class='item'>
                         <div class='icon'>
+                            <i class='fa-solid fa-shield'></i>
+                        </div>
+                        <p>Restricted Mode: off</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
                             <i class='fa-solid fa-globe'></i>
                         </div>
                         <p>Location: Finland</p>
                     </a>
                     <a class='item'>
                         <div class='icon'>
+                            <i class='fa-solid fa-keyboard'></i>
+                        </div>
+                        <p>Keyboard shortcuts</p>
+                    </a>
+                    <hr>
+                    <a class='item'>
+                        <div class='icon'>
                             <i class='fa-solid fa-gear'></i>
                         </div>
                         <p>Settings</p>
                     </a>
-                    <a class='item'>
-                        <div class='icon'>
-                            <i class='fa-solid fa-user-shield'></i>
-                        </div>
-                        <p>Your data in YouTube</p>
-                    </a>
+                    <hr>
                     <a class='item'>
                         <div class='icon'>
                             <i class='fa-solid fa-circle-question'></i>
@@ -251,16 +266,7 @@
                         </div>
                         <p>Send feedback</p>
                     </a>
-                    <a class='item'>
-                        <div class='icon'>
-                            <i class='fa-solid fa-keyboard'></i>
-                        </div>
-                        <p>Keyboard shortcuts</p>
-                    </a>
                     <hr>
-                    <a class='item'>
-                        <p>Restricted Mode: off</p>
-                    </a>
                 </div>
             <a class='notifications'>
                 <i class='fa-solid fa-bell'></i>

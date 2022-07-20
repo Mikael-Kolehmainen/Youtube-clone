@@ -298,7 +298,8 @@ header {
         display: inline-block;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        font-size: 14px; }
       header .profile .item .icon {
         position: relative;
         display: inline-block;
