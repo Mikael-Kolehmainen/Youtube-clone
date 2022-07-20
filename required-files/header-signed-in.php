@@ -195,6 +195,9 @@
                             <i class='fa-solid fa-user-group'></i>
                         </div>
                         <p>Switch account</p>
+                        <div class='angle'>
+                            <i class='fa-solid fa-angle-right'></i>
+                        </div>
                     </a>
                     <a class='item'>
                         <div class='icon'>
@@ -221,24 +224,36 @@
                             <i class='fa-solid fa-moon'></i>
                         </div>
                         <p>Appearance: Light</p>
+                        <div class='angle'>
+                            <i class='fa-solid fa-angle-right'></i>
+                        </div>
                     </a>
                     <a class='item'>
                         <div class='icon'>
                             <i class='fa-solid fa-language'></i>
                         </div>
                         <p>Language: English</p>
+                        <div class='angle'>
+                            <i class='fa-solid fa-angle-right'></i>
+                        </div>
                     </a>
                     <a class='item'>
                         <div class='icon'>
                             <i class='fa-solid fa-shield'></i>
                         </div>
                         <p>Restricted Mode: off</p>
+                        <div class='angle'>
+                            <i class='fa-solid fa-angle-right'></i>
+                        </div>
                     </a>
                     <a class='item'>
                         <div class='icon'>
                             <i class='fa-solid fa-globe'></i>
                         </div>
                         <p>Location: Finland</p>
+                        <div class='angle'>
+                            <i class='fa-solid fa-angle-right'></i>
+                        </div>
                     </a>
                     <a class='item'>
                         <div class='icon'>

@@ -387,7 +387,7 @@ header {
                 transform: translateY(-50%);
                 font-size: 14px;
             }
-            .icon {
+            .icon, .angle {
                 position: relative;
                 display: inline-block;
                 font-size: 20px;
@@ -395,6 +395,16 @@ header {
                 i {
                     width: 23px;
                     max-width: 23px;
+                }
+            }
+            .angle {
+                top: 50%;
+                left: 95%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+
+                i {
+                    color: $darker-main-border-color;
                 }
             }
             &.active {

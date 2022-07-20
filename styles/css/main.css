@@ -300,13 +300,20 @@ header {
         top: 50%;
         transform: translateY(-50%);
         font-size: 14px; }
-      header .profile .item .icon {
+      header .profile .item .icon, header .profile .item .angle {
         position: relative;
         display: inline-block;
         font-size: 20px; }
-        header .profile .item .icon i {
+        header .profile .item .icon i, header .profile .item .angle i {
           width: 23px;
           max-width: 23px; }
+      header .profile .item .angle {
+        top: 50%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+        position: absolute; }
+        header .profile .item .angle i {
+          color: #b7b7b7; }
       header .profile .item.active {
         background-color: #d5d5d5; }
         header .profile .item.active p {

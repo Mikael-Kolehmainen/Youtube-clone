@@ -1,6 +1,5 @@
 <!-- 5 -->
 <!-- Dropdown when profile image is clicked -->
-    <!-- Add the arrow pointing right to some options -->
 
 <!-- 6 -->
 <!-- Upload video function -->
