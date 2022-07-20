@@ -327,7 +327,7 @@ header {
         animation-name: hamburgerClicked;
         animation-duration: 1s;
     }
-    .profile {
+    .profile, .video {
         width: 300px;
         position: absolute;
         height: fit-content;
@@ -416,6 +416,11 @@ header {
             }
         }
     }
+    .video {
+        width: 175px;
+        right: -3.5%;
+        top: 160%;
+    }
 }
 @keyframes hamburgerClicked {
     0% { background-color: $main-border-color; }
@@ -425,6 +430,9 @@ header {
 @keyframes navMenuOpen {
     from {width: 0px;}
     to {width: 240px;}
+}
+@media (max-width: 1300px) {
+    
 }
 @media (max-width: 1250px) {
     header {

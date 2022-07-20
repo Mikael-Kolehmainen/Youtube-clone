@@ -250,7 +250,7 @@ header {
   header .clicked {
     animation-name: hamburgerClicked;
     animation-duration: 1s; }
-  header .profile {
+  header .profile, header .video {
     width: 300px;
     position: absolute;
     height: fit-content;
@@ -262,36 +262,36 @@ header {
     border: 1px solid #d5d5d5;
     border-top: none;
     z-index: 2; }
-    header .profile .top {
+    header .profile .top, header .video .top {
       border-bottom: 1px solid #d5d5d5;
       padding: 15px; }
-      header .profile .top h1, header .profile .top a {
+      header .profile .top h1, header .profile .top a, header .video .top h1, header .video .top a {
         display: inline-block; }
-      header .profile .top a {
+      header .profile .top a, header .video .top a {
         text-decoration: none;
         color: #1a73e8;
         font-size: 14px;
         margin-top: 15px; }
-      header .profile .top h1 {
+      header .profile .top h1, header .video .top h1 {
         margin-top: 2px;
         font-size: 16px; }
-      header .profile .top img {
+      header .profile .top img, header .video .top img {
         float: left;
         display: inline-block;
         margin-right: 15px;
         width: 45px;
         height: 45px;
         border-radius: 50%; }
-    header .profile .item {
+    header .profile .item, header .video .item {
       display: block;
       cursor: pointer;
       position: relative;
       padding-left: 30px;
       padding-top: 10px;
       padding-bottom: 10px; }
-      header .profile .item:hover {
+      header .profile .item:hover, header .video .item:hover {
         background-color: #d5d5d5; }
-      header .profile .item p {
+      header .profile .item p, header .video .item p {
         padding-top: 0;
         margin-right: 0;
         margin-left: 25px;
@@ -300,24 +300,28 @@ header {
         top: 50%;
         transform: translateY(-50%);
         font-size: 14px; }
-      header .profile .item .icon, header .profile .item .angle {
+      header .profile .item .icon, header .profile .item .angle, header .video .item .icon, header .video .item .angle {
         position: relative;
         display: inline-block;
         font-size: 20px; }
-        header .profile .item .icon i, header .profile .item .angle i {
+        header .profile .item .icon i, header .profile .item .angle i, header .video .item .icon i, header .video .item .angle i {
           width: 23px;
           max-width: 23px; }
-      header .profile .item .angle {
+      header .profile .item .angle, header .video .item .angle {
         top: 50%;
         left: 95%;
         transform: translate(-50%, -50%);
         position: absolute; }
-        header .profile .item .angle i {
+        header .profile .item .angle i, header .video .item .angle i {
           color: #b7b7b7; }
-      header .profile .item.active {
+      header .profile .item.active, header .video .item.active {
         background-color: #d5d5d5; }
-        header .profile .item.active p {
+        header .profile .item.active p, header .video .item.active p {
           font-weight: bold; }
+  header .video {
+    width: 175px;
+    right: -3.5%;
+    top: 160%; }
 
 @keyframes hamburgerClicked {
   0% {

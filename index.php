@@ -1,8 +1,13 @@
 <!-- 5 -->
 <!-- Dropdown when profile image is clicked -->
+    <!-- MEDIA QUERIES FOR DROPDOWN -->
 
 <!-- 6 -->
 <!-- Upload video function -->
+    <!-- -->
+
+<!-- 7 -->
+<!-- HOW TO USE TUTORIAL TO GITHUB REPO -->
 
 <!DOCTYPE html>
 <html>

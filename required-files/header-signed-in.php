@@ -169,10 +169,10 @@
             </div>
             
             <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
-            <a href='#' onclick='openProfileMenu();' class='profile-btn'>
+            <a href='#' onclick='openDropdownMenu(\"profileMenu\");' class='profile-btn'>
                 <img src='./media/profile-default.jpg' alt='profile image of user'>
             </a>
-                <div class='profile' id='profileMenu' style='display: none'>
+                <div class='profile dropdown' id='profileMenu' style='display: none'>
                     <div class='top'>
                         <img src='./media/profile-default.jpg' alt='profile image of user'>
                         <h1>$row[fname] $row[lname]</h1><br>
@@ -286,12 +286,23 @@
             <a class='notifications'>
                 <i class='fa-solid fa-bell'></i>
             </a>
-            <a class='apps'>
-                <i class='fa-solid fa-ellipsis'></i>
-            </a>
-            <a class='new'>
+            <a href='#' onclick='openDropdownMenu(\"videoMenu\");' class='new'>
                 <i class='fa-solid fa-video'></i>
             </a>
+                <div class='video dropdown' id='videoMenu' style='display: none'>
+                    <a href='create-video.php' class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-circle-play'></i>
+                        </div>
+                        <p>Upload video</p>
+                    </a>
+                    <a class='item'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-tower-broadcast'></i>
+                        </div>
+                        <p>Go live</p>
+                    </a>
+                </div>
             <a class='voice-search'>
                 <i class='fa-solid fa-microphone'></i>
             </a>
