@@ -1,7 +1,3 @@
-<!-- 5 -->
-<!-- Dropdown when profile image is clicked -->
-    <!-- Sign out function -->
-
 <!-- 6 -->
 <!-- Upload video function -->
     <!-- -->
