@@ -34,8 +34,8 @@
                         <h2 style='margin-bottom: 100px;'>Welcome</h2>
                         <p class='useremail'>$_SESSION[email]</p>
                         <form action='index.php' method='POST'>
-                            <input type='password' name='password' placeholder='Enter your password' required><br>
-                            <input type='checkbox' name='show' id='show' onchange=''><label for='show'>Show password</label>
+                            <input type='password' name='password' id='pw' placeholder='Enter your password' required><br>
+                            <input type='checkbox' name='show' id='show' onchange='showPassword();'><label for='show'>Show password</label>
                             <div class='options'>
                                 <a href='#'>Forgot password?</a>
                                 <input type='submit' name='sign-in' value='Next'>

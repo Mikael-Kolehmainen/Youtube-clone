@@ -199,7 +199,7 @@
                             <i class='fa-solid fa-angle-right'></i>
                         </div>
                     </a>
-                    <a class='item'>
+                    <a href='signout.php' class='item'>
                         <div class='icon'>
                             <i class='fa-solid fa-arrow-right-from-bracket'></i>
                         </div>
