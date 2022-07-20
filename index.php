@@ -1,6 +1,6 @@
 <!-- 5 -->
 <!-- Dropdown when profile image is clicked -->
-    <!-- MEDIA QUERIES FOR DROPDOWN -->
+    <!-- Sign out function -->
 
 <!-- 6 -->
 <!-- Upload video function -->

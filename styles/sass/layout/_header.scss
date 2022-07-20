@@ -432,12 +432,29 @@ header {
     to {width: 240px;}
 }
 @media (max-width: 1300px) {
-    
+    header {
+        .profile {
+            right: -10%;
+        }
+        .video {
+            right: -6%;
+        }
+    }
 }
 @media (max-width: 1250px) {
     header {
         .search-bar {
             margin-left: 10%;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    header {
+        .profile {
+            right: -15%;
+        }
+        .video {
+            right: -8%;
         }
     }
 }
@@ -499,6 +516,16 @@ header {
         }
     }
 }
+@media (max-width: 700px) {
+    header {
+        .profile {
+            right: -20%;
+        }
+        .video {
+            right: -12%;
+        }
+    }
+}
 @media (max-width: 600px) {
     header {
         .search-container {
@@ -511,6 +538,16 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+@media (max-width: 550px) {
+    header {
+        .profile {
+            right: -25%;
+        }
+        .video {
+            right: -15%;
         }
     }
 }
