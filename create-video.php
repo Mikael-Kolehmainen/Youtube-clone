@@ -22,16 +22,20 @@
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>
                         <!-- UPLOAD STAGE -->
-                        <div id='upload-stage' style='display: none;'>
+                        <div id='upload-stage' style='display: block;'>
                             <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();'>
                             <div class='info'>
                                 <p id='error'></p>
                                 <h2>Drag and drop video files to upload (not available, please click the icon)</h2>
                                 <p>Your videos will be private untill you publish them.</p>
                             </div>
+                            <div class='legal'>
+                                <p>By submitting your videos to YouTube, you acknowledge that you agree to YouTube's <a href='#'>Terms of Service</a> and <a href='#'>Community Guidelines.</a></p>
+                                <p>Please be sure not to violate others' copyright or privacy rights. <a href='#'>Learn more</a></p>
+                            </div>
                         </div>
                         <!-- DETAILS STAGE -->
-                        <div id='details-stage' style='display: block;'>
+                        <div id='details-stage' style='display: none;'>
                             <div class='timeline'>
 
                             </div>
@@ -93,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='bottom' id='nav' style='display: block;'>
+                        <div class='bottom' id='nav' style='display: none;'>
                             <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
                             <i class=''></i>
                             <i class=''></i>

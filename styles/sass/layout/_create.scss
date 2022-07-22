@@ -52,17 +52,34 @@
                     color: red;
                 }
                 h2 {
-                    font-size: 15px;
+                    font-weight: normal;
+                    font-size: 14px;
                     margin-bottom: 5px;
+                    color: #0d0d0d;
                 }
                 p {
-                    font-size: 13px;
+                    font-size: 12px;
+                    color: $secondary-font-color;
+                }
+                .info, .legal {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
                 }
                 .info {
-                    position: absolute;
                     top: 55%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                }
+                .legal {
+                    width: 100%;
+                    bottom: 0;
+
+                    p {
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        color: $sign-link-font-color;
+                        text-decoration: none;
+                    }
                 }
                 .upload-input {
                     position: absolute;

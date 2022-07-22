@@ -782,15 +782,27 @@ footer {
           margin-bottom: 5px;
           color: red; }
         .create-page .create-section .create-box .mid h2 {
-          font-size: 15px;
-          margin-bottom: 5px; }
+          font-weight: normal;
+          font-size: 14px;
+          margin-bottom: 5px;
+          color: #0d0d0d; }
         .create-page .create-section .create-box .mid p {
-          font-size: 13px; }
-        .create-page .create-section .create-box .mid .info {
+          font-size: 12px;
+          color: #606060; }
+        .create-page .create-section .create-box .mid .info, .create-page .create-section .create-box .mid .legal {
           position: absolute;
-          top: 55%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
+          transform: translate(-50%, -50%);
+          left: 50%; }
+        .create-page .create-section .create-box .mid .info {
+          top: 55%; }
+        .create-page .create-section .create-box .mid .legal {
+          width: 100%;
+          bottom: 0; }
+          .create-page .create-section .create-box .mid .legal p {
+            margin-bottom: 10px; }
+          .create-page .create-section .create-box .mid .legal a {
+            color: #1a73e8;
+            text-decoration: none; }
         .create-page .create-section .create-box .mid .upload-input {
           position: absolute;
           top: 40%;
