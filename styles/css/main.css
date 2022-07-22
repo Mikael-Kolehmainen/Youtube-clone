@@ -825,18 +825,38 @@ footer {
             cursor: pointer; }
         .create-page .create-section .create-box .mid #details-stage {
           height: 797px;
-          margin-left: 50px;
-          margin-right: 50px; }
+          margin-left: 40px;
+          margin-right: 40px; }
           .create-page .create-section .create-box .mid #details-stage .timeline {
             height: 80px;
             width: 100%; }
           .create-page .create-section .create-box .mid #details-stage .details {
             height: 718px;
             width: 100%;
-            float: left; }
-            .create-page .create-section .create-box .mid #details-stage .details h1 {
-              font-weight: bold;
-              font-size: 25px; }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info, .create-page .create-section .create-box .mid #details-stage .details .video-player {
+              display: flex;
+              flex-direction: column; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info {
+              width: 65%; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .title h1 {
+                width: fit-content;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 25px;
+                float: left; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .title #reuse {
+                margin-top: 7.5px;
+                font-weight: bold;
+                font-size: 14px;
+                width: fit-content;
+                display: inline-block;
+                float: right; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-player {
+              width: 35%;
+              margin-top: 40px; }
         .create-page .create-section .create-box .mid .bottom {
           height: 20px;
           width: 940px;

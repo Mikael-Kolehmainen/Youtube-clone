@@ -40,9 +40,11 @@
 
                             </div>
                             <div class='details'>
-                                <div class='info'>
-                                    <h1>Details</h1>
-                                    <a href='#'>REUSE DETAILS</a>
+                                <div class='video-info'>
+                                    <div class='title'>
+                                        <h1>Details</h1>
+                                        <a href='#' id='reuse'>REUSE DETAILS</a>
+                                    </div>
                                     <div class='input'>
                                         <label for='title'>Title (required)</label>
                                         <i class='fa-solid fa-circle-question'></i>
