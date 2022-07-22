@@ -20,13 +20,10 @@
                     </a>
                 </div>
                 <div class='mid'>
-                    <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload'>
-                        <i class='fa-solid fa-arrow-up-from-bracket'></i>
-                    </a>
+                    <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();'>
                     <div class='info'>
-                        <h2>Drag and drop video files to upload</h2>
+                        <h2>Drag and drop video files to upload (not available, please click the icon)</h2>
                         <p>Your videos will be private untill you publish them.</p>
-                        <input type='file'>
                     </div>
                 </div>
             </article>
