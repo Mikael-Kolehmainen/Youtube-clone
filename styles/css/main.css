@@ -777,6 +777,8 @@ footer {
         text-align: center;
         position: relative;
         height: 850px; }
+        .create-page .create-section .create-box .mid form {
+          height: 100%; }
         .create-page .create-section .create-box .mid #error {
           margin-top: 5px;
           margin-bottom: 5px;
@@ -789,6 +791,10 @@ footer {
         .create-page .create-section .create-box .mid p {
           font-size: 12px;
           color: #606060; }
+        .create-page .create-section .create-box .mid a {
+          font-size: 12px;
+          text-decoration: none;
+          color: #1a73e8; }
         .create-page .create-section .create-box .mid .info, .create-page .create-section .create-box .mid .legal {
           position: absolute;
           transform: translate(-50%, -50%);
@@ -800,9 +806,6 @@ footer {
           bottom: 0; }
           .create-page .create-section .create-box .mid .legal p {
             margin-bottom: 10px; }
-          .create-page .create-section .create-box .mid .legal a {
-            color: #1a73e8;
-            text-decoration: none; }
         .create-page .create-section .create-box .mid .upload-input {
           position: absolute;
           top: 40%;
@@ -820,19 +823,54 @@ footer {
           font-size: 0; }
           .create-page .create-section .create-box .mid .upload-input:hover {
             cursor: pointer; }
-        .create-page .create-section .create-box .mid .timeline {
-          height: 80px;
-          width: 912px;
-          margin-left: 24px;
-          margin-right: 24px; }
-        .create-page .create-section .create-box .mid .details {
-          height: 718px;
-          padding-left: 50px;
-          padding-right: 50px;
-          float: left; }
-          .create-page .create-section .create-box .mid .details h1 {
-            font-weight: bold;
-            font-size: 25px; }
+        .create-page .create-section .create-box .mid #details-stage {
+          height: 797px;
+          margin-left: 50px;
+          margin-right: 50px; }
+          .create-page .create-section .create-box .mid #details-stage .timeline {
+            height: 80px;
+            width: 100%; }
+          .create-page .create-section .create-box .mid #details-stage .details {
+            height: 718px;
+            width: 100%;
+            float: left; }
+            .create-page .create-section .create-box .mid #details-stage .details h1 {
+              font-weight: bold;
+              font-size: 25px; }
+        .create-page .create-section .create-box .mid .bottom {
+          height: 20px;
+          width: 940px;
+          border-top: 1px solid #d5d5d5;
+          padding-top: 16.5px;
+          padding-bottom: 16.5px;
+          padding-left: 10px;
+          padding-right: 10px; }
+          .create-page .create-section .create-box .mid .bottom .left, .create-page .create-section .create-box .mid .bottom .right {
+            height: 100%;
+            width: fit-content;
+            position: relative; }
+          .create-page .create-section .create-box .mid .bottom .left {
+            position: relative;
+            display: inline-block;
+            float: left; }
+            .create-page .create-section .create-box .mid .bottom .left p {
+              white-space: nowrap;
+              position: absolute;
+              top: 50%;
+              left: 200%;
+              transform: translate(-50%, -50%); }
+            .create-page .create-section .create-box .mid .bottom .left i {
+              margin-left: 10px;
+              font-size: 20px;
+              color: #1a73e8; }
+          .create-page .create-section .create-box .mid .bottom .right {
+            float: right; }
+            .create-page .create-section .create-box .mid .bottom .right .btn {
+              font-size: 14px;
+              background-color: #1a73e8;
+              color: white;
+              padding: 10px 15px;
+              border-radius: 2px; }
 
 * {
   scroll-behavior: smooth;

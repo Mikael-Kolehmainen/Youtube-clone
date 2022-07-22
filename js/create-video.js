@@ -6,6 +6,7 @@ function checkValue() {
         errorTag.innerText = "The file couldn't be uploaded";
     } else {
         showDetailsStage();
+        showNav();
     }
 }
 // MAKE SHOWNEXTSTAGE INSTEAD LESS CODE, ONCLICK EVENTS ON BTNS TELL WHAT STAGE

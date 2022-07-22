@@ -22,7 +22,7 @@
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>
                         <!-- UPLOAD STAGE -->
-                        <div id='upload-stage' style='display: block;'>
+                        <div id='upload-stage' style='display: none;'>
                             <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();'>
                             <div class='info'>
                                 <p id='error'></p>
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <!-- DETAILS STAGE -->
-                        <div id='details-stage' style='display: none;'>
+                        <div id='details-stage' style='display: block;'>
                             <div class='timeline'>
 
                             </div>
@@ -97,13 +97,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='bottom' id='nav' style='display: none;'>
-                            <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
-                            <i class=''></i>
-                            <i class=''></i>
-                            <i class=''></i>
-                            <p>Processing HD (not really ;))</p>
-                            <a href='#' onclick='' class='btn'>NEXT</a>
+                        <div class='bottom' id='nav' style='display: block;'>
+                            <div class='left'>
+                                <i class='fa-solid fa-arrow-up-from-bracket' title='Video upload complete'></i>
+                                <i class='fa-solid fa-hard-drive' title='Video processing'></i>
+                                <i class='fa-solid fa-square-check' title='Copyright check complete'></i>
+                                <p>Processing HD (not really ;))</p>
+                            </div>
+                            <div class='right'>
+                                <a href='#' onclick='' class='btn'>NEXT</a>
+                                <a href='#' onclick='' class='btn' style='display: none;'>BACK</a>
+                            </div>
                         </div>
                     </form>
                 </div>
