@@ -46,15 +46,15 @@
                                         <a href='#' id='reuse'>REUSE DETAILS</a>
                                     </div>
                                     <div class='input'>
-                                        <label for='title'>Title (required)</label>
                                         <i class='fa-solid fa-circle-question'></i>
                                         <input type='text' name='title' required placeholder='Add a title that describes your video (type @ to mention a channel)'>
+                                        <label for='title'>Title (required)</label>
                                         <p>0/100</p>
                                     </div>
-                                    <div class='input'>
-                                        <label for='desc'>Description</label>
+                                    <div class='input' id='desc'>
                                         <i class='fa-solid fa-circle-question'></i>
                                         <input type='text' name='desc' placeholder='Tell viewers about your video (type @ to mention a channel)'>
+                                        <label for='desc'>Description</label>
                                         <p>0/5000</p>
                                     </div>
                                     <div class='thumbnail'>
