@@ -242,7 +242,7 @@
                 
                                     &:hover {
                                         cursor: pointer;
-                                        background-color: $main-border-color;
+                                        background-color: $gray-background-color;
     
                                         &::after {
                                             color: $third-font-color;
@@ -293,7 +293,63 @@
                                 }
                             }
                             .audience {
-                                
+                                .choice {
+                                    text-align: left;
+                                    margin-bottom: 8px;
+
+                                    p {
+                                        display: inline-block;
+                                        font-weight: bold;
+
+                                        &:first-child {
+                                            color: $third-font-color;
+                                        }
+                                        &:last-child {
+                                            font-size: 12px;
+                                            margin-left: 10px;
+                                            background-color: $gray-background-color;
+                                        }
+                                    }
+                                }
+                                .radio-buttons {
+                                    text-align: left;
+
+                                    label {
+                                        font-size: 15px;
+                                        margin-left: 10px;
+                                        cursor: pointer;
+                                    }
+                                    input[type=radio] {
+                                        margin-top: 10px;
+                                        margin-bottom: 10px;
+                                        -ms-transform: scale(1.5);
+                                        -webkit-transform: scale(1.5);
+                                        transform: scale(1.5);
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            .restriction {
+                                text-align: left;
+                                margin-top: 24px;
+                                margin-bottom: 24px;
+                                cursor: pointer;
+
+                                p, i {
+                                    color: $third-font-color;
+                                }
+                                p {
+                                    margin-left: 10px;
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                    display: inline-block;
+                                }
+                            }
+                            .more {
+                                font-size: 14px;
+                                text-align: left;
+                                margin-bottom: 8px;
+                                font-weight: bold;
                             }
                         }
                         .video-player {

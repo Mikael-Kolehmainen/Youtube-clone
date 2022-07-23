@@ -75,17 +75,21 @@
                                     </div>
                                     <div class='audience'>
                                         <h2>Audience (not available)</h2>
-                                        <p>This video is set to not made for kids</p><p>Set by you</p>
+                                        <div class='choice'>
+                                            <p>This video is set to not made for kids</p><p>Set by you</p>
+                                        </div>
                                         <p>Regardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are made for kids.<a href='#'>What's content made for kids?</a></p>
-                                        <input type='radio' name='for_kids' value='yes'id='yes'><label for='yes'>Yes, it's made for kids</label>
-                                        <input type='radio' name='for_kids' value='no' id='no'><label for='no'>No, it's not made for kids</label>
+                                        <div class='radio-buttons'>
+                                            <input type='radio' name='for_kids' value='yes'id='yes'><label for='yes'>Yes, it's made for kids</label><br>
+                                            <input type='radio' name='for_kids' value='no' id='no'><label for='no'>No, it's not made for kids</label>
+                                        </div>
                                         <div class='restriction'>
                                             <i class='fa-solid fa-angle-down'></i>
                                             <p>Age restriction (advanced)</p>
                                         </div>
                                     </div>
-                                    <a href='#'>SHOW MORE</a>
-                                    <p>Paid promotion, tags, subtitles, and more</p>
+                                    <a href='#' class='more'>SHOW MORE</a>
+                                    <p style='margin-bottom: 50px;'>Paid promotion, tags, subtitles, and more</p>
                                 </div>
                                 <div class='video-player'>
                                     <div class='player'>

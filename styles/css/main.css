@@ -75,7 +75,7 @@ header {
         padding-top: 10px;
         padding-bottom: 10px; }
         header nav .navLinks .item:hover {
-          background-color: #d5d5d5; }
+          background-color: rgba(0, 0, 0, 0.06); }
         header nav .navLinks .item p {
           padding-top: 0;
           margin-right: 0;
@@ -290,7 +290,7 @@ header {
       padding-top: 10px;
       padding-bottom: 10px; }
       header .profile .item:hover, header .video .item:hover {
-        background-color: #d5d5d5; }
+        background-color: rgba(0, 0, 0, 0.06); }
       header .profile .item p, header .video .item p {
         padding-top: 0;
         margin-right: 0;
@@ -928,7 +928,7 @@ footer {
                   font-size: 0; }
                   .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover {
                     cursor: pointer;
-                    background-color: #d5d5d5; }
+                    background-color: rgba(0, 0, 0, 0.06); }
                     .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover::after {
                       color: #0d0d0d; }
                   .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input::after {
@@ -965,6 +965,48 @@ footer {
                     border-color: #0d0d0d; }
                 .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists p {
                   margin-bottom: 8px; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice {
+                text-align: left;
+                margin-bottom: 8px; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p {
+                  display: inline-block;
+                  font-weight: bold; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p:first-child {
+                    color: #0d0d0d; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p:last-child {
+                    font-size: 12px;
+                    margin-left: 10px;
+                    background-color: rgba(0, 0, 0, 0.06); }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons {
+                text-align: left; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons label {
+                  font-size: 15px;
+                  margin-left: 10px;
+                  cursor: pointer; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons input[type=radio] {
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+                  -ms-transform: scale(1.5);
+                  -webkit-transform: scale(1.5);
+                  transform: scale(1.5);
+                  cursor: pointer; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction {
+                text-align: left;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                cursor: pointer; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction p, .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction i {
+                  color: #0d0d0d; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction p {
+                  margin-left: 10px;
+                  font-weight: bold;
+                  font-size: 15px;
+                  display: inline-block; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .more {
+                font-size: 14px;
+                text-align: left;
+                margin-bottom: 8px;
+                font-weight: bold; }
             .create-page .create-section .create-box .mid #details-stage .details .video-player {
               width: 32%;
               margin-top: 45px; }
