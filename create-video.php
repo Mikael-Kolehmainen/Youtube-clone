@@ -67,6 +67,7 @@
                                         <h2>Playlists (not available)</h2>
                                         <p>Add your video to one or more playlists. Playlists can help viewers discover your content faster. <a href='#'>Learn more</a></p>
                                         <select name='playlist'>
+                                            <option value='' selected disabled hidden>Select</option>
                                             <option value='p-1'>Playlist 1</option>
                                             <option value='p-2'>Playlist 2</option>
                                             <option value='p-3'>Playlist 3</option>

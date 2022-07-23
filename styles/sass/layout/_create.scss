@@ -126,7 +126,7 @@
                         h2 {
                             text-align: left;
                             font-weight: bold;
-                            font-size: 15px;
+                            font-size: 14px;
                             margin-bottom: 8px;
                         }
                         p {
@@ -194,7 +194,10 @@
                                     border-radius: 5px;
                                     border: 1px solid $darker-main-border-color;
                                     font-size: 15px;
-
+                                    
+                                    &:hover {
+                                        border-color: $third-font-color;
+                                    }
                                     &:focus {
                                         outline: none !important;
                                         border: 1px solid $sign-link-font-color;
@@ -202,9 +205,6 @@
                                         &+label {
                                             color: $sign-link-font-color;
                                         }
-                                    }
-                                    &:hover {
-                                        border-color: $third-font-color;
                                     }
                                 }
                                 &#desc {
@@ -228,6 +228,9 @@
                                 margin-bottom: 24px;
                                 position: relative;
 
+                                p {
+                                    margin-bottom: 8px;
+                                }
                                 .thumbnail-input {
                                     position: relative;
                                     display: block;
@@ -264,6 +267,33 @@
                                     z-index: 2;
                                     color: $secondary-font-color;
                                 }
+                            }
+                            .playlists {
+                                margin-bottom: 24px;
+
+                                select {
+                                    width: 260px;
+                                    height: 48px;
+                                    float: left;
+                                    color: $secondary-font-color;
+                                    border: 1px solid $darker-main-border-color;
+                                    background-color: white;
+                                    border-radius: 5px;
+                                    font-size: 15px;
+                                    padding-left: 7px;
+                                    padding-right: 7px;
+
+                                    &:hover {
+                                        cursor: pointer;
+                                        border-color: $third-font-color;
+                                    }
+                                }
+                                p {
+                                    margin-bottom: 8px;
+                                }
+                            }
+                            .audience {
+                                
                             }
                         }
                         .video-player {
