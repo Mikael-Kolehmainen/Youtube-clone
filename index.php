@@ -1,6 +1,7 @@
 <!-- 6 -->
 <!-- Upload video function -->
     <!-- CREATE TIMELINE IN UPLOAD VIDEO -->
+    <!-- Current task: Finish timeline -->
 
 <!-- 7 -->
 <!-- HOW TO USE TUTORIAL TO GITHUB REPO -->
