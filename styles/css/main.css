@@ -830,14 +830,35 @@ footer {
           overflow-y: scroll;
           overflow-x: hidden; }
           .create-page .create-section .create-box .mid #details-stage .timeline {
-            height: 80px;
-            width: 100%; }
+            height: 64px;
+            width: 880px;
+            position: fixed;
+            background-color: white;
+            z-index: 99;
+            padding-top: 8px;
+            padding-bottom: 8px; }
+            .create-page .create-section .create-box .mid #details-stage .timeline a {
+              text-align: center;
+              display: inline-block;
+              width: 128px;
+              height: 18px;
+              padding-top: 23px;
+              padding-bottom: 23px;
+              font-size: 14px;
+              color: #065fd4;
+              border-radius: 4px;
+              margin-left: 42px;
+              margin-right: 42px;
+              font-weight: bold; }
+              .create-page .create-section .create-box .mid #details-stage .timeline a:hover {
+                background-color: rgba(6, 95, 212, 0.2); }
           .create-page .create-section .create-box .mid #details-stage .details {
             height: 718px;
             width: 100%;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+            margin-top: 80px; }
             .create-page .create-section .create-box .mid #details-stage .details h2 {
               text-align: left;
               font-weight: bold;
@@ -1035,12 +1056,12 @@ footer {
             .create-page .create-section .create-box .mid .bottom .left i {
               margin-left: 10px;
               font-size: 20px;
-              color: #1a73e8; }
+              color: #065fd4; }
           .create-page .create-section .create-box .mid .bottom .right {
             float: right; }
             .create-page .create-section .create-box .mid .bottom .right .btn {
               font-size: 14px;
-              background-color: #1a73e8;
+              background-color: #065fd4;
               color: white;
               padding: 10px 15px;
               border-radius: 2px; }

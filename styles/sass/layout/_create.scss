@@ -113,8 +113,32 @@
                     overflow-x: hidden;
 
                     .timeline {
-                        height: 80px;
-                        width: 100%;
+                        height: 64px;
+                        width: 880px;
+                        position: fixed;
+                        background-color: white;
+                        z-index: 99;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+
+                        a {
+                            text-align: center;
+                            display: inline-block;
+                            width: 128px;
+                            height: 18px;
+                            padding-top: 23px;
+                            padding-bottom: 23px;
+                            font-size: 14px;
+                            color: $sign-main-color;
+                            border-radius: 4px;
+                            margin-left: 42px;
+                            margin-right: 42px;
+                            font-weight: bold;
+
+                            &:hover {
+                                background-color: $timeline-hover-background-color;
+                            }
+                        }
                     }
                     .details {
                         height: 718px;
@@ -122,6 +146,7 @@
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
+                        margin-top: 80px;
                         
                         h2 {
                             text-align: left;
@@ -387,7 +412,7 @@
                         i {
                             margin-left: 10px;
                             font-size: 20px;
-                            color: $sign-link-font-color;
+                            color: $sign-main-color;
                         }
                     }
                     .right {
@@ -395,7 +420,7 @@
 
                         .btn {
                             font-size: 14px;
-                            background-color: $sign-link-font-color;
+                            background-color: $sign-main-color;
                             color: white;
                             padding: 10px 15px;
                             border-radius: 2px;
