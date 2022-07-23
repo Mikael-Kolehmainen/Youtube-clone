@@ -60,7 +60,8 @@
                                     <div class='thumbnail'>
                                         <h2>Thumbnail</h2>
                                         <p>Select or upload a picture that shows what's in your video. A good thumbnail stands out and draws viewers' attention. <a href='#'>Learn more</a></p>
-                                        <input type='file' name='thumbnail' accept='image/png,image/jpeg,image/*'>
+                                        <i class='fa-solid fa-image img-icon'></i>
+                                        <input type='file' name='thumbnail' accept='image/png,image/jpeg,image/*' class='thumbnail-input'>
                                     </div>
                                     <div class='playlists'>
                                         <h2>Playlists (not available)</h2>

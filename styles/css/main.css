@@ -826,7 +826,9 @@ footer {
         .create-page .create-section .create-box .mid #details-stage {
           height: 797px;
           margin-left: 40px;
-          margin-right: 40px; }
+          margin-right: 40px;
+          overflow-y: scroll;
+          overflow-x: hidden; }
           .create-page .create-section .create-box .mid #details-stage .timeline {
             height: 80px;
             width: 100%; }
@@ -836,6 +838,15 @@ footer {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap; }
+            .create-page .create-section .create-box .mid #details-stage .details h2 {
+              text-align: left;
+              font-weight: bold;
+              font-size: 15px;
+              margin-bottom: 8px; }
+            .create-page .create-section .create-box .mid #details-stage .details p {
+              text-align: left;
+              font-size: 13px;
+              line-height: 20px; }
             .create-page .create-section .create-box .mid #details-stage .details .video-info, .create-page .create-section .create-box .mid #details-stage .details .video-player {
               display: flex;
               flex-direction: column;
@@ -900,6 +911,38 @@ footer {
                   top: 90%; }
                 .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc input {
                   padding-bottom: 120px; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail {
+                margin-bottom: 24px;
+                position: relative; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input {
+                  position: relative;
+                  display: block;
+                  border-radius: 5px;
+                  width: 127px;
+                  height: 68px;
+                  border: 2px solid #e6e6e6;
+                  font-size: 0; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover {
+                    cursor: pointer;
+                    background-color: #d5d5d5; }
+                    .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover::after {
+                      color: #0d0d0d; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input::after {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: fit-content;
+                    font-size: 12px;
+                    color: #606060;
+                    content: "Upload thumbnail"; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .img-icon {
+                  position: absolute;
+                  top: 65%;
+                  left: 12%;
+                  transform: translate(-50%, -50%);
+                  z-index: 2;
+                  color: #606060; }
             .create-page .create-section .create-box .mid #details-stage .details .video-player {
               width: 32%;
               margin-top: 45px; }

@@ -58,7 +58,7 @@
                     font-weight: normal;
                     font-size: 14px;
                     margin-bottom: 5px;
-                    color: #0d0d0d;
+                    color: $third-font-color;
                 }
                 p {
                     font-size: 12px;
@@ -109,6 +109,8 @@
                     height: 797px;
                     margin-left: 40px;
                     margin-right: 40px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
 
                     .timeline {
                         height: 80px;
@@ -120,7 +122,18 @@
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
-    
+                        
+                        h2 {
+                            text-align: left;
+                            font-weight: bold;
+                            font-size: 15px;
+                            margin-bottom: 8px;
+                        }
+                        p {
+                            text-align: left;
+                            font-size: 13px;
+                            line-height: 20px;
+                        }
                         .video-info, .video-player {
                             display: flex;
                             flex-direction: column;
@@ -206,6 +219,47 @@
                                     input {
                                         padding-bottom: 120px;
                                     }
+                                }
+                            }
+                            .thumbnail {
+                                margin-bottom: 24px;
+                                position: relative;
+
+                                .thumbnail-input {
+                                    position: relative;
+                                    display: block;
+                                    border-radius: 5px;
+                                    width: 127px;
+                                    height: 68px;
+                                    border: 2px solid $lighter-main-border-color;
+                                    font-size: 0;
+                
+                                    &:hover {
+                                        cursor: pointer;
+                                        background-color: $main-border-color;
+    
+                                        &::after {
+                                            color: $third-font-color;
+                                        }
+                                    }
+                                    &::after {
+                                        position: absolute;
+                                        top: 70%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        width: fit-content;
+                                        font-size: 12px;
+                                        color: $secondary-font-color;
+                                        content: "Upload thumbnail";
+                                    }
+                                }
+                                .img-icon {
+                                    position: absolute;
+                                    top: 65%;
+                                    left: 12%;
+                                    transform: translate(-50%, -50%);
+                                    z-index: 2;
+                                    color: $secondary-font-color;
                                 }
                             }
                         }
