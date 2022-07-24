@@ -127,6 +127,7 @@
                             
                             .line {
                                 position: relative;
+                                z-index: -1;
                                 
                                 &::before {
                                     content: "";

@@ -841,7 +841,8 @@ footer {
               width: 100%;
               height: 1px; }
               .create-page .create-section .create-box .mid #details-stage .timeline .lines .line {
-                position: relative; }
+                position: relative;
+                z-index: -1; }
                 .create-page .create-section .create-box .mid #details-stage .timeline .lines .line::before {
                   content: "";
                   position: absolute;
