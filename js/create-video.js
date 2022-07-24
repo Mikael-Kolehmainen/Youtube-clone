@@ -3,12 +3,26 @@ function checkValue() {
 
     if (inputField.files.length == 0) {
         errorTag = document.getElementById("error");
-        errorTag.innerText = "The file couldn't be uploaded";
+        errorTag.innerText = "The file couldn't be uploaded, try again.";
     } else {
-        showNextStage("upload", "details");
+        showNextStage("details");
     }
 }
-function showNextStage(currentStageName, nextStageName) {
+
+// Save currentstage in localStorage instead of the link and when the forward and backwards 
+// buttons are clicked check localstorage to know last location
+
+function showNextStage(nextStageName = "") {
+    if (window.location.href.includes("#")) {
+        splitUrl = window.location.href.split("#");
+        if (splitUrl[1] == "") {
+            currentStageName = "upload";
+        } else {
+            currentStageName = splitUrl[1];
+        }
+    } else {
+        currentStageName = "upload";
+    }
     currentStageName = currentStageName.toLowerCase();
     nextStageName = nextStageName.toLowerCase();
     idSuffix = "-stage";

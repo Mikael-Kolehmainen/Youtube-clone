@@ -26,10 +26,10 @@
                         <div class='line'></div>
                         <div class='line'></div>
                     </div>
-                    <a href='#' class='active'>Details</a>
-                    <a href='#'>Video elements</a>
-                    <a href='#'>Checks</a>
-                    <a href='#'>Visibility</a>
+                    <a href='#details' class='active' onclick='showNextStage("details")'>Details</a>
+                    <a href='#elements' onclick='showNextStage("elements")'>Video elements</a>
+                    <a href='#checks' onclick='showNextStage("checks")'>Checks</a>
+                    <a href='#visibility' onclick='showNextStage("visibility")'>Visibility</a>
                 </div>
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>
@@ -115,7 +115,15 @@
                             </div>
                         </div>
                         <!-- ELEMENTS STAGE -->
-                        <div id='element-stage' style='display: none'>
+                        <div id='elements-stage' style='display: none'>
+
+                        </div>
+                        <!-- CHECKS STAGE -->
+                        <div id='checks-stage' style='display: none'>
+
+                        </div>
+                        <!-- VISIBILITY STAGE -->
+                        <div id='visibility-stage' style='display: none'>
 
                         </div>
                         <div class='bottom' id='nav' style='display: none;'>
@@ -126,7 +134,7 @@
                                 <p>Processing HD (not really ;))</p>
                             </div>
                             <div class='right'>
-                                <a href='#' onclick='' class='btn'>NEXT</a>
+                                <a href='#' onclick='showNextStage()' class='btn'>NEXT</a>
                                 <a href='#' onclick='' class='btn' style='display: none;'>BACK</a>
                             </div>
                         </div>
