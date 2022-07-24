@@ -87,22 +87,42 @@
 
                         &:nth-child(1) {
                             &::before {
-                                left: 11.2%;
+                                left: 11.5%;
+                            }
+                            &.active {
+                                &::before {
+                                    left: 11.2%;
+                                }
                             }
                         }
                         &:nth-child(2) {
                             &::before {
                                 left: 36.5%;
                             }
+                            &.active {
+                                &::before {
+                                    left: 36.2%;
+                                }
+                            }
                         }
                         &:nth-child(3) {
                             &::before {
                                 left: 61.8%;
                             }
+                            &.active {
+                                &::before {
+                                    left: 61.5%;
+                                }
+                            }
                         }
                         &:nth-child(4) {
                             &::before {
                                 left: 87.1%;
+                            }
+                            &.active {
+                                &::before {
+                                    left: 86.8%;
+                                }
                             }
                         }
                         &.active {

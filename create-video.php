@@ -21,15 +21,15 @@
                 </div>
                 <div class='timeline' id='timeline' style='display: none'>
                     <div class='lines'>
-                        <div class='line active'></div>
-                        <div class='line'></div>
-                        <div class='line'></div>
-                        <div class='line'></div>
+                        <div class='line active' id='details-line'></div>
+                        <div class='line' id='elements-line'></div>
+                        <div class='line' id='checks-line'></div>
+                        <div class='line' id='visibility-line'></div>
                     </div>
-                    <a href='#' class='active' onclick='showNextStage("details")'>Details</a>
-                    <a href='#' onclick='showNextStage("elements")'>Video elements</a>
-                    <a href='#' onclick='showNextStage("checks")'>Checks</a>
-                    <a href='#' onclick='showNextStage("visibility")'>Visibility</a>
+                    <a href='#' class='active' id='details-link' onclick='showNextStage("details")'>Details</a>
+                    <a href='#' id='elements-link' onclick='showNextStage("elements")'>Video elements</a>
+                    <a href='#' id='checks-link' onclick='showNextStage("checks")'>Checks</a>
+                    <a href='#' id='visibility-link' onclick='showNextStage("visibility")'>Visibility</a>
                 </div>
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>

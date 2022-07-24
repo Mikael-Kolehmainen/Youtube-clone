@@ -41,7 +41,6 @@ function showNextStage(nextStageName = "") {
     }
     currentStageName = currentStageName.toLowerCase();
     nextStageName = nextStageName.toLowerCase();
-    idSuffix = "-stage";
     // SHOW NAV & TIMELINE WHEN THE VIDEO FILE HAS BEEN ACCEPTED
     if (currentStageName == "upload") {
         navBar = document.getElementById("nav");
@@ -51,11 +50,23 @@ function showNextStage(nextStageName = "") {
         timeline.style.display = "block";
     }
     // HIDE CURRENT STAGE
-    currentStage = document.getElementById(currentStageName+idSuffix);
+    currentStage = document.getElementById(currentStageName+"-stage");
     currentStage.style.display = "none";
     // SHOW NEXT STAGE
-    nextStage = document.getElementById(nextStageName+idSuffix);
+    nextStage = document.getElementById(nextStageName+"-stage");
     nextStage.style.display = "block";
+    // UPDATE NAVIGATION/TIMELINE
+    if (currentStageName != "upload") {
+        currentStageLink = document.getElementById(currentStageName+"-link");
+        currentStageLink.classList.remove("active");
+        nextStageLink = document.getElementById(nextStageName+"-link");
+        nextStageLink.classList.add("active");
+
+        currentStageLine = document.getElementById(currentStageName+"-line");
+        currentStageLine.classList.remove("active");
+        nextStageLine = document.getElementById(nextStageName+"-line");
+        nextStageLine.classList.add("active");
+    }
 
     localStorage.setItem("currentStageName", nextStageName);
 }
