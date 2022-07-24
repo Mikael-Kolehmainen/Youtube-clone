@@ -1,10 +1,14 @@
 <!-- 6 -->
 <!-- Upload video function -->
-    <!-- CREATE TIMELINE IN UPLOAD VIDEO -->
-    <!-- Current task: Finish timeline -->
+    <!-- Finish timeline -->
         <!-- onclick move active class to next line -->
 
+    <!-- video player function -->
+
 <!-- 7 -->
+<!-- The place where you can watch the video -->
+
+<!-- 8 -->
 <!-- HOW TO USE TUTORIAL TO GITHUB REPO -->
 
 <!DOCTYPE html>
