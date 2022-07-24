@@ -2,6 +2,7 @@
 <!-- Upload video function -->
     <!-- CREATE TIMELINE IN UPLOAD VIDEO -->
     <!-- Current task: Finish timeline -->
+        <!-- onclick move active class to next line -->
 
 <!-- 7 -->
 <!-- HOW TO USE TUTORIAL TO GITHUB REPO -->

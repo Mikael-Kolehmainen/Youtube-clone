@@ -38,12 +38,12 @@
                         <div id='details-stage' style='display: block;'>
                             <div class='timeline'>
                                 <div class='lines'>
-                                    <div class='line'></div>
+                                    <div class='line active'></div>
                                     <div class='line'></div>
                                     <div class='line'></div>
                                     <div class='line'></div>
                                 </div>
-                                <a href='#'>Details</a>
+                                <a href='#' class='active'>Details</a>
                                 <a href='#'>Video elements</a>
                                 <a href='#'>Checks</a>
                                 <a href='#'>Visibility</a>
