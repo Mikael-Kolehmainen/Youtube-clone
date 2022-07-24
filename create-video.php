@@ -134,8 +134,9 @@
                                 <p>Processing HD (not really ;))</p>
                             </div>
                             <div class='right'>
+                                <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
+                                <a href='#' onclick='' class='btn back' style='display: inline-block;'>BACK</a>
                                 <a href='#' onclick='showNextStage()' class='btn'>NEXT</a>
-                                <a href='#' onclick='' class='btn' style='display: none;'>BACK</a>
                             </div>
                         </div>
                     </form>

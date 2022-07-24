@@ -1,7 +1,9 @@
 <!-- 6 -->
 <!-- Upload video function -->
     <!-- Finish timeline -->
-        <!-- onclick move active class to next line -->
+        <!-- back button -->
+            <!-- hide on details stage -->
+            <!-- functionality -->
 
     <!-- video player function -->
 
