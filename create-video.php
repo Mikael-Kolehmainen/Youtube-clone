@@ -109,7 +109,7 @@
                                             <p>Filename</p>
                                             <p></p>
                                         </div>
-                                        <i class='fa-solid fa-copy'></i>
+                                        <i class='fa-solid fa-copy' title='Copy video link'></i>
                                     </div>
                                 </div>
                             </div>

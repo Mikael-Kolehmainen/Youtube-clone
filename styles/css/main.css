@@ -1071,7 +1071,37 @@ footer {
                 font-weight: bold; }
             .create-page .create-section .create-box .mid #details-stage .details .video-player {
               width: 32%;
-              margin-top: 45px; }
+              margin-top: 49px; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-player .player {
+                background-color: rgba(0, 0, 0, 0.06);
+                position: relative; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left {
+                  width: 80%; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left p, .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left a {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                    width: fit-content; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left p {
+                    font-size: 12px;
+                    margin-top: 12px; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left a {
+                    display: block;
+                    text-align: left;
+                    font-size: 15px;
+                    padding-bottom: 5px; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-player .player i {
+                  font-size: 20px;
+                  position: absolute;
+                  left: 90%;
+                  top: 70%;
+                  transform: translate(-50%, -50%);
+                  color: #606060; }
+                  .create-page .create-section .create-box .mid #details-stage .details .video-player .player i:hover {
+                    cursor: pointer;
+                    color: #030303; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-player .player video {
+                  width: 100%;
+                  height: 157px; }
         .create-page .create-section .create-box .mid .bottom {
           height: 20px;
           width: 940px;
