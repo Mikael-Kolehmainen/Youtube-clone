@@ -202,13 +202,14 @@
                         cursor: pointer;
                     }
                 }
-                #details-stage {
+                #details-stage, #elements-stage, #checks-stage, #visibility-stage {
                     height: 797px;
                     margin-left: 40px;
                     margin-right: 40px;
                     overflow-y: scroll;
                     overflow-x: hidden;
-
+                }
+                #details-stage {
                     .details {
                         height: 718px;
                         width: 100%;

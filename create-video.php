@@ -26,10 +26,10 @@
                         <div class='line'></div>
                         <div class='line'></div>
                     </div>
-                    <a href='#details' class='active' onclick='showNextStage("details")'>Details</a>
-                    <a href='#elements' onclick='showNextStage("elements")'>Video elements</a>
-                    <a href='#checks' onclick='showNextStage("checks")'>Checks</a>
-                    <a href='#visibility' onclick='showNextStage("visibility")'>Visibility</a>
+                    <a href='#' class='active' onclick='showNextStage("details")'>Details</a>
+                    <a href='#' onclick='showNextStage("elements")'>Video elements</a>
+                    <a href='#' onclick='showNextStage("checks")'>Checks</a>
+                    <a href='#' onclick='showNextStage("visibility")'>Visibility</a>
                 </div>
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>

@@ -5,23 +5,39 @@ function checkValue() {
         errorTag = document.getElementById("error");
         errorTag.innerText = "The file couldn't be uploaded, try again.";
     } else {
+        localStorage.clear();
         showNextStage("details");
     }
 }
 
-// Save currentstage in localStorage instead of the link and when the forward and backwards 
-// buttons are clicked check localstorage to know last location
+// Create a back button
 
 function showNextStage(nextStageName = "") {
-    if (window.location.href.includes("#")) {
-        splitUrl = window.location.href.split("#");
-        if (splitUrl[1] == "") {
-            currentStageName = "upload";
-        } else {
-            currentStageName = splitUrl[1];
-        }
+    currentStageName = localStorage.getItem("currentStageName");
+
+    if (localStorage.getItem("currentStageName") != null) {
+        currentStageName = localStorage.getItem("currentStageName");
     } else {
         currentStageName = "upload";
+    }
+    if (nextStageName == "") {
+        switch (currentStageName) {
+            case "upload":
+                nextStageName = "details";
+                break;
+            case "details":
+                nextStageName = "elements";
+                break;
+            case "elements":
+                nextStageName = "checks";
+                break;
+            case "checks":
+                nextStageName = "visibility";
+                break;
+            default:
+                nextStageName = "upload";
+                break;
+        }
     }
     currentStageName = currentStageName.toLowerCase();
     nextStageName = nextStageName.toLowerCase();
@@ -40,4 +56,6 @@ function showNextStage(nextStageName = "") {
     // SHOW NEXT STAGE
     nextStage = document.getElementById(nextStageName+idSuffix);
     nextStage.style.display = "block";
+
+    localStorage.setItem("currentStageName", nextStageName);
 }
