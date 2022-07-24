@@ -19,11 +19,23 @@
                         <i class='fa-solid fa-circle-exclamation'></i>
                     </a>
                 </div>
+                <div class='timeline' id='timeline' style='display: none'>
+                    <div class='lines'>
+                        <div class='line active'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                    <a href='#' class='active'>Details</a>
+                    <a href='#'>Video elements</a>
+                    <a href='#'>Checks</a>
+                    <a href='#'>Visibility</a>
+                </div>
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>
                         <!-- UPLOAD STAGE -->
-                        <div id='upload-stage' style='display: none;'>
-                            <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();'>
+                        <div id='upload-stage' style='display: block;'>
+                            <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();' required>
                             <div class='info'>
                                 <p id='error'></p>
                                 <h2>Drag and drop video files to upload (not available, please click the icon)</h2>
@@ -35,19 +47,7 @@
                             </div>
                         </div>
                         <!-- DETAILS STAGE -->
-                        <div id='details-stage' style='display: block;'>
-                            <div class='timeline'>
-                                <div class='lines'>
-                                    <div class='line active'></div>
-                                    <div class='line'></div>
-                                    <div class='line'></div>
-                                    <div class='line'></div>
-                                </div>
-                                <a href='#' class='active'>Details</a>
-                                <a href='#'>Video elements</a>
-                                <a href='#'>Checks</a>
-                                <a href='#'>Visibility</a>
-                            </div>
+                        <div id='details-stage' style='display: none;'>
                             <div class='details'>
                                 <div class='video-info'>
                                     <div class='title'>
@@ -114,7 +114,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='bottom' id='nav' style='display: block;'>
+                        <!-- ELEMENTS STAGE -->
+                        <div id='element-stage' style='display: none'>
+
+                        </div>
+                        <div class='bottom' id='nav' style='display: none;'>
                             <div class='left'>
                                 <i class='fa-solid fa-arrow-up-from-bracket' title='Video upload complete'></i>
                                 <i class='fa-solid fa-hard-drive' title='Video processing'></i>

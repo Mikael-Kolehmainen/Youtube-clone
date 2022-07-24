@@ -5,20 +5,25 @@ function checkValue() {
         errorTag = document.getElementById("error");
         errorTag.innerText = "The file couldn't be uploaded";
     } else {
-        showDetailsStage();
-        showNav();
+        showNextStage("upload", "details");
     }
 }
-// MAKE SHOWNEXTSTAGE INSTEAD LESS CODE, ONCLICK EVENTS ON BTNS TELL WHAT STAGE
-function showDetailsStage() {
-    // HIDE PREVIOUS STAGE
-    uploadStage = document.getElementById("upload-stage");
-    uploadStage.style.display = "none";
-    // SHOW CURRENT STAGE
-    detailsStage = document.getElementById("details-stage");
-    detailsStage.style.display = "block";
-}
-function showNav() {
-    navBar = document.getElementById("nav");
-    navBar.style.display = "block";
+function showNextStage(currentStageName, nextStageName) {
+    currentStageName = currentStageName.toLowerCase();
+    nextStageName = nextStageName.toLowerCase();
+    idSuffix = "-stage";
+    // SHOW NAV & TIMELINE WHEN THE VIDEO FILE HAS BEEN ACCEPTED
+    if (currentStageName == "upload") {
+        navBar = document.getElementById("nav");
+        navBar.style.display = "block";
+
+        timeline = document.getElementById("timeline");
+        timeline.style.display = "block";
+    }
+    // HIDE CURRENT STAGE
+    currentStage = document.getElementById(currentStageName+idSuffix);
+    currentStage.style.display = "none";
+    // SHOW NEXT STAGE
+    nextStage = document.getElementById(nextStageName+idSuffix);
+    nextStage.style.display = "block";
 }
