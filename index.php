@@ -2,7 +2,6 @@
 <!-- Upload video function -->
     <!-- Finish timeline -->
         <!-- back button -->
-            <!-- hide on details stage -->
             <!-- functionality -->
 
     <!-- video player function -->

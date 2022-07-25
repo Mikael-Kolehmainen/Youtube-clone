@@ -10,6 +10,8 @@ function checkValue() {
     }
 }
 
+// inline-block;
+
 // Create a back button
 
 function showNextStage(nextStageName = "") {
@@ -48,6 +50,13 @@ function showNextStage(nextStageName = "") {
 
         timeline = document.getElementById("timeline");
         timeline.style.display = "block";
+    }
+    // HIDE BACK BUTTON IF ON DETAILS STAGE
+    backBtn = document.getElementById("back-btn");
+    if (nextStageName == "details") {
+        backBtn.style.display = "none";
+    } else {
+        backBtn.style.display = "inline-block";
     }
     // HIDE CURRENT STAGE
     currentStage = document.getElementById(currentStageName+"-stage");
