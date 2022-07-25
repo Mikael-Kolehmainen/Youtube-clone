@@ -135,8 +135,8 @@
                             </div>
                             <div class='right'>
                                 <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
-                                <a href='#' onclick='' class='btn back' id='back-btn' style='display: inline-block'>BACK</a>
-                                <a href='#' onclick='showNextStage()' class='btn'>NEXT</a>
+                                <a href='#' onclick='showNextStage("", false)' class='btn back' id='back-btn' style='display: inline-block'>BACK</a>
+                                <a href='#' onclick='showNextStage("", true)' class='btn'>NEXT</a>
                             </div>
                         </div>
                     </form>

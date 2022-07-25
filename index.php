@@ -1,8 +1,7 @@
 <!-- 6 -->
 <!-- Upload video function -->
     <!-- Finish timeline -->
-        <!-- back button -->
-            <!-- functionality -->
+        <!-- some minor details -->
 
     <!-- video player function -->
 

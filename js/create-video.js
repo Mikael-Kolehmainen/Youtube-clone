@@ -9,12 +9,7 @@ function checkValue() {
         showNextStage("details");
     }
 }
-
-// inline-block;
-
-// Create a back button
-
-function showNextStage(nextStageName = "") {
+function showNextStage(nextStageName = "", forward = true) {
     currentStageName = localStorage.getItem("currentStageName");
 
     if (localStorage.getItem("currentStageName") != null) {
@@ -23,22 +18,39 @@ function showNextStage(nextStageName = "") {
         currentStageName = "upload";
     }
     if (nextStageName == "") {
-        switch (currentStageName) {
-            case "upload":
-                nextStageName = "details";
-                break;
-            case "details":
-                nextStageName = "elements";
-                break;
-            case "elements":
-                nextStageName = "checks";
-                break;
-            case "checks":
-                nextStageName = "visibility";
-                break;
-            default:
-                nextStageName = "upload";
-                break;
+        if (forward) {
+            switch (currentStageName) {
+                case "upload":
+                    nextStageName = "details";
+                    break;
+                case "details":
+                    nextStageName = "elements";
+                    break;
+                case "elements":
+                    nextStageName = "checks";
+                    break;
+                case "checks":
+                    nextStageName = "visibility";
+                    break;
+                default:
+                    nextStageName = "upload";
+                    break;
+            }
+        } else {
+            switch (currentStageName) {
+                case "elements":
+                    nextStageName = "details";
+                    break;
+                case "checks":
+                    nextStageName = "elements";
+                    break;
+                case "visibility":
+                    nextStageName = "checks";
+                    break;
+                default:
+                    nextStageName = "upload";
+                    break;
+            }
         }
     }
     currentStageName = currentStageName.toLowerCase();
