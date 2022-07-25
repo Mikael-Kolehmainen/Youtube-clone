@@ -102,7 +102,7 @@
                                 </div>
                                 <div class='video-player'>
                                     <div class='player'>
-                                        <video controls></video>
+                                        <video controls id='video-player'></video>
                                         <div class='left'>
                                             <p>Video link</p>
                                             <a href='#'>https://notactuallyalink</a>

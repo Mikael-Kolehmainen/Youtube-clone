@@ -6,6 +6,10 @@ function checkValue() {
         errorTag.innerText = "The file couldn't be uploaded, try again.";
     } else {
         localStorage.clear();
+        videoPlayer = document.getElementById("video-player");
+        video = document.getElementById("upload");
+        console.log(video.files[0]);
+        videoPlayer.src = video.files[0];
         showNextStage("details");
     }
 }
