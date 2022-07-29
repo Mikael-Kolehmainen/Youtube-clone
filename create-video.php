@@ -125,34 +125,34 @@
                                     <div class='icon'>
                                         <i class='fa-solid fa-closed-captioning'></i>
                                     </div>
-                                    <h2>Add subtitles</h2>
-                                    <p>Reach a broader audience by adding subtitles to your video</p>
                                     <div class='btn'>
                                         <a href='#'>ADD</a>
                                     </div>
+                                    <h2>Add subtitles</h2>
+                                    <p>Reach a broader audience by adding subtitles to your video</p>
                                 </div>
                                 <div class='option'>
                                     <div class='icon'>
                                         <i class='fa-solid fa-display'></i>
                                     </div>
-                                    <h2>Add an end screen</h2>
-                                    <p>Promote related content at the end of your video</p>
-                                    <div class='btn'>
-                                        <a href='#'>IMPORT FROM VIDEO</a>
-                                    </div>
                                     <div class='btn'>
                                         <a href='#'>ADD</a>
                                     </div>
+                                    <div class='btn wide'>
+                                        <a href='#'>IMPORT FROM VIDEO</a>
+                                    </div>
+                                    <h2>Add an end screen</h2>
+                                    <p>Promote related content at the end of your video</p>
                                 </div>
                                 <div class='option'>
                                     <div class='icon'>
                                         <i class='fa-solid fa-circle-exclamation'></i>
                                     </div>
-                                    <h2>Add cards</h2>
-                                    <p>Promote related content during your video</p>
                                     <div class='btn'>
                                         <a href='#'>ADD</a>
                                     </div>
+                                    <h2>Add cards</h2>
+                                    <p>Promote related content during your video</p>
                                 </div>
                             </div>
                         </div>
