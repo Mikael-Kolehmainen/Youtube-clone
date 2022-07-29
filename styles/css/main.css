@@ -912,8 +912,10 @@ footer {
               font-size: 24px;
               float: left; }
             .create-page .create-section .create-box .mid .stage .title p {
-              color: #030303; }
-          .create-page .create-section .create-box .mid .stage .details, .create-page .create-section .create-box .mid .stage .elements {
+              font-size: 13px;
+              color: #030303;
+              line-height: 20px; }
+          .create-page .create-section .create-box .mid .stage .details, .create-page .create-section .create-box .mid .stage .elements, .create-page .create-section .create-box .mid .stage .checks {
             height: 718px;
             width: 100%;
             display: flex;
@@ -1174,6 +1176,56 @@ footer {
                   white-space: nowrap; }
                 .create-page .create-section .create-box .mid #elements-stage .elements .option .btn.wide {
                   width: 155px; }
+        .create-page .create-section .create-box .mid #checks-stage {
+          overflow-y: hidden; }
+          .create-page .create-section .create-box .mid #checks-stage .checks {
+            width: 97%;
+            padding: 1.5%;
+            align-content: flex-start; }
+            .create-page .create-section .create-box .mid #checks-stage .checks p {
+              width: 55%;
+              font-size: 12.5px;
+              text-align: left;
+              line-height: 20px; }
+            .create-page .create-section .create-box .mid #checks-stage .checks .title {
+              text-align: left;
+              height: fit-content;
+              width: 100%; }
+              .create-page .create-section .create-box .mid #checks-stage .checks .title h1 {
+                margin-bottom: 10px;
+                float: none; }
+              .create-page .create-section .create-box .mid #checks-stage .checks .title p {
+                width: 60%;
+                font-size: 13px; }
+            .create-page .create-section .create-box .mid #checks-stage .checks .copyright {
+              width: 100%;
+              text-align: left;
+              border-bottom: 1px solid #d5d5d5;
+              padding-bottom: 16px;
+              margin-bottom: 16px; }
+              .create-page .create-section .create-box .mid #checks-stage .checks .copyright h2 {
+                font-weight: bold;
+                font-weight: 14.5px;
+                margin-bottom: 8px;
+                line-height: 24px; }
+              .create-page .create-section .create-box .mid #checks-stage .checks .copyright p {
+                color: #030303; }
+              .create-page .create-section .create-box .mid #checks-stage .checks .copyright .icon {
+                float: right;
+                height: 52px;
+                width: 52px;
+                position: relative; }
+                .create-page .create-section .create-box .mid #checks-stage .checks .copyright .icon i {
+                  font-size: 20px;
+                  color: #007800;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%); }
+            .create-page .create-section .create-box .mid #checks-stage .checks .feedback {
+              width: 100%;
+              text-align: right;
+              font-size: 12.5px; }
         .create-page .create-section .create-box .mid .bottom {
           height: 20px;
           width: 940px;

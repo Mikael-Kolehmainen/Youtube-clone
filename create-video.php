@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <!-- ELEMENTS STAGE -->
-                        <div id='elements-stage' class='stage' style='display: block'>
+                        <div id='elements-stage' class='stage' style='display: none;'>
                             <div class='elements'>
                                 <div class='title'>
                                     <h1>Video elements (not available)</h1>
@@ -157,8 +157,22 @@
                             </div>
                         </div>
                         <!-- CHECKS STAGE -->
-                        <div id='checks-stage' class='stage' style='display: none'>
-
+                        <div id='checks-stage' class='stage' style='display: block;'>
+                            <div class='checks'>
+                                <div class='title'>
+                                    <h1>Checks</h1>
+                                    <p>We'll check your video for issues that may restrict its visibility and then you will have the opportunity to fix issues before publishing your video. <a href='#'>Learn more</a></p>
+                                </div>
+                                <div class='copyright'>
+                                    <div class='icon'>
+                                        <i class='fa-solid fa-check'></i>
+                                    </div>
+                                    <h2>Copyright</h2>
+                                    <p>No issues found</p>
+                                </div>
+                                <p>Remember: These check results aren't final. Issues may come up in the future that impact your video. <a href='#'>Learn more</a></p>
+                                <a href='#' class='feedback'>Send feedback</a>
+                            </div>
                         </div>
                         <!-- VISIBILITY STAGE -->
                         <div id='visibility-stage' class='stage' style='display: none'>

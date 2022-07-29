@@ -240,10 +240,12 @@
                             float: left;
                         }
                         p {
+                            font-size: 13px;
                             color: $main-font-color;
+                            line-height: 20px;
                         }
                     }
-                    .details, .elements {
+                    .details, .elements, .checks {
                         height: 718px;
                         width: 100%;
                         display: flex;
@@ -598,6 +600,73 @@
                                     width: 155px;
                                 }
                             }
+                        }
+                    }
+                }
+                #checks-stage {
+                    overflow-y: hidden;
+
+                    .checks {
+                        width: 97%;
+                        padding: 1.5%;
+                        align-content: flex-start;
+
+                        p {
+                            width: 55%;
+                            font-size: 12.5px;
+                            text-align: left;
+                            line-height: 20px;
+                        }
+                        .title {
+                            text-align: left;
+                            height: fit-content;
+                            width: 100%;
+
+                            h1 {
+                                margin-bottom: 10px;
+                                float: none;
+                            }
+                            p {
+                                width: 60%;
+                                font-size: 13px;
+                            }
+                        }
+                        .copyright {
+                            width: 100%;
+                            text-align: left;
+                            border-bottom: 1px solid $main-border-color;
+                            padding-bottom: 16px;
+                            margin-bottom: 16px;
+
+                            h2 {
+                                font-weight: bold;
+                                font-weight: 14.5px;
+                                margin-bottom: 8px;
+                                line-height: 24px;
+                            }
+                            p {
+                                color: $main-font-color;
+                            }
+                            .icon {
+                                float: right;
+                                height: 52px;
+                                width: 52px;
+                                position: relative;
+
+                                i {
+                                    font-size: 20px;
+                                    color: $checkmark-color;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                        }
+                        .feedback {
+                            width: 100%;
+                            text-align: right;
+                            font-size: 12.5px;
                         }
                     }
                 }
