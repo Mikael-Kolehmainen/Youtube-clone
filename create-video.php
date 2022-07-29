@@ -19,7 +19,7 @@
                         <i class='fa-solid fa-circle-exclamation'></i>
                     </a>
                 </div>
-                <div class='timeline' id='timeline' style='display: none'>
+                <div class='timeline' id='timeline' style='display: block'>
                     <div class='lines'>
                         <div class='line active' id='details-line'></div>
                         <div class='line' id='elements-line'></div>
@@ -34,7 +34,7 @@
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>
                         <!-- UPLOAD STAGE -->
-                        <div id='upload-stage' style='display: block;'>
+                        <div id='upload-stage' class='stage' style='display: none;'>
                             <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();' required>
                             <div class='info'>
                                 <p id='error'></p>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <!-- DETAILS STAGE -->
-                        <div id='details-stage' style='display: none;'>
+                        <div id='details-stage' class='stage' style='display: none;'>
                             <div class='details'>
                                 <div class='video-info'>
                                     <div class='title'>
@@ -115,18 +115,56 @@
                             </div>
                         </div>
                         <!-- ELEMENTS STAGE -->
-                        <div id='elements-stage' style='display: none'>
-
+                        <div id='elements-stage' class='stage' style='display: block'>
+                            <div class='elements'>
+                                <div class='title'>
+                                    <h1>Video elements (not available)</h1>
+                                    <p>Use cards and an end screen to show viewers related videos, websites, and calls to action. <a href='#'>Learn more</a></p>
+                                </div>
+                                <div class='option'>
+                                    <div class='icon'>
+                                        <i class='fa-solid fa-closed-captioning'></i>
+                                    </div>
+                                    <h2>Add subtitles</h2>
+                                    <p>Reach a broader audience by adding subtitles to your video</p>
+                                    <div class='btn'>
+                                        <a href='#'>ADD</a>
+                                    </div>
+                                </div>
+                                <div class='option'>
+                                    <div class='icon'>
+                                        <i class='fa-solid fa-display'></i>
+                                    </div>
+                                    <h2>Add an end screen</h2>
+                                    <p>Promote related content at the end of your video</p>
+                                    <div class='btn'>
+                                        <a href='#'>IMPORT FROM VIDEO</a>
+                                    </div>
+                                    <div class='btn'>
+                                        <a href='#'>ADD</a>
+                                    </div>
+                                </div>
+                                <div class='option'>
+                                    <div class='icon'>
+                                        <i class='fa-solid fa-circle-exclamation'></i>
+                                    </div>
+                                    <h2>Add cards</h2>
+                                    <p>Promote related content during your video</p>
+                                    <div class='btn'>
+                                        <a href='#'>ADD</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- CHECKS STAGE -->
-                        <div id='checks-stage' style='display: none'>
+                        <div id='checks-stage' class='stage' style='display: none'>
 
                         </div>
                         <!-- VISIBILITY STAGE -->
-                        <div id='visibility-stage' style='display: none'>
+                        <div id='visibility-stage' class='stage' style='display: none'>
 
                         </div>
-                        <div class='bottom' id='nav' style='display: none;'>
+                        <div class='bottom' id='nav' style='display: block;'>
                             <div class='left'>
                                 <i class='fa-solid fa-arrow-up-from-bracket' title='Video upload complete'></i>
                                 <i class='fa-solid fa-hard-drive' title='Video processing'></i>
