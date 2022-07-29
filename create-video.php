@@ -19,7 +19,7 @@
                         <i class='fa-solid fa-circle-exclamation'></i>
                     </a>
                 </div>
-                <div class='timeline' id='timeline' style='display: block'>
+                <div class='timeline' id='timeline' style='display: none'>
                     <div class='lines'>
                         <div class='line active' id='details-line'></div>
                         <div class='line' id='elements-line'></div>
@@ -34,7 +34,7 @@
                 <div class='mid'>
                     <form action='' method='POST' enctype='multipart/form-data'>
                         <!-- UPLOAD STAGE -->
-                        <div id='upload-stage' class='stage' style='display: none;'>
+                        <div id='upload-stage' class='stage' style='display: block;'>
                             <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();' required>
                             <div class='info'>
                                 <p id='error'></p>
@@ -157,7 +157,7 @@
                             </div>
                         </div>
                         <!-- CHECKS STAGE -->
-                        <div id='checks-stage' class='stage' style='display: block;'>
+                        <div id='checks-stage' class='stage' style='display: none;'>
                             <div class='checks'>
                                 <div class='title'>
                                     <h1>Checks</h1>
@@ -178,7 +178,7 @@
                         <div id='visibility-stage' class='stage' style='display: none'>
 
                         </div>
-                        <div class='bottom' id='nav' style='display: block;'>
+                        <div class='bottom' id='nav' style='display: none;'>
                             <div class='left'>
                                 <i class='fa-solid fa-arrow-up-from-bracket' title='Video upload complete'></i>
                                 <i class='fa-solid fa-hard-drive' title='Video processing'></i>
