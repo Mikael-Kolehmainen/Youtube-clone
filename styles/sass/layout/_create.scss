@@ -226,26 +226,31 @@
                     height: 797px;
                     margin-left: 40px;
                     margin-right: 40px;
-                    overflow-y: scroll;
                     overflow-x: hidden;
+                    overflow-y: hidden;
 
                     .title {
                         margin-bottom: 20px;
+                        text-align: left;
+                        height: fit-content;
+                        width: 100%;
 
                         h1 {
                             width: fit-content;
                             display: inline-block;
                             font-weight: bold;
                             font-size: 24px;
-                            float: left;
+                            margin-bottom: 10px;
+                            float: none;
                         }
                         p {
-                            font-size: 13px;
                             color: $main-font-color;
                             line-height: 20px;
+                            width: 60%;
+                            font-size: 13px;
                         }
                     }
-                    .details, .elements, .checks {
+                    .details, .elements, .checks, .visibility {
                         height: 718px;
                         width: 100%;
                         display: flex;
@@ -254,8 +259,84 @@
                         margin-top: 80px;
                     }
                 }
+                #details-stage, #visibility-stage {
+                    overflow-y: scroll;
+
+                    .details, .visibility {
+                        .video-info, .video-player {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 1.5%;
+                        }
+                        .video-info {
+                            width: 62%;
+                        }
+                        .video-player {
+                            width: 32%;
+                            margin-top: 49px;
+
+                            .player {
+                                background-color: $gray-background-color;
+                                position: relative;
+
+                                .left {
+                                    width: 80%;
+
+                                    p, a {
+                                        margin-left: 16px;
+                                        margin-right: 16px;
+                                        width: fit-content;
+                                    }
+                                    p {
+                                        font-size: 12px;
+                                        margin-top: 12px;
+                                    }
+                                    a {
+                                        display: block;
+                                        text-align: left;
+                                        font-size: 15px;
+                                        padding-bottom: 5px;
+                                    }
+                                }
+                                i {
+                                    font-size: 20px;
+                                    position: absolute;
+                                    left: 90%;
+                                    top: 70%;
+                                    transform: translate(-50%, -50%);
+                                    color: $secondary-font-color;
+
+                                    &:hover {
+                                        cursor: pointer;
+                                        color: $main-font-color;
+                                    }
+                                }
+                                video {
+                                    width: 100%;
+                                    height: 157px;
+                                }
+                            }
+                        }
+                    }
+                }
                 #details-stage {
                     .details {
+                        .title {
+                            margin-bottom: 20px;
+    
+                            h1 {
+                                width: fit-content;
+                                display: inline-block;
+                                font-weight: bold;
+                                font-size: 24px;
+                                float: left;
+                            }
+                            p {
+                                font-size: 13px;
+                                color: $main-font-color;
+                                line-height: 20px;
+                            }
+                        }
                         h2 {
                             text-align: left;
                             font-weight: bold;
@@ -267,14 +348,7 @@
                             font-size: 13px;
                             line-height: 20px;
                         }
-                        .video-info, .video-player {
-                            display: flex;
-                            flex-direction: column;
-                            padding: 1.5%;
-                        }
                         .video-info {
-                            width: 62%;
-
                             .title {
                                 #reuse {
                                     margin-top: 7.5px;
@@ -476,72 +550,14 @@
                                 font-weight: bold;
                             }
                         }
-                        .video-player {
-                            width: 32%;
-                            margin-top: 49px;
-
-                            .player {
-                                background-color: $gray-background-color;
-                                position: relative;
-
-                                .left {
-                                    width: 80%;
-
-                                    p, a {
-                                        margin-left: 16px;
-                                        margin-right: 16px;
-                                        width: fit-content;
-                                    }
-                                    p {
-                                        font-size: 12px;
-                                        margin-top: 12px;
-                                    }
-                                    a {
-                                        display: block;
-                                        text-align: left;
-                                        font-size: 15px;
-                                        padding-bottom: 5px;
-                                    }
-                                }
-                                i {
-                                    font-size: 20px;
-                                    position: absolute;
-                                    left: 90%;
-                                    top: 70%;
-                                    transform: translate(-50%, -50%);
-                                    color: $secondary-font-color;
-
-                                    &:hover {
-                                        cursor: pointer;
-                                        color: $main-font-color;
-                                    }
-                                }
-                                video {
-                                    width: 100%;
-                                    height: 157px;
-                                }
-                            }
-                        }
                     }
                 }
                 #elements-stage {
-                    overflow-y: hidden;
-
                     .elements {
                         width: 97%;
                         padding: 1.5%;
                         align-content: flex-start;
 
-                        .title {
-                            text-align: left;
-                            height: fit-content;
-                            width: 100%;
-
-                            h1 {
-                                margin-bottom: 10px;
-                                float: none;
-                            }
-                        }
                         .option {
                             width: 100%;
                             background-color: $gray-background-color;
@@ -604,8 +620,6 @@
                     }
                 }
                 #checks-stage {
-                    overflow-y: hidden;
-
                     .checks {
                         width: 97%;
                         padding: 1.5%;
@@ -616,20 +630,6 @@
                             font-size: 12.5px;
                             text-align: left;
                             line-height: 20px;
-                        }
-                        .title {
-                            text-align: left;
-                            height: fit-content;
-                            width: 100%;
-
-                            h1 {
-                                margin-bottom: 10px;
-                                float: none;
-                            }
-                            p {
-                                width: 60%;
-                                font-size: 13px;
-                            }
                         }
                         .copyright {
                             width: 100%;
@@ -668,6 +668,11 @@
                             text-align: right;
                             font-size: 12.5px;
                         }
+                    }
+                }
+                #visibility-stage {
+                    .visibility {
+                        
                     }
                 }
                 .bottom {

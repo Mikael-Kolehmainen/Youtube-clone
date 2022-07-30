@@ -901,27 +901,85 @@ footer {
           height: 797px;
           margin-left: 40px;
           margin-right: 40px;
-          overflow-y: scroll;
-          overflow-x: hidden; }
+          overflow-x: hidden;
+          overflow-y: hidden; }
           .create-page .create-section .create-box .mid .stage .title {
-            margin-bottom: 20px; }
+            margin-bottom: 20px;
+            text-align: left;
+            height: fit-content;
+            width: 100%; }
             .create-page .create-section .create-box .mid .stage .title h1 {
               width: fit-content;
               display: inline-block;
               font-weight: bold;
               font-size: 24px;
-              float: left; }
+              margin-bottom: 10px;
+              float: none; }
             .create-page .create-section .create-box .mid .stage .title p {
-              font-size: 13px;
               color: #030303;
-              line-height: 20px; }
-          .create-page .create-section .create-box .mid .stage .details, .create-page .create-section .create-box .mid .stage .elements, .create-page .create-section .create-box .mid .stage .checks {
+              line-height: 20px;
+              width: 60%;
+              font-size: 13px; }
+          .create-page .create-section .create-box .mid .stage .details, .create-page .create-section .create-box .mid .stage .elements, .create-page .create-section .create-box .mid .stage .checks, .create-page .create-section .create-box .mid .stage .visibility {
             height: 718px;
             width: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             margin-top: 80px; }
+        .create-page .create-section .create-box .mid #details-stage, .create-page .create-section .create-box .mid #visibility-stage {
+          overflow-y: scroll; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info, .create-page .create-section .create-box .mid #details-stage .details .video-player, .create-page .create-section .create-box .mid #details-stage .visibility .video-info, .create-page .create-section .create-box .mid #details-stage .visibility .video-player, .create-page .create-section .create-box .mid #visibility-stage .details .video-info, .create-page .create-section .create-box .mid #visibility-stage .details .video-player, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-info, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5%; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info, .create-page .create-section .create-box .mid #details-stage .visibility .video-info, .create-page .create-section .create-box .mid #visibility-stage .details .video-info, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-info {
+            width: 62%; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-player, .create-page .create-section .create-box .mid #details-stage .visibility .video-player, .create-page .create-section .create-box .mid #visibility-stage .details .video-player, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player {
+            width: 32%;
+            margin-top: 49px; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-player .player, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player {
+              background-color: rgba(0, 0, 0, 0.06);
+              position: relative; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player .left, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player .left, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player .left {
+                width: 80%; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left p, .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left a, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player .left p, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player .left a, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player .left p, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player .left a, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player .left p, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player .left a {
+                  margin-left: 16px;
+                  margin-right: 16px;
+                  width: fit-content; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left p, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player .left p, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player .left p, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player .left p {
+                  font-size: 12px;
+                  margin-top: 12px; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left a, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player .left a, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player .left a, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player .left a {
+                  display: block;
+                  text-align: left;
+                  font-size: 15px;
+                  padding-bottom: 5px; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-player .player i, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player i, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player i, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player i {
+                font-size: 20px;
+                position: absolute;
+                left: 90%;
+                top: 70%;
+                transform: translate(-50%, -50%);
+                color: #606060; }
+                .create-page .create-section .create-box .mid #details-stage .details .video-player .player i:hover, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player i:hover, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player i:hover, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player i:hover {
+                  cursor: pointer;
+                  color: #030303; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-player .player video, .create-page .create-section .create-box .mid #details-stage .visibility .video-player .player video, .create-page .create-section .create-box .mid #visibility-stage .details .video-player .player video, .create-page .create-section .create-box .mid #visibility-stage .visibility .video-player .player video {
+                width: 100%;
+                height: 157px; }
+        .create-page .create-section .create-box .mid #details-stage .details .title {
+          margin-bottom: 20px; }
+          .create-page .create-section .create-box .mid #details-stage .details .title h1 {
+            width: fit-content;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 24px;
+            float: left; }
+          .create-page .create-section .create-box .mid #details-stage .details .title p {
+            font-size: 13px;
+            color: #030303;
+            line-height: 20px; }
         .create-page .create-section .create-box .mid #details-stage .details h2 {
           text-align: left;
           font-weight: bold;
@@ -931,301 +989,241 @@ footer {
           text-align: left;
           font-size: 13px;
           line-height: 20px; }
-        .create-page .create-section .create-box .mid #details-stage .details .video-info, .create-page .create-section .create-box .mid #details-stage .details .video-player {
-          display: flex;
-          flex-direction: column;
-          padding: 1.5%; }
-        .create-page .create-section .create-box .mid #details-stage .details .video-info {
-          width: 62%; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .title #reuse {
-            margin-top: 7.5px;
-            font-weight: bold;
-            font-size: 14px;
-            width: fit-content;
-            display: inline-block;
-            float: right; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .input {
-            position: relative;
-            margin-bottom: 24px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input label, .create-page .create-section .create-box .mid #details-stage .details .video-info .input i, .create-page .create-section .create-box .mid #details-stage .details .video-info .input p {
-              color: #606060;
-              position: absolute;
-              transform: translate(-50%, -50%); }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input label {
-              text-align: left;
-              left: 9.7%;
-              top: 21%;
-              font-size: 12px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input i {
-              left: 19%;
-              top: 21%; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input p {
-              left: 95%;
-              top: 80%;
-              font-size: 12px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input input {
-              padding-left: 2.5%;
-              padding-right: 2.5%;
-              width: 95%;
-              padding-top: 30px;
-              padding-bottom: 30px;
-              border-radius: 5px;
-              border: 1px solid #b7b7b7;
-              font-size: 15px; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:hover {
-                border-color: #0d0d0d; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:focus {
-                outline: none !important;
-                border: 1px solid #1a73e8; }
-                .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:focus + label {
-                  color: #1a73e8; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc label {
-              top: 12%;
-              left: 8.2%; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc i {
-              top: 12%;
-              left: 16%; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc p {
-              top: 90%; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc input {
-              padding-bottom: 120px; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail {
-            margin-bottom: 24px;
-            position: relative; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail p {
-              margin-bottom: 8px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input {
-              position: relative;
-              display: block;
-              border-radius: 5px;
-              width: 127px;
-              height: 68px;
-              border: 2px solid #e6e6e6;
-              font-size: 0; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover {
-                cursor: pointer;
-                background-color: rgba(0, 0, 0, 0.06); }
-                .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover::after {
-                  color: #0d0d0d; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input::after {
-                position: absolute;
-                top: 70%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: fit-content;
-                font-size: 12px;
-                color: #606060;
-                content: "Upload thumbnail"; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .img-icon {
-              position: absolute;
-              top: 65%;
-              left: 12%;
-              transform: translate(-50%, -50%);
-              z-index: 2;
-              color: #606060; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists {
-            margin-bottom: 24px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists select {
-              width: 260px;
-              height: 48px;
-              float: left;
-              color: #606060;
-              border: 1px solid #b7b7b7;
-              background-color: white;
-              border-radius: 5px;
-              font-size: 15px;
-              padding-left: 7px;
-              padding-right: 7px; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists select:hover {
-                cursor: pointer;
-                border-color: #0d0d0d; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists p {
-              margin-bottom: 8px; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice {
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .title #reuse {
+          margin-top: 7.5px;
+          font-weight: bold;
+          font-size: 14px;
+          width: fit-content;
+          display: inline-block;
+          float: right; }
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .input {
+          position: relative;
+          margin-bottom: 24px; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input label, .create-page .create-section .create-box .mid #details-stage .details .video-info .input i, .create-page .create-section .create-box .mid #details-stage .details .video-info .input p {
+            color: #606060;
+            position: absolute;
+            transform: translate(-50%, -50%); }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input label {
             text-align: left;
+            left: 9.7%;
+            top: 21%;
+            font-size: 12px; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input i {
+            left: 19%;
+            top: 21%; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input p {
+            left: 95%;
+            top: 80%;
+            font-size: 12px; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input input {
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            width: 95%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-radius: 5px;
+            border: 1px solid #b7b7b7;
+            font-size: 15px; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:hover {
+              border-color: #0d0d0d; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:focus {
+              outline: none !important;
+              border: 1px solid #1a73e8; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:focus + label {
+                color: #1a73e8; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc label {
+            top: 12%;
+            left: 8.2%; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc i {
+            top: 12%;
+            left: 16%; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc p {
+            top: 90%; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc input {
+            padding-bottom: 120px; }
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail {
+          margin-bottom: 24px;
+          position: relative; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail p {
             margin-bottom: 8px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p {
-              display: inline-block;
-              font-weight: bold; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p:first-child {
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input {
+            position: relative;
+            display: block;
+            border-radius: 5px;
+            width: 127px;
+            height: 68px;
+            border: 2px solid #e6e6e6;
+            font-size: 0; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover {
+              cursor: pointer;
+              background-color: rgba(0, 0, 0, 0.06); }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input:hover::after {
                 color: #0d0d0d; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p:last-child {
-                font-size: 12px;
-                margin-left: 10px;
-                background-color: rgba(0, 0, 0, 0.06); }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons {
-            text-align: left; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons label {
-              font-size: 15px;
-              margin-left: 10px;
-              cursor: pointer; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons input[type=radio] {
-              margin-top: 10px;
-              margin-bottom: 10px;
-              -ms-transform: scale(1.5);
-              -webkit-transform: scale(1.5);
-              transform: scale(1.5);
-              cursor: pointer; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction {
-            text-align: left;
-            margin-top: 24px;
-            margin-bottom: 24px;
-            cursor: pointer; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction p, .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction i {
-              color: #0d0d0d; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction p {
-              margin-left: 10px;
-              font-weight: bold;
-              font-size: 15px;
-              display: inline-block; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .more {
-            font-size: 14px;
-            text-align: left;
-            margin-bottom: 8px;
-            font-weight: bold; }
-        .create-page .create-section .create-box .mid #details-stage .details .video-player {
-          width: 32%;
-          margin-top: 49px; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-player .player {
-            background-color: rgba(0, 0, 0, 0.06);
-            position: relative; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left {
-              width: 80%; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left p, .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left a {
-                margin-left: 16px;
-                margin-right: 16px;
-                width: fit-content; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left p {
-                font-size: 12px;
-                margin-top: 12px; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-player .player .left a {
-                display: block;
-                text-align: left;
-                font-size: 15px;
-                padding-bottom: 5px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-player .player i {
-              font-size: 20px;
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .thumbnail-input::after {
               position: absolute;
-              left: 90%;
               top: 70%;
+              left: 50%;
               transform: translate(-50%, -50%);
-              color: #606060; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-player .player i:hover {
-                cursor: pointer;
-                color: #030303; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-player .player video {
-              width: 100%;
-              height: 157px; }
-        .create-page .create-section .create-box .mid #elements-stage {
-          overflow-y: hidden; }
-          .create-page .create-section .create-box .mid #elements-stage .elements {
-            width: 97%;
-            padding: 1.5%;
-            align-content: flex-start; }
-            .create-page .create-section .create-box .mid #elements-stage .elements .title {
+              width: fit-content;
+              font-size: 12px;
+              color: #606060;
+              content: "Upload thumbnail"; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .img-icon {
+            position: absolute;
+            top: 65%;
+            left: 12%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: #606060; }
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists {
+          margin-bottom: 24px; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists select {
+            width: 260px;
+            height: 48px;
+            float: left;
+            color: #606060;
+            border: 1px solid #b7b7b7;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 15px;
+            padding-left: 7px;
+            padding-right: 7px; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists select:hover {
+              cursor: pointer;
+              border-color: #0d0d0d; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists p {
+            margin-bottom: 8px; }
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice {
+          text-align: left;
+          margin-bottom: 8px; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p {
+            display: inline-block;
+            font-weight: bold; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p:first-child {
+              color: #0d0d0d; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .choice p:last-child {
+              font-size: 12px;
+              margin-left: 10px;
+              background-color: rgba(0, 0, 0, 0.06); }
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons {
+          text-align: left; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons label {
+            font-size: 15px;
+            margin-left: 10px;
+            cursor: pointer; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .audience .radio-buttons input[type=radio] {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            cursor: pointer; }
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction {
+          text-align: left;
+          margin-top: 24px;
+          margin-bottom: 24px;
+          cursor: pointer; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction p, .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction i {
+            color: #0d0d0d; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .restriction p {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-block; }
+        .create-page .create-section .create-box .mid #details-stage .details .video-info .more {
+          font-size: 14px;
+          text-align: left;
+          margin-bottom: 8px;
+          font-weight: bold; }
+        .create-page .create-section .create-box .mid #elements-stage .elements {
+          width: 97%;
+          padding: 1.5%;
+          align-content: flex-start; }
+          .create-page .create-section .create-box .mid #elements-stage .elements .option {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.06);
+            padding: 18px;
+            padding-left: 24px;
+            padding-right: 24px;
+            height: 52px;
+            margin-top: 24px; }
+            .create-page .create-section .create-box .mid #elements-stage .elements .option h2 {
+              font-size: 14.5px;
+              font-weight: bold;
               text-align: left;
-              height: fit-content;
-              width: 100%; }
-              .create-page .create-section .create-box .mid #elements-stage .elements .title h1 {
-                margin-bottom: 10px;
-                float: none; }
-            .create-page .create-section .create-box .mid #elements-stage .elements .option {
-              width: 100%;
-              background-color: rgba(0, 0, 0, 0.06);
-              padding: 18px;
-              padding-left: 24px;
-              padding-right: 24px;
-              height: 52px;
-              margin-top: 24px; }
-              .create-page .create-section .create-box .mid #elements-stage .elements .option h2 {
-                font-size: 14.5px;
-                font-weight: bold;
-                text-align: left;
-                margin-bottom: 8px;
-                line-height: 24px; }
-              .create-page .create-section .create-box .mid #elements-stage .elements .option p {
-                font-size: 12.5px;
-                text-align: left;
-                line-height: 20px; }
-              .create-page .create-section .create-box .mid #elements-stage .elements .option a {
-                font-size: 14px;
-                font-weight: bold; }
-              .create-page .create-section .create-box .mid #elements-stage .elements .option .icon {
-                float: left;
-                position: relative;
-                height: 52px;
-                width: 52px;
-                margin-right: 24px; }
-                .create-page .create-section .create-box .mid #elements-stage .elements .option .icon i {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  font-size: 22px;
-                  color: #606060; }
-              .create-page .create-section .create-box .mid #elements-stage .elements .option .btn {
-                float: right;
-                height: 52px;
-                width: 52px;
-                position: relative; }
-                .create-page .create-section .create-box .mid #elements-stage .elements .option .btn a {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  white-space: nowrap; }
-                .create-page .create-section .create-box .mid #elements-stage .elements .option .btn.wide {
-                  width: 155px; }
-        .create-page .create-section .create-box .mid #checks-stage {
-          overflow-y: hidden; }
-          .create-page .create-section .create-box .mid #checks-stage .checks {
-            width: 97%;
-            padding: 1.5%;
-            align-content: flex-start; }
-            .create-page .create-section .create-box .mid #checks-stage .checks p {
-              width: 55%;
+              margin-bottom: 8px;
+              line-height: 24px; }
+            .create-page .create-section .create-box .mid #elements-stage .elements .option p {
               font-size: 12.5px;
               text-align: left;
               line-height: 20px; }
-            .create-page .create-section .create-box .mid #checks-stage .checks .title {
-              text-align: left;
-              height: fit-content;
-              width: 100%; }
-              .create-page .create-section .create-box .mid #checks-stage .checks .title h1 {
-                margin-bottom: 10px;
-                float: none; }
-              .create-page .create-section .create-box .mid #checks-stage .checks .title p {
-                width: 60%;
-                font-size: 13px; }
-            .create-page .create-section .create-box .mid #checks-stage .checks .copyright {
-              width: 100%;
-              text-align: left;
-              border-bottom: 1px solid #d5d5d5;
-              padding-bottom: 16px;
-              margin-bottom: 16px; }
-              .create-page .create-section .create-box .mid #checks-stage .checks .copyright h2 {
-                font-weight: bold;
-                font-weight: 14.5px;
-                margin-bottom: 8px;
-                line-height: 24px; }
-              .create-page .create-section .create-box .mid #checks-stage .checks .copyright p {
-                color: #030303; }
-              .create-page .create-section .create-box .mid #checks-stage .checks .copyright .icon {
-                float: right;
-                height: 52px;
-                width: 52px;
-                position: relative; }
-                .create-page .create-section .create-box .mid #checks-stage .checks .copyright .icon i {
-                  font-size: 20px;
-                  color: #007800;
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%); }
-            .create-page .create-section .create-box .mid #checks-stage .checks .feedback {
-              width: 100%;
-              text-align: right;
-              font-size: 12.5px; }
+            .create-page .create-section .create-box .mid #elements-stage .elements .option a {
+              font-size: 14px;
+              font-weight: bold; }
+            .create-page .create-section .create-box .mid #elements-stage .elements .option .icon {
+              float: left;
+              position: relative;
+              height: 52px;
+              width: 52px;
+              margin-right: 24px; }
+              .create-page .create-section .create-box .mid #elements-stage .elements .option .icon i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 22px;
+                color: #606060; }
+            .create-page .create-section .create-box .mid #elements-stage .elements .option .btn {
+              float: right;
+              height: 52px;
+              width: 52px;
+              position: relative; }
+              .create-page .create-section .create-box .mid #elements-stage .elements .option .btn a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                white-space: nowrap; }
+              .create-page .create-section .create-box .mid #elements-stage .elements .option .btn.wide {
+                width: 155px; }
+        .create-page .create-section .create-box .mid #checks-stage .checks {
+          width: 97%;
+          padding: 1.5%;
+          align-content: flex-start; }
+          .create-page .create-section .create-box .mid #checks-stage .checks p {
+            width: 55%;
+            font-size: 12.5px;
+            text-align: left;
+            line-height: 20px; }
+          .create-page .create-section .create-box .mid #checks-stage .checks .copyright {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid #d5d5d5;
+            padding-bottom: 16px;
+            margin-bottom: 16px; }
+            .create-page .create-section .create-box .mid #checks-stage .checks .copyright h2 {
+              font-weight: bold;
+              font-weight: 14.5px;
+              margin-bottom: 8px;
+              line-height: 24px; }
+            .create-page .create-section .create-box .mid #checks-stage .checks .copyright p {
+              color: #030303; }
+            .create-page .create-section .create-box .mid #checks-stage .checks .copyright .icon {
+              float: right;
+              height: 52px;
+              width: 52px;
+              position: relative; }
+              .create-page .create-section .create-box .mid #checks-stage .checks .copyright .icon i {
+                font-size: 20px;
+                color: #007800;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); }
+          .create-page .create-section .create-box .mid #checks-stage .checks .feedback {
+            width: 100%;
+            text-align: right;
+            font-size: 12.5px; }
         .create-page .create-section .create-box .mid .bottom {
           height: 20px;
           width: 940px;
