@@ -683,13 +683,22 @@
                             &.active {
                                 border-color: $main-font-color;
                             }
-                            input[type=radio], input[type=checkbox] {
+                            input[type=radio], #premiere {
                                 transform: scale(1.5);
                                 cursor: pointer;
+                                accent-color: black;
                             }
-                            input[type=checkbox] {
+                            #premiere {
                                 margin-left: 55px;
                                 margin-top: 10px;
+                            }
+                            #premiere-label {
+                                color: $disabled-font-color;
+                            }
+                            #premiere-icon {
+                                font-size: 17px;
+                                margin-left: 5px;
+                                color: $disabled-font-color;
                             }
                             input[type=radio] {
                                 &:not(:first-of-type) {
@@ -719,6 +728,46 @@
                                 }
                                 b {
                                     color: $secondary-font-color;
+                                }
+                            }
+                            .share {
+                                margin-left: 52px;
+                                margin-bottom: 15px;
+                                cursor: pointer;
+                                width: fit-content;
+
+                                a {
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                    color: $sign-main-color;
+                                    margin-left: 5px;
+                                }
+                                i {
+                                    font-size: 18px;
+                                    color: $sign-main-color;
+                                }
+                            }   
+                        }
+                        .disclaimer {
+                            background-color: $gray-background-color;
+                            text-align: left;
+                            padding: 20px;
+
+                            h2 {
+                                font-size: 15px;
+                                font-weight: bold;
+                                margin-bottom: 15px;
+                            }
+                            p {
+                                font-size: 12px;
+                                margin-bottom: 10px;
+                                width: 85%;
+
+                                &:nth-of-type(odd) {
+                                    color: $third-font-color;
+                                }
+                                &:nth-of-type(even) {
+                                    margin-bottom: 15px;
                                 }
                             }
                         }

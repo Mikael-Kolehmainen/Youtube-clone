@@ -188,15 +188,15 @@
                                         <input type='radio' id='private' value='private' name='video_visibility' checked><label for='private'>Private</label>
                                         <p>Only you and people you choose can watch your video</p>
                                         <div class='share'>
-                                            <i class=''></i>
+                                            <i class='fa-solid fa-user-plus'></i>
                                             <a href='#'>SHARE PRIVATELY</a>
                                         </div>
                                         <input type='radio' id='unlisted' value='unlisted' name='video_visibility'><label for='unlisted'>Unlisted</label>
                                         <p>Anyone with the video link can watch your video</p>
                                         <input type='radio' id='public' value='public' name='video_visibility'><label for='public'>Public</label>
                                         <p>Everyone can watch your video</p>
-                                        <input type='checkbox' id='premiere' value='premiere' disabled><label for='premiere'>Set as instant Premiere</label>
-                                        <i class=''></i>
+                                        <input type='checkbox' id='premiere' value='premiere' disabled><label for='premiere' id='premiere-label'>Set as instant Premiere</label>
+                                        <i class='fa-solid fa-circle-question' id='premiere-icon'></i>
                                     </div>
                                     <div class='options'>
                                         <input type='radio' id='schedule' value='schedule' disabled><label for='schedule'>Schedule (not available)</label>
@@ -214,10 +214,10 @@
                                     <div class='player'>
                                         <video controls id='video-player'></video>
                                         <div class='left'>
+                                            <p>Video name (functionality in future)</p>
+                                            <br>
                                             <p>Video link</p>
                                             <a href='#'>https://notactuallyalink</a>
-                                            <p>Filename</p>
-                                            <p></p>
                                         </div>
                                         <i class='fa-solid fa-copy' title='Copy video link'></i>
                                     </div>

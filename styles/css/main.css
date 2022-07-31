@@ -1233,12 +1233,19 @@ footer {
           margin-bottom: 15px; }
           .create-page .create-section .create-box .mid #visibility-stage .visibility .options.active {
             border-color: #030303; }
-          .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=radio], .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=checkbox] {
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=radio], .create-page .create-section .create-box .mid #visibility-stage .visibility .options #premiere {
             transform: scale(1.5);
-            cursor: pointer; }
-          .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=checkbox] {
+            cursor: pointer;
+            accent-color: black; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options #premiere {
             margin-left: 55px;
             margin-top: 10px; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options #premiere-label {
+            color: #909090; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options #premiere-icon {
+            font-size: 17px;
+            margin-left: 5px;
+            color: #909090; }
           .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=radio]:not(:first-of-type) {
             margin-top: 12.5px;
             margin-left: 25px; }
@@ -1259,6 +1266,35 @@ footer {
               margin-left: 50px; }
             .create-page .create-section .create-box .mid #visibility-stage .visibility .options p b {
               color: #606060; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options .share {
+            margin-left: 52px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            width: fit-content; }
+            .create-page .create-section .create-box .mid #visibility-stage .visibility .options .share a {
+              font-weight: bold;
+              font-size: 14px;
+              color: #065fd4;
+              margin-left: 5px; }
+            .create-page .create-section .create-box .mid #visibility-stage .visibility .options .share i {
+              font-size: 18px;
+              color: #065fd4; }
+        .create-page .create-section .create-box .mid #visibility-stage .visibility .disclaimer {
+          background-color: rgba(0, 0, 0, 0.06);
+          text-align: left;
+          padding: 20px; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .disclaimer h2 {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 15px; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .disclaimer p {
+            font-size: 12px;
+            margin-bottom: 10px;
+            width: 85%; }
+            .create-page .create-section .create-box .mid #visibility-stage .visibility .disclaimer p:nth-of-type(odd) {
+              color: #0d0d0d; }
+            .create-page .create-section .create-box .mid #visibility-stage .visibility .disclaimer p:nth-of-type(even) {
+              margin-bottom: 15px; }
         .create-page .create-section .create-box .mid .bottom {
           height: 20px;
           width: 940px;
