@@ -12,6 +12,7 @@
 
 <!-- 8 -->
 <!-- HOW TO USE TUTORIAL TO GITHUB REPO -->
+    <!-- change upload_max_filesize from php.ini so that program can work -->
 
 <!DOCTYPE html>
 <html>
