@@ -182,7 +182,33 @@
                                         <h1>Visibility</h1>
                                         <p>Choose when to publish and who can see your video</p>
                                     </div>
-                                    
+                                    <div class='options active'>
+                                        <input type='radio' id='publish' value='publish' checked><label for='publish'>Save or publish</label>
+                                        <p>Make your video <b>public, unlisted,</b> or <b>private</b></p>
+                                        <input type='radio' id='private' value='private' name='video_visibility' checked><label for='private'>Private</label>
+                                        <p>Only you and people you choose can watch your video</p>
+                                        <div class='share'>
+                                            <i class=''></i>
+                                            <a href='#'>SHARE PRIVATELY</a>
+                                        </div>
+                                        <input type='radio' id='unlisted' value='unlisted' name='video_visibility'><label for='unlisted'>Unlisted</label>
+                                        <p>Anyone with the video link can watch your video</p>
+                                        <input type='radio' id='public' value='public' name='video_visibility'><label for='public'>Public</label>
+                                        <p>Everyone can watch your video</p>
+                                        <input type='checkbox' id='premiere' value='premiere' disabled><label for='premiere'>Set as instant Premiere</label>
+                                        <i class=''></i>
+                                    </div>
+                                    <div class='options'>
+                                        <input type='radio' id='schedule' value='schedule' disabled><label for='schedule'>Schedule (not available)</label>
+                                        <p>Select a date to make your video <b>public</b></p>
+                                    </div>
+                                    <div class='disclaimer'>
+                                        <h2>Before you publish, check the following:</h2>
+                                        <p>Do kids appear in this video?</p>
+                                        <p>Make sure you follow our policies to protect minors from harm, exploitation, bullying, and violations of labor law. <a href='#'>Learn more</a></p>
+                                        <p>Looking for overall content guidance?</p>
+                                        <p>Our Community Guidelines can help you avoid trouble and ensure that YouTube remains a safe and vibrant community. <a href='#'>Learn more</a></p>
+                                    </div>
                                 </div>
                                 <div class='video-player'>
                                     <div class='player'>
@@ -203,7 +229,7 @@
                                 <i class='fa-solid fa-arrow-up-from-bracket' title='Video upload complete'></i>
                                 <i class='fa-solid fa-hard-drive' title='Video processing'></i>
                                 <i class='fa-solid fa-square-check' title='Copyright check complete'></i>
-                                <p>Processing HD (not really ;))</p>
+                                <p>Checks complete. No issues found.</p>
                             </div>
                             <div class='right'>
                                 <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->

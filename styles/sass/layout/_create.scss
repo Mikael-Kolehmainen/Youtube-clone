@@ -672,7 +672,56 @@
                 }
                 #visibility-stage {
                     .visibility {
-                        
+                        .options {
+                            width: 92%;
+                            border: .5px solid $darker-main-border-color;
+                            border-radius: 5px;
+                            text-align: left;
+                            padding: 4%;
+                            margin-bottom: 15px;
+
+                            &.active {
+                                border-color: $main-font-color;
+                            }
+                            input[type=radio], input[type=checkbox] {
+                                transform: scale(1.5);
+                                cursor: pointer;
+                            }
+                            input[type=checkbox] {
+                                margin-left: 55px;
+                                margin-top: 10px;
+                            }
+                            input[type=radio] {
+                                &:not(:first-of-type) {
+                                    margin-top: 12.5px;
+                                    margin-left: 25px;
+                                }
+                            }
+                            label {
+                                font-size: 15px;
+                                font-weight: bold;
+                                margin-left: 10px;
+                                margin-top: 10px;
+                                cursor: pointer;
+
+                                &:not(:first-of-type) {
+                                    font-weight: normal;
+                                }
+                            }
+                            p {
+                                font-size: 13px;
+                                margin-top: 5px;
+                                margin-bottom: 7.5px;
+                                margin-left: 25px;
+
+                                &:not(:first-of-type) {
+                                    margin-left: 50px;
+                                }
+                                b {
+                                    color: $secondary-font-color;
+                                }
+                            }
+                        }
                     }
                 }
                 .bottom {
@@ -698,7 +747,7 @@
                             white-space: nowrap;
                             position: absolute;
                             top: 50%;
-                            left: 200%;
+                            left: 220%;
                             transform: translate(-50%, -50%);
                         }
                         i {

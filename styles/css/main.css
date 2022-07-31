@@ -1224,6 +1224,41 @@ footer {
             width: 100%;
             text-align: right;
             font-size: 12.5px; }
+        .create-page .create-section .create-box .mid #visibility-stage .visibility .options {
+          width: 92%;
+          border: 0.5px solid #b7b7b7;
+          border-radius: 5px;
+          text-align: left;
+          padding: 4%;
+          margin-bottom: 15px; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options.active {
+            border-color: #030303; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=radio], .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=checkbox] {
+            transform: scale(1.5);
+            cursor: pointer; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=checkbox] {
+            margin-left: 55px;
+            margin-top: 10px; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options input[type=radio]:not(:first-of-type) {
+            margin-top: 12.5px;
+            margin-left: 25px; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options label {
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer; }
+            .create-page .create-section .create-box .mid #visibility-stage .visibility .options label:not(:first-of-type) {
+              font-weight: normal; }
+          .create-page .create-section .create-box .mid #visibility-stage .visibility .options p {
+            font-size: 13px;
+            margin-top: 5px;
+            margin-bottom: 7.5px;
+            margin-left: 25px; }
+            .create-page .create-section .create-box .mid #visibility-stage .visibility .options p:not(:first-of-type) {
+              margin-left: 50px; }
+            .create-page .create-section .create-box .mid #visibility-stage .visibility .options p b {
+              color: #606060; }
         .create-page .create-section .create-box .mid .bottom {
           height: 20px;
           width: 940px;
@@ -1244,7 +1279,7 @@ footer {
               white-space: nowrap;
               position: absolute;
               top: 50%;
-              left: 200%;
+              left: 220%;
               transform: translate(-50%, -50%); }
             .create-page .create-section .create-box .mid .bottom .left i {
               margin-left: 10px;
