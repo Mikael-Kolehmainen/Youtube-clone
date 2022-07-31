@@ -67,12 +67,22 @@ function showNextStage(nextStageName = "", forward = true) {
         timeline = document.getElementById("timeline");
         timeline.style.display = "block";
     }
-    // HIDE BACK BUTTON IF ON DETAILS STAGE
+    // HIDE BACK BUTTON IF ON DETAILS (FIRST) STAGE
     backBtn = document.getElementById("back-btn");
     if (nextStageName == "details") {
         backBtn.style.display = "none";
     } else {
         backBtn.style.display = "inline-block";
+    }
+    // HIDE NEXT AND SHOW SUBMIT BUTTON IF ON VISIBILITY (LAST) STAGE
+    nextBtn = document.getElementById("next-btn");
+    submitBtn = document.getElementById("submit-btn");
+    if (nextStageName == "visibility") {
+        nextBtn.style.display = "none";
+        submitBtn.style.display = "inline-block";
+    } else {
+        nextBtn.style.display = "inline-block";
+        submitBtn.style.display = "none";
     }
     // HIDE CURRENT STAGE
     currentStage = document.getElementById(currentStageName+"-stage");

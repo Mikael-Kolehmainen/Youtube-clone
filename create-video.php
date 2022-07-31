@@ -19,7 +19,7 @@
                         <i class='fa-solid fa-circle-exclamation'></i>
                     </a>
                 </div>
-                <div class='timeline' id='timeline' style='display: block'>
+                <div class='timeline' id='timeline' style='display: none'>
                     <div class='lines'>
                         <div class='line active' id='details-line'></div>
                         <div class='line' id='elements-line'></div>
@@ -32,9 +32,9 @@
                     <a href='#' id='visibility-link' onclick='showNextStage("visibility")'>Visibility</a>
                 </div>
                 <div class='mid'>
-                    <form action='' method='POST' enctype='multipart/form-data'>
+                    <form action='upload-video.php' method='POST' enctype='multipart/form-data'>
                         <!-- UPLOAD STAGE -->
-                        <div id='upload-stage' class='stage' style='display: none;'>
+                        <div id='upload-stage' class='stage' style='display: block;'>
                             <input type='file' name='video' accept='video/mp4,video/x-m4v,video/*' class='upload-input' id='upload' onchange='checkValue();' required>
                             <div class='info'>
                                 <p id='error'></p>
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                         <!-- VISIBILITY STAGE -->
-                        <div id='visibility-stage' class='stage' style='display: block'>
+                        <div id='visibility-stage' class='stage' style='display: none'>
                             <div class='visibility'>
                                 <div class='video-info'>
                                     <div class='title'>
@@ -224,7 +224,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='bottom' id='nav' style='display: block;'>
+                        <div class='bottom' id='nav' style='display: none;'>
                             <div class='left'>
                                 <i class='fa-solid fa-arrow-up-from-bracket' title='Video upload complete'></i>
                                 <i class='fa-solid fa-hard-drive' title='Video processing'></i>
@@ -234,7 +234,8 @@
                             <div class='right'>
                                 <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
                                 <a href='#' onclick='showNextStage("", false)' class='btn back' id='back-btn' style='display: inline-block'>BACK</a>
-                                <a href='#' onclick='showNextStage("", true)' class='btn'>NEXT</a>
+                                <a href='#' onclick='showNextStage("", true)' class='btn' id='next-btn' style='display: inline-block;'>NEXT</a>
+                                <input type='submit' name='create-video' value='SAVE' class='btn' id='submit-btn' style='display: none;'>
                             </div>
                         </div>
                     </form>

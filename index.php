@@ -4,6 +4,8 @@
         <!-- some minor details -->
 
     <!-- video player function -->
+        <!-- video gets uploaded first & the path to the video is saved in session so that it can be
+            saved to the database on the initial submit.-->
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->

@@ -1334,7 +1334,9 @@ footer {
               position: absolute;
               top: 50%;
               left: 75%;
-              transform: translate(-50%, -50%); }
+              transform: translate(-50%, -50%);
+              cursor: pointer;
+              border: none; }
               .create-page .create-section .create-box .mid .bottom .right .btn.back {
                 background-color: white;
                 color: #606060;
