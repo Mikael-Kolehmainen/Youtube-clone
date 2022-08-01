@@ -5,12 +5,8 @@ function checkValue() {
         errorTag = document.getElementById("error");
         errorTag.innerText = "The file couldn't be uploaded, try again.";
     } else {
-        localStorage.clear();
-        videoPlayer = document.getElementById("video-player");
-        video = document.getElementById("upload");
-        console.log(video.files[0]);
-        videoPlayer.src = video.files[0];
-        showNextStage("details");
+        document.getElementById("video-form").submit();
+        localStorage.setItem("currentStageName", "details");
     }
 }
 function showNextStage(nextStageName = "", forward = true) {
