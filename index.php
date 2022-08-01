@@ -6,8 +6,6 @@
 
     <!-- thumbnail upload visual side -->
 
-    <!-- thumbnail upload functional side --> <!-- 1 -->
-
     <!-- video player function -->
     
     <!-- Redirect to video page after upload -->
