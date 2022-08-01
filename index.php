@@ -12,6 +12,8 @@
     
     <!-- Redirect to video page after upload -->
 
+    <!-- Validate title & desc according to MariaDB policy (for example. no ' in them) -->
+
 <!-- 7 -->
 <!-- The place where you can watch the video -->
 

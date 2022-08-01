@@ -26,9 +26,7 @@
                             if (isset($_COOKIE['alreadyLoggedInCookie'])) {
                                 $cookie = $_COOKIE['alreadyLoggedInCookie'];
 
-                                if (file_exists("media/videos/".$cookie)) {
-                                    $folder = "media/videos/".$cookie;
-                                } else {
+                                if (!file_exists("media/videos/".$cookie)) {
                                     $folder = mkdir("media/videos/".$cookie);
                                 }
                                 $videoExt = pathinfo($_FILES["video"]["name"], PATHINFO_EXTENSION);
@@ -92,7 +90,7 @@
             <a href='#' id='visibility-link' onclick='showNextStage(\"visibility\")'>Visibility</a>
         </div>
         <div class='mid'>
-            <form action='upload-video.php' method='POST'>
+            <form action='upload-video.php' method='POST' enctype='multipart/form-data'>
                 <!-- DETAILS STAGE -->
                 <div id='details-stage' class='stage' style='display: block;'>
                     <div class='details'>
