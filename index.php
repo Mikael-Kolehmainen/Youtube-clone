@@ -4,8 +4,9 @@
         <!-- some minor details -->
 
     <!-- video player function -->
-        <!-- video gets uploaded first & the path to the video is saved in session so that it can be
-            saved to the database on the initial submit.-->
+        <!-- Redirect to video page after upload -->
+
+        <!-- MAKE THUMBNAIL CODE ACTUALLY WORK -->
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->
@@ -62,7 +63,7 @@
 
                     mysqli_query($conn, $sql);
 
-                    $cookieTime = 60 * 30;
+                    $cookieTime = 60 * 60;
                     setcookie('alreadyLoggedInCookie', $session, time() + ($cookieTime), "/");
 
                     header("Location: index.php");

@@ -35,7 +35,8 @@
                                 $videoPath = "media/videos/".$cookie."/".date("Y").date("m").date("d").getRandomString(5).".".$videoExt;
 
                                 if (move_uploaded_file($_FILES["video"]["tmp_name"], $videoPath)) {
-                                    // save video path to session
+                                    session_start();
+                                    $_SESSION["videoPath"] = $videoPath;
                                 } else {
                                     print_r($_FILES);
                                 }
