@@ -1,12 +1,16 @@
 <!-- 6 -->
 <!-- Upload video function -->
-    <!-- Finish timeline -->
-        <!-- some minor details -->
+    <!-- Finish timeline --> <!-- 3 -->
+
+    <!-- counter counting letters on title & desc --> <!-- 2 -->
+
+    <!-- thumbnail upload visual side -->
+
+    <!-- thumbnail upload functional side --> <!-- 1 -->
 
     <!-- video player function -->
-        <!-- Redirect to video page after upload -->
-
-        <!-- MAKE THUMBNAIL CODE ACTUALLY WORK -->
+    
+    <!-- Redirect to video page after upload -->
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->
