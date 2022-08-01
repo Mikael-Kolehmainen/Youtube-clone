@@ -20,8 +20,31 @@
                     </a>
                 </div>
                     <?php
+                        require "required-files/random-string.php";
                         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["video"])) {
                             // Save video to files and video path to session
+                            if (isset($_COOKIE['alreadyLoggedInCookie'])) {
+                                $cookie = $_COOKIE['alreadyLoggedInCookie'];
+
+                                if (file_exists("media/videos/".$cookie)) {
+                                    $folder = "media/videos/".$cookie;
+                                } else {
+                                    $folder = mkdir("media/videos/".$cookie);
+                                }
+                                $videoExt = pathinfo($_FILES["video"]["name"], PATHINFO_EXTENSION);
+                                $videoPath = "media/videos/".$cookie."/".date("Y").date("m").date("d").getRandomString(5).".".$videoExt;
+
+                                if (move_uploaded_file($_FILES["video"]["tmp_name"], $videoPath)) {
+                                    // save video path to session
+                                } else {
+                                    print_r($_FILES);
+                                }
+                            } else {
+                                echo "<script>
+                                    alert('Please sign back in to upload video.');
+                                    window.location.href = 'index.php';
+                                </script>";
+                            }
                             otherStages();
                         } else {
                             uploadStage();
