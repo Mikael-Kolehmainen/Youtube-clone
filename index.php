@@ -7,11 +7,11 @@
     
     <!-- Redirect to video page after upload -->
 
-    <!-- Validate title & desc according to MariaDB policy (for example. no ' in them) -->
+    <!-- Validate title & desc according to MariaDB policy (for example. no ' in them) --> <!-- 2 -->
 
     <!-- Remove 'alreadySaved' cookie if create video section is closed -->
 
-    <!-- Change desc & title input to textarea -->
+    <!-- Change desc & title input to textarea --> <!-- 1 -->
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->
