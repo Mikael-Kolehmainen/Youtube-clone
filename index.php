@@ -1,8 +1,8 @@
 <!-- 6 -->
 <!-- Upload video function -->
-    <!-- Finish timeline --> <!-- 3 -->
+    <!-- Finish timeline -->
 
-    <!-- counter counting letters on title & desc --> <!-- 2 -->
+    <!-- add title up and on visibility page --> <!-- 1 -->
 
     <!-- thumbnail upload visual side -->
 
@@ -14,7 +14,7 @@
 
     <!-- Remove 'alreadySaved' cookie if create video section is closed -->
 
-    <!-- Change desc input to textarea -->
+    <!-- Change desc & title input to textarea -->
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->

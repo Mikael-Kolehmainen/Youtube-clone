@@ -11,15 +11,11 @@ function showCounter(inputField) {
 
     counter.style.display = "block";
 }
-
-// TO-DO: Show the amount of chars in inputField through counter, chars + '/' + maxLength
-
 function updateCounter(inputField) {
     let counter = findCounter(inputField);
 
-    console.log(inputField.maxLength);
+    counter.innerText = inputField.value.length + "/" + inputField.maxLength;
 }
-
 function findCounter(inputField) {
     let placeholder = inputField.nextElementSibling;
     let counter;
