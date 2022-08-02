@@ -23,20 +23,23 @@
                         require "required-files/random-string.php";
                         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["video"])) {
                             // Save video to files and video path to session
+                            session_start();
                             if (isset($_COOKIE['alreadyLoggedInCookie'])) {
-                                $cookie = $_COOKIE['alreadyLoggedInCookie'];
+                                if (!isset($_SESSION['alreadySaved'])) {
+                                    $cookie = $_COOKIE['alreadyLoggedInCookie'];
+                                    $_SESSION["alreadySaved"] = true;
 
-                                if (!file_exists("media/videos/".$cookie)) {
-                                    $folder = mkdir("media/videos/".$cookie);
-                                }
-                                $videoExt = pathinfo($_FILES["video"]["name"], PATHINFO_EXTENSION);
-                                $videoPath = "media/videos/".$cookie."/".date("Y").date("m").date("d").getRandomString(5).".".$videoExt;
+                                    if (!file_exists("media/videos/".$cookie)) {
+                                        $folder = mkdir("media/videos/".$cookie);
+                                    }
+                                    $videoExt = pathinfo($_FILES["video"]["name"], PATHINFO_EXTENSION);
+                                    $videoPath = "media/videos/".$cookie."/".date("Y").date("m").date("d").getRandomString(5).".".$videoExt;
 
-                                if (move_uploaded_file($_FILES["video"]["tmp_name"], $videoPath)) {
-                                    session_start();
-                                    $_SESSION["videoPath"] = $videoPath;
-                                } else {
-                                    print_r($_FILES);
+                                    if (move_uploaded_file($_FILES["video"]["tmp_name"], $videoPath)) {
+                                        $_SESSION["videoPath"] = $videoPath;
+                                    } else {
+                                        print_r($_FILES);
+                                    }
                                 }
                             } else {
                                 echo "<script>
@@ -101,15 +104,15 @@
                             </div>
                             <div class='input'>
                                 <i class='fa-solid fa-circle-question'></i>
-                                <input type='text' name='title' required placeholder='Add a title that describes your video (type @ to mention a channel)'>
+                                <input type='text' name='title' onfocus='showCounter();' required placeholder='Add a title that describes your video (type @ to mention a channel)'>
                                 <label for='title'>Title (required)</label>
-                                <p>0/100</p>
+                                <p style='display: none;' class='counter'>0/100</p>
                             </div>
                             <div class='input' id='desc'>
                                 <i class='fa-solid fa-circle-question'></i>
                                 <input type='text' name='desc' placeholder='Tell viewers about your video (type @ to mention a channel)'>
                                 <label for='desc'>Description</label>
-                                <p>0/5000</p>
+                                <p style='display: none;  class='counter'>0/5000</p>
                             </div>
                             <div class='thumbnail'>
                                 <h2>Thumbnail</h2>

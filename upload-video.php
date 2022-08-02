@@ -61,6 +61,8 @@
         $sql = "INSERT INTO videos (title, description, thumbnail, visibility, video, users_id)
                 VALUES ('$title', '$desc', '$thumbPath', '$visibility', '$video', '$userID')";
         
+        unset($_SESSION['alreadySaved']);
+
         // Redirect to video page eventually
         if (mysqli_query($conn, $sql)) {
             echo "
@@ -68,6 +70,13 @@
                     window.location.href = 'index.php';
                 </script>
             ";
+        } else {
+            echo "
+                <script>
+                    alert('Something went wrong with uploading the data, try again.');
+                    window.location.href = 'create-video.php';
+                </script>
+            "
         }
         mysqli_close($conn);
     } else {

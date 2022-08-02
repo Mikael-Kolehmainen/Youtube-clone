@@ -7,6 +7,7 @@
         <script src='./js/password-check.js' async></script>
         <script src='./js/dropdown.js' async></script>
         <script src='./js/create-video/stage-manager.js' async></script>
+        <script src='./js/create-video/counter.js' async></script>
         <link href='./styles/css/main.css' rel='stylesheet' type='text/css'>
     ";
 ?>
