@@ -88,7 +88,7 @@
                         $dbPw = substr($row['pw'], 5);
                         if ($email == $row['email'] && password_verify($pw, $dbPw) == 1) {
                             $session = getRandomString(25);
-                            $cookieTime = 60 * 30;
+                            $cookieTime = 60 * 60;
                             setcookie('alreadyLoggedInCookie', $session, time() + ($cookieTime), "/");
                             $userID = $row['id'];
                             $sql_2 = "UPDATE users SET sessionhash = '$session' WHERE id = '$userID'";

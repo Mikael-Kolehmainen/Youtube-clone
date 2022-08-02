@@ -61,7 +61,7 @@
         $sql = "INSERT INTO videos (title, description, thumbnail, visibility, video, users_id)
                 VALUES ('$title', '$desc', '$thumbPath', '$visibility', '$video', '$userID')";
         
-        unset($_SESSION['alreadySaved']);
+        setcookie('alreadySaved', false, time() + 0, "/");
 
         // Redirect to video page eventually
         if (mysqli_query($conn, $sql)) {

@@ -23,11 +23,11 @@
                         require "required-files/random-string.php";
                         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["video"])) {
                             // Save video to files and video path to session
-                            session_start();
                             if (isset($_COOKIE['alreadyLoggedInCookie'])) {
-                                if (!isset($_SESSION['alreadySaved'])) {
+                                if (!isset($_COOKIE['alreadySaved']) || $_COOKIE['alreadySaved'] == false) {
                                     $cookie = $_COOKIE['alreadyLoggedInCookie'];
                                     $_SESSION["alreadySaved"] = true;
+                                    setcookie('alreadySaved', true, time() + (60 * 60), "/");
 
                                     if (!file_exists("media/videos/".$cookie)) {
                                         $folder = mkdir("media/videos/".$cookie);
