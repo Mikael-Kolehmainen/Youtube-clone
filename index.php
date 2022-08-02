@@ -3,11 +3,7 @@
     <!-- Finish timeline -->
         <!-- BUG: when on other stage than details and refresh it will think it's still on that stage -->
 
-    <!-- add title up and on visibility page --> <!-- 1 -->
-
     <!-- thumbnail upload visual side -->
-
-    <!-- video player function --> <!-- 2 -->
     
     <!-- Redirect to video page after upload -->
 

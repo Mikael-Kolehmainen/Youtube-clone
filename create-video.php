@@ -20,13 +20,14 @@
                     </a>
                 </div>
                     <?php
+                        session_start();
+
                         require "required-files/random-string.php";
                         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["video"])) {
                             // Save video to files and video path to session
                             if (isset($_COOKIE['alreadyLoggedInCookie'])) {
                                 if (!isset($_COOKIE['alreadySaved']) || $_COOKIE['alreadySaved'] == false) {
                                     $cookie = $_COOKIE['alreadyLoggedInCookie'];
-                                    $_SESSION["alreadySaved"] = true;
                                     setcookie('alreadySaved', true, time() + (60 * 60), "/");
 
                                     if (!file_exists("media/videos/".$cookie)) {
@@ -47,7 +48,7 @@
                                     window.location.href = 'index.php';
                                 </script>";
                             }
-                            otherStages();
+                            otherStages($_SESSION["videoPath"]);
                         } else {
                             uploadStage();
                         }
@@ -78,7 +79,7 @@
             </div>
         ";
     }
-    function otherStages() {
+    function otherStages($videoPath) {
         echo "
         <div class='timeline' id='timeline' style='display: block;'>
             <div class='lines'>
@@ -150,7 +151,7 @@
                         </div>
                         <div class='video-player'>
                             <div class='player'>
-                                <video controls id='video-player'></video>
+                                <video controls id='video-player' src='$videoPath'></video>
                                 <div class='left'>
                                     <p>Video link</p>
                                     <a href='#'>https://notactuallyalink</a>
@@ -260,7 +261,7 @@
                         </div>
                         <div class='video-player'>
                             <div class='player'>
-                                <video controls id='video-player'></video>
+                                <video controls id='video-player' src='$videoPath'></video>
                                 <div class='left'>
                                     <p id='video-name'></p>
                                     <br>
