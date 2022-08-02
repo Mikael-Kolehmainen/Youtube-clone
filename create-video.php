@@ -9,7 +9,7 @@
         <section class='create-section'>
             <article class='create-box'>
                 <div class='top'>
-                    <h1 id='title'>Upload videos</h1>
+                    <h1 id='video-title'>Upload videos</h1>
 
                     <!-- IN REVERSE ORDER BECAUSE OF FLOAT RIGHT -->
                     <a href='index.php' title='Close' class='btn'>
@@ -262,7 +262,7 @@
                             <div class='player'>
                                 <video controls id='video-player'></video>
                                 <div class='left'>
-                                    <p>Video name (functionality in future)</p>
+                                    <p id='video-name'></p>
                                     <br>
                                     <p>Video link</p>
                                     <a href='#'>https://notactuallyalink</a>

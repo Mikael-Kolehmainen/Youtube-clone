@@ -12,9 +12,18 @@ function showCounter(inputField) {
     counter.style.display = "block";
 }
 function updateCounter(inputField) {
+    // UPDATE COUNTER
     let counter = findCounter(inputField);
 
     counter.innerText = inputField.value.length + "/" + inputField.maxLength;
+    // UPDATE TITLE
+    let title = document.getElementById("video-title");
+
+    title.innerText = inputField.value;
+    // UPDATE NAME ON VISIBILITY STAGE
+    let name = document.getElementById("video-name");
+
+    name.innerText = inputField.value;
 }
 function findCounter(inputField) {
     let placeholder = inputField.nextElementSibling;
