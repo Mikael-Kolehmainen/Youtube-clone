@@ -12,6 +12,10 @@
 
     <!-- Validate title & desc according to MariaDB policy (for example. no ' in them) -->
 
+    <!-- Remove 'alreadySaved' cookie if create video section is closed -->
+
+    <!-- Change desc input to textarea -->
+
 <!-- 7 -->
 <!-- The place where you can watch the video -->
 

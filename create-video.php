@@ -104,15 +104,15 @@
                             </div>
                             <div class='input'>
                                 <i class='fa-solid fa-circle-question'></i>
-                                <input type='text' name='title' onfocus='showCounter();' required placeholder='Add a title that describes your video (type @ to mention a channel)'>
+                                <input type='text' name='title' maxlength='100' onfocus='showCounter(this);' oninput='updateCounter(this);' required placeholder='Add a title that describes your video (type @ to mention a channel)'>
                                 <label for='title'>Title (required)</label>
                                 <p style='display: none;' class='counter'>0/100</p>
                             </div>
                             <div class='input' id='desc'>
                                 <i class='fa-solid fa-circle-question'></i>
-                                <input type='text' name='desc' placeholder='Tell viewers about your video (type @ to mention a channel)'>
+                                <input type='text' name='desc' maxlength='5000' onfocus='showCounter(this);' oninput='updateCounter(this);' placeholder='Tell viewers about your video (type @ to mention a channel)'>
                                 <label for='desc'>Description</label>
-                                <p style='display: none;  class='counter'>0/5000</p>
+                                <p style='display: none;'  class='counter'>0/5000</p>
                             </div>
                             <div class='thumbnail'>
                                 <h2>Thumbnail</h2>
