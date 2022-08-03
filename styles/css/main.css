@@ -1016,7 +1016,7 @@ footer {
             left: 95%;
             top: 80%;
             font-size: 12px; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .input input {
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input textarea {
             padding-left: 2.5%;
             padding-right: 2.5%;
             width: 95%;
@@ -1024,13 +1024,14 @@ footer {
             padding-bottom: 30px;
             border-radius: 5px;
             border: 1px solid #b7b7b7;
-            font-size: 15px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:hover {
+            font-size: 15px;
+            font-family: roboto; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .input textarea:hover {
               border-color: #0d0d0d; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:focus {
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .input textarea:focus {
               outline: none !important;
               border: 1px solid #1a73e8; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .input input:focus + label {
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .input textarea:focus + label {
                 color: #1a73e8; }
           .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc label {
             top: 12%;
@@ -1040,7 +1041,7 @@ footer {
             left: 16%; }
           .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc p {
             top: 90%; }
-          .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc input {
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .input#desc textarea {
             padding-bottom: 120px; }
         .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail {
           margin-bottom: 24px;

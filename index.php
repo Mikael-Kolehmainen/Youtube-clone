@@ -11,7 +11,11 @@
 
     <!-- Remove 'alreadySaved' cookie if create video section is closed -->
 
-    <!-- Change desc & title input to textarea --> <!-- 1 -->
+    <!-- Desc textarea shouldn't change the title --> <!-- 1 -->
+
+    <!-- Disable enter in title --> <!-- 2 -->
+
+    <!-- fix overflow on title --> <!-- 3 -->
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->
