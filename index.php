@@ -11,8 +11,6 @@
 
     <!-- Remove 'alreadySaved' cookie if create video section is closed -->
 
-    <!-- Disable enter in title --> <!-- 2 -->
-
     <!-- fix overflow on title --> <!-- 3 -->
 
 <!-- 7 -->

@@ -1,4 +1,6 @@
 <?php
+    require 'required-files/clean-string.php';
+
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["create-video"])) {
         require "required-files/connection.php";
         $sql = "SELECT id, sessionhash FROM users";
@@ -31,9 +33,12 @@
         mysqli_close($conn);
 
         session_start();
+
         $title = $_POST['title'];
+        $title = cleanString($title);
         $desc = $_POST['desc'];
-        $thumbnail = $_POST['thumbnail']; /* MAKE THUMBNAIL CODE ACTUALLY WORK */
+        $desc = cleanString($desc);
+        $thumbnail = $_POST['thumbnail'];
 
         // SAVE THUMBNAIL TO THE SERVER
         $cookie = $_COOKIE['alreadyLoggedInCookie'];

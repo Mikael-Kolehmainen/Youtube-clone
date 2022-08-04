@@ -105,7 +105,7 @@
                             </div>
                             <div class='input'>
                                 <i class='fa-solid fa-circle-question'></i>
-                                <textarea name='title' maxlength='100' onfocus='showCounter(this);' oninput='updateCounter(this);' required placeholder='Add a title that describes your video (type @ to mention a channel)'></textarea>
+                                <textarea name='title' maxlength='100' onfocus='showCounter(this);' oninput='updateCounter(this);' required placeholder='Add a title that describes your video (type @ to mention a channel)' id='title-input'></textarea>
                                 <label for='title'>Title (required)</label>
                                 <p style='display: none;' class='counter'>0/100</p>
                             </div>
