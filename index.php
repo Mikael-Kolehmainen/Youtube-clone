@@ -4,12 +4,12 @@
         <!-- BUG: when on other stage than details and refresh it will think it's still on that stage -->
 
     <!-- thumbnail upload visual side -->
+
+    <!-- default thumbnail in upload-video.php -->
     
     <!-- Redirect to video page after upload -->
 
-    <!-- Validate title & desc according to MariaDB policy (for example. no ' in them) --> <!-- 2 -->
-
-    <!-- Remove 'alreadySaved' cookie if create video section is closed -->
+    <!-- Fix the bug: on refresh video is uploaded again --> <!-- Come back later with a fresh mind -->
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->

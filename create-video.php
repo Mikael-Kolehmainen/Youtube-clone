@@ -23,32 +23,37 @@
                         session_start();
 
                         require "required-files/random-string.php";
+
                         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["video"])) {
-                            // Save video to files and video path to session
-                            if (isset($_COOKIE['alreadyLoggedInCookie'])) {
-                                if (!isset($_COOKIE['alreadySaved']) || $_COOKIE['alreadySaved'] == false) {
+                            if (!isset($_COOKIE['alreadySaved'])) {
+                                // Save video to files and video path to session
+                                if (isset($_COOKIE['alreadyLoggedInCookie'])) {
+                                    setcookie('alreadySaved', TRUE, time() + (60*60), "/");
                                     $cookie = $_COOKIE['alreadyLoggedInCookie'];
-                                    setcookie('alreadySaved', true, time() + (60 * 60), "/");
-
-                                    if (!file_exists("media/videos/".$cookie)) {
-                                        $folder = mkdir("media/videos/".$cookie);
+                                    if ($alreadySaved == false) {
+                                        if (!file_exists("media/videos/".$cookie)) {
+                                            $folder = mkdir("media/videos/".$cookie);
+                                        }
+                                        $videoExt = pathinfo($_FILES["video"]["name"], PATHINFO_EXTENSION);
+                                        $videoPath = "media/videos/".$cookie."/".date("Y").date("m").date("d").getRandomString(5).".".$videoExt;
+                                        
+                                        if (move_uploaded_file($_FILES["video"]["tmp_name"], $videoPath)) {
+                                            $_SESSION["videoPath"] = $videoPath;
+                                        } else {
+                                            print_r($_FILES);
+                                        }
                                     }
-                                    $videoExt = pathinfo($_FILES["video"]["name"], PATHINFO_EXTENSION);
-                                    $videoPath = "media/videos/".$cookie."/".date("Y").date("m").date("d").getRandomString(5).".".$videoExt;
-
-                                    if (move_uploaded_file($_FILES["video"]["tmp_name"], $videoPath)) {
-                                        $_SESSION["videoPath"] = $videoPath;
-                                    } else {
-                                        print_r($_FILES);
-                                    }
+                                } else {
+                                    echo "<script>
+                                        alert('Please sign back in to upload video.');
+                                        window.location.href = 'index.php';
+                                    </script>";
                                 }
+                                otherStages($_SESSION["videoPath"]);
                             } else {
-                                echo "<script>
-                                    alert('Please sign back in to upload video.');
-                                    window.location.href = 'index.php';
-                                </script>";
+                                setcookie('alreadySaved', TRUE, time(), "/");
+                                otherStages($_SESSION["videoPath"]);
                             }
-                            otherStages($_SESSION["videoPath"]);
                         } else {
                             uploadStage();
                         }
