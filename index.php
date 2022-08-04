@@ -11,8 +11,6 @@
 
     <!-- Remove 'alreadySaved' cookie if create video section is closed -->
 
-    <!-- fix overflow on title --> <!-- 3 -->
-
 <!-- 7 -->
 <!-- The place where you can watch the video -->
 

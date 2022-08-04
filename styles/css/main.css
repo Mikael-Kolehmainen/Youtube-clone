@@ -765,6 +765,10 @@ footer {
       .create-page .create-section .create-box .top {
         padding: 20px;
         border-bottom: 1px solid #d5d5d5; }
+        .create-page .create-section .create-box .top h1 {
+          width: 90%;
+          height: 24px;
+          overflow-x: hidden; }
         .create-page .create-section .create-box .top .btn {
           float: right;
           font-size: 22px;

@@ -26,6 +26,11 @@
                 padding: 20px;
                 border-bottom: 1px solid $main-border-color;
 
+                h1 {
+                    width: 90%;
+                    height: 24px;
+                    overflow-x: hidden;
+                }
                 .btn {
                     float: right;
                     font-size: 22px;
