@@ -4,8 +4,6 @@
         <!-- BUG: when on other stage than details and refresh it will think it's still on that stage -->
 
     <!-- thumbnail upload visual side -->
-
-    <!-- default thumbnail in upload-video.php -->
     
     <!-- Redirect to video page after upload -->
 

@@ -58,6 +58,7 @@
             }
         } else {
             // SAVE PATH TO A DEFAULT THUMBNAIL
+            $thumbPath = "media/videos/default-thumbnail.png";
         }
 
         $visibility = $_POST['video_visibility'];
