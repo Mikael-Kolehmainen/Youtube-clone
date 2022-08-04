@@ -11,8 +11,6 @@
 
     <!-- Remove 'alreadySaved' cookie if create video section is closed -->
 
-    <!-- Desc textarea shouldn't change the title --> <!-- 1 -->
-
     <!-- Disable enter in title --> <!-- 2 -->
 
     <!-- fix overflow on title --> <!-- 3 -->

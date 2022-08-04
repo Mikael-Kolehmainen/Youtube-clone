@@ -1025,7 +1025,8 @@ footer {
             border-radius: 5px;
             border: 1px solid #b7b7b7;
             font-size: 15px;
-            font-family: roboto; }
+            font-family: roboto;
+            resize: none; }
             .create-page .create-section .create-box .mid #details-stage .details .video-info .input textarea:hover {
               border-color: #0d0d0d; }
             .create-page .create-section .create-box .mid #details-stage .details .video-info .input textarea:focus {

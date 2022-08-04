@@ -16,14 +16,17 @@ function updateCounter(inputField) {
     let counter = findCounter(inputField);
 
     counter.innerText = inputField.value.length + "/" + inputField.maxLength;
-    // UPDATE TITLE
-    let title = document.getElementById("video-title");
 
-    title.innerText = inputField.value;
-    // UPDATE NAME ON VISIBILITY STAGE
-    let name = document.getElementById("video-name");
+    if (inputField.name == "title") {
+        // UPDATE TITLE
+        let title = document.getElementById("video-title");
 
-    name.innerText = inputField.value;
+        title.innerText = inputField.value;
+        // UPDATE NAME ON VISIBILITY STAGE
+        let name = document.getElementById("video-name");
+
+        name.innerText = inputField.value;
+    }
 }
 function findCounter(inputField) {
     let placeholder = inputField.nextElementSibling;

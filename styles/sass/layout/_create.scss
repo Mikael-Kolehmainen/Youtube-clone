@@ -393,6 +393,7 @@
                                     border: 1px solid $darker-main-border-color;
                                     font-size: 15px;
                                     font-family: $main-font-family;
+                                    resize: none;
                                     
                                     &:hover {
                                         border-color: $third-font-color;
