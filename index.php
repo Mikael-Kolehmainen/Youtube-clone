@@ -1,7 +1,8 @@
 <!-- 6 -->
 <!-- Upload video function -->
     <!-- Finish timeline -->
-        <!-- BUG: when on other stage than details and refresh it will think it's still on that stage -->
+    
+    <!-- BUG: when on other stage than details and refresh it will think it's still on that stage -->
 
     <!-- thumbnail upload visual side -->
     
