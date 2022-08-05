@@ -123,8 +123,16 @@
                             <div class='thumbnail'>
                                 <h2>Thumbnail</h2>
                                 <p>Select or upload a picture that shows what's in your video. A good thumbnail stands out and draws viewers' attention. <a href='#'>Learn more</a></p>
-                                <i class='fa-solid fa-image img-icon'></i>
-                                <input type='file' name='thumbnail' accept='image/png,image/jpeg,image/*' class='thumbnail-input'>
+                                <i class='fa-solid fa-image img-icon' id='img-icon'></i>
+                                <input type='file' name='thumbnail' onchange='showThumbnailMenu(this);' accept='image/png,image/jpeg,image/*' class='thumbnail-input' id='thumbnail-input'>
+                                <img src='' id='thumbnail-image' style='display: none;'>
+                                <div class='menu-icon' title='Options'>
+                                    <i class='fa-solid fa-ellipsis-vertical'></i>
+                                    <div class='menu' style='display: none;'>
+                                        <p onclick='uploadThumbnail();'>Change</p>
+                                        <p>Download</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class='playlists'>
                                 <h2>Playlists (not available)</h2>

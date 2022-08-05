@@ -9,6 +9,7 @@
         <script src='./js/create-video/stage-manager.js' async></script>
         <script src='./js/create-video/counter.js' async></script>
         <script src='./js/create-video/disable-keys.js' async></script>
+        <script src='./js/create-video/thumbnail.js' async></script>
         <link href='./styles/css/main.css' rel='stylesheet' type='text/css'>
     ";
 ?>

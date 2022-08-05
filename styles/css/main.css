@@ -1082,6 +1082,34 @@ footer {
             transform: translate(-50%, -50%);
             z-index: 2;
             color: #606060; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail #thumbnail-image {
+            width: 127px;
+            height: 68px;
+            border: 2px solid #030303;
+            border-radius: 2px; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail #thumbnail-image:hover {
+              cursor: pointer; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail #thumbnail-image:hover ~ .menu-icon {
+                display: block; }
+          .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon {
+            display: none;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            top: 65%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            opacity: 0.7; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon:hover i {
+              color: white; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon i {
+              color: #909090;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
         .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists {
           margin-bottom: 24px; }
           .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists select {

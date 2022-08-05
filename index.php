@@ -5,6 +5,8 @@
     <!-- BUG: when on other stage than details and refresh it will think it's still on that stage -->
 
     <!-- thumbnail upload visual side -->
+        <!-- BUG: when hovering thumbnail you can't hover the menu icon at the same time --> <!-- 1 -->
+        <!-- onclick show the menu & css for the menu --> <!-- 2 -->
     
     <!-- Redirect to video page after upload -->
 
