@@ -1,3 +1,6 @@
+window.onbeforeunload = function() {
+    localStorage.clear();
+}
 function checkValue() {
     inputField = document.getElementById("upload");
 
@@ -6,16 +9,15 @@ function checkValue() {
         errorTag.innerText = "The file couldn't be uploaded, try again.";
     } else {
         document.getElementById("video-form").submit();
-        localStorage.setItem("currentStageName", "details");
+        showNextStage("details");
     }
 }
 function showNextStage(nextStageName = "", forward = true) {
-    currentStageName = localStorage.getItem("currentStageName");
 
     if (localStorage.getItem("currentStageName") != null) {
         currentStageName = localStorage.getItem("currentStageName");
     } else {
-        currentStageName = "upload";
+        currentStageName = "details";
     }
     if (nextStageName == "") {
         if (forward) {

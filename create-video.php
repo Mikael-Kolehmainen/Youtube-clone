@@ -164,7 +164,7 @@
                         </div>
                         <div class='video-player'>
                             <div class='player'>
-                                <video controls id='video-player' src='$videoPath'></video>
+                                <video controls class='player' src='$videoPath'></video>
                                 <div class='left'>
                                     <p>Video link</p>
                                     <a href='#'>https://notactuallyalink</a>
@@ -274,7 +274,7 @@
                         </div>
                         <div class='video-player'>
                             <div class='player'>
-                                <video controls id='video-player' src='$videoPath'></video>
+                                <video controls class='player' src='$videoPath'></video>
                                 <div class='left'>
                                     <p id='video-name'></p>
                                     <br>

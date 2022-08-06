@@ -2,8 +2,6 @@
 <!-- Upload video function -->
     <!-- Finish timeline -->
     
-    <!-- BUG: when on other stage than details and refresh it will think it's still on that stage -->
-
     <!-- Redirect to video page after upload -->
 
     <!-- Fix the bug: on refresh video is uploaded again --> <!-- Come back later with a fresh mind -->

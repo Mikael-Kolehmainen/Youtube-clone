@@ -1,5 +1,6 @@
 <?php
     require 'required-files/clean-string.php';
+    require 'required-files/random-string.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["create-video"])) {
         require "required-files/connection.php";
@@ -63,17 +64,17 @@
 
         $visibility = $_POST['video_visibility'];
         $video = $_SESSION['videoPath'];
+        $videoID = getRandomString(11);
         require 'required-files/connection.php';
-        $sql = "INSERT INTO videos (title, description, thumbnail, visibility, video, users_id)
-                VALUES ('$title', '$desc', '$thumbPath', '$visibility', '$video', '$userID')";
+        $sql = "INSERT INTO videos (title, description, thumbnail, visibility, video, videoID, users_id)
+                VALUES ('$title', '$desc', '$thumbPath', '$visibility', '$video', '$videoID', '$userID')";
         
         setcookie('alreadySaved', false, time() + 0, "/");
 
-        // Redirect to video page eventually
         if (mysqli_query($conn, $sql)) {
             echo "
                 <script>
-                    window.location.href = 'index.php';
+                    window.location.href = 'video.php?v=$videoID';
                 </script>
             ";
         } else {
@@ -82,7 +83,7 @@
                     alert('Something went wrong with uploading the data, try again.');
                     window.location.href = 'create-video.php';
                 </script>
-            "
+            ";
         }
         mysqli_close($conn);
     } else {
