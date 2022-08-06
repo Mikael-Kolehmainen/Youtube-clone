@@ -168,9 +168,6 @@
                 position: relative;
                 height: 850px;
 
-               /* form {
-                    height: 100%;
-                } */
                 #error {
                     margin-top: 5px;
                     margin-bottom: 5px;
@@ -479,7 +476,6 @@
                                     border-radius: 2px;
 
                                     &:hover {
-                                        cursor: pointer;
 
                                         &~.menu-icon {
                                             display: block;
@@ -496,9 +492,11 @@
                                     left: 20%;
                                     transform: translate(-50%, -50%);
                                     background-color: black;
-                                    opacity: 0.7;
 
                                     &:hover {
+                                        display: block;
+                                        cursor: pointer;
+
                                         i {
                                             color: white;
                                         }
@@ -509,6 +507,32 @@
                                         top: 50%;
                                         left: 50%;
                                         transform: translate(-50%, -50%);
+                                    }
+                                    .menu {
+                                        width: 110px;
+                                        position: absolute;
+                                        height: fit-content;
+                                        left: 0%;
+                                        top: 0%;
+                                        transform: translate(-50%, -50%);
+                                        margin-top: 0;
+                                        background-color: white;
+                                        border: 1px solid $main-border-color;
+                                        border-top: none;
+                                        z-index: 2;
+                                        padding: 10px;
+                                        padding-left: 0;
+                                        padding-right: 0;
+
+                                        p {
+                                            font-size: 15px;
+                                            color: $main-font-color;
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                            padding-top: 5px;
+                                            padding-bottom: 5px;
+                                            margin: 0;
+                                        }
                                     }
                                 }
                             }

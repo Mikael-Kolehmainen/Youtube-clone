@@ -854,10 +854,7 @@ footer {
       .create-page .create-section .create-box .mid {
         text-align: center;
         position: relative;
-        height: 850px;
-        /* form {
-                    height: 100%;
-                } */ }
+        height: 850px; }
         .create-page .create-section .create-box .mid #error {
           margin-top: 5px;
           margin-bottom: 5px;
@@ -1087,10 +1084,8 @@ footer {
             height: 68px;
             border: 2px solid #030303;
             border-radius: 2px; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail #thumbnail-image:hover {
-              cursor: pointer; }
-              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail #thumbnail-image:hover ~ .menu-icon {
-                display: block; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail #thumbnail-image:hover ~ .menu-icon {
+              display: block; }
           .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon {
             display: none;
             position: absolute;
@@ -1100,16 +1095,41 @@ footer {
             top: 65%;
             left: 20%;
             transform: translate(-50%, -50%);
-            background-color: black;
-            opacity: 0.7; }
-            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon:hover i {
-              color: white; }
+            background-color: black; }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon:hover {
+              display: block;
+              cursor: pointer; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon:hover i {
+                color: white; }
             .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon i {
               color: #909090;
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%); }
+            .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon .menu {
+              width: 110px;
+              position: absolute;
+              height: fit-content;
+              left: 0%;
+              top: 0%;
+              transform: translate(-50%, -50%);
+              margin-top: 0;
+              background-color: white;
+              border: 1px solid #d5d5d5;
+              border-top: none;
+              z-index: 2;
+              padding: 10px;
+              padding-left: 0;
+              padding-right: 0; }
+              .create-page .create-section .create-box .mid #details-stage .details .video-info .thumbnail .menu-icon .menu p {
+                font-size: 15px;
+                color: #030303;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin: 0; }
         .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists {
           margin-bottom: 24px; }
           .create-page .create-section .create-box .mid #details-stage .details .video-info .playlists select {

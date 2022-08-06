@@ -126,9 +126,9 @@
                                 <i class='fa-solid fa-image img-icon' id='img-icon'></i>
                                 <input type='file' name='thumbnail' onchange='showThumbnailMenu(this);' accept='image/png,image/jpeg,image/*' class='thumbnail-input' id='thumbnail-input'>
                                 <img src='' id='thumbnail-image' style='display: none;'>
-                                <div class='menu-icon' title='Options'>
+                                <div class='menu-icon' title='Options' onclick='openDropdownMenu(\"options\");'>
                                     <i class='fa-solid fa-ellipsis-vertical'></i>
-                                    <div class='menu' style='display: none;'>
+                                    <div class='menu' id='options' style='display: none;'>
                                         <p onclick='uploadThumbnail();'>Change</p>
                                         <p>Download</p>
                                     </div>
