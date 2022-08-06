@@ -8,8 +8,14 @@
 
 <!-- 7 -->
 <!-- The place where you can watch the video -->
+    <!-- Layout of site --> <!-- 1 -->
+    <!-- PHP side of site --> <!-- 2 -->
 
 <!-- 8 -->
+<!-- Show videos on home screen -->
+    <!-- count the amount of views -->
+
+<!-- 9 -->
 <!-- HOW TO USE TUTORIAL TO GITHUB REPO -->
     <!-- change upload_max_filesize from php.ini so that program can work -->
 

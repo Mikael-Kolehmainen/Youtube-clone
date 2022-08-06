@@ -60,6 +60,7 @@
                     ?>
             </article>
         </section>
+        <?php require 'required-files/footer.php'; ?>
     </body>
 </html>
 <?php
